@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    background-color: whitesmoke;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+}
+
+/* .nav img{
+    height: 10px;
+    
+} */
+
+.nav li{
+    margin: 20px;
+}
+
+.nav li img{
+    height: 30px;
+}
+
+.nav li:hover{
+    text-decoration: underline red 5px ;
+}
+
+#book{
+    background-color: red;
+    color: white;
+    border-color: black;
+    border-radius: 20px;
+    padding: 5px 10px;
+    
+}

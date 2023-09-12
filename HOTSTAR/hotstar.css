@@ -1,0 +1,683 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter",sans-serif;;
+}
+
+.container{
+    background-color: black;
+    width: 100%;
+}
+
+.sidebar{
+    background-color: #15245f ;
+    display: block;
+    width: 15%;
+    height: 100%;
+    list-style-type: none;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar img{ 
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+
+.sidebar ul{
+    padding-top: 200px;
+    
+}
+
+.sidebar ul li{
+    color: lightgray;
+    padding: 30px;
+}
+
+.sidebar ul li:hover{
+    transform: scale(1.3); 
+}
+
+
+.main{
+    margin-left:15%;
+    width: 85%;
+}
+
+.indvspak img{
+    height: 910px;                     
+}
+
+
+.banner div.indvspak:hover .live{
+    opacity: 1;
+    width: 150px;
+    position: relative;
+    bottom: 60px;
+    right: 210px;
+    display: block;
+    z-index: 999999;
+}
+
+.live{
+    display: none;
+}
+
+
+
+.main div.first:hover .watch {
+    width: 150px;
+    position: relative;
+    bottom: -90px;
+    left: -940px;
+    right: 30px;
+    display: block;
+    z-index: 999999;
+}
+
+.main p{
+  position: absolute;
+  left: 200px;
+  bottom: 150px;
+  z-index: 1;
+  margin-left: 740px;
+  font-weight: bold;
+  font-size: xx-large;
+  color: white;
+  background-color: blue;
+  border: 4px solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.main p:hover{
+    background-color: skyblue;
+    color: black;
+    
+}
+
+#wl{
+    position: absolute;
+    left: 260px;
+    bottom: 50px;
+    z-index: 1;
+    margin-left: 740px;
+    font-weight: bold;
+    font-size: xx-large;
+    color: white;
+    background-color: red;
+    border: 4px solid black;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+ #wl:hover{
+    background-color: lightcoral;
+    color: black;
+    transform: scale(1.3);
+  }
+
+.cards h3{
+    margin-left: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size:x-large;
+    color: white;
+}
+
+.cards img {
+    /* margin: 30px; */
+    margin-left: 1%;
+    margin-bottom: 2%;
+    height: 250px;
+    width: 200px;
+    transition: .5s ease;
+}
+
+div.latest-release{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.cards div.first {
+    width: 210px;
+    height: 280px;
+    margin: 10px 8px;
+    border-radius: 15px;
+}
+
+.cards div.first:hover .watch {
+    width: 150px;
+    position: relative;
+    bottom: -90px;
+    left: -930px;
+    right: 30px;
+    display: block;
+    z-index: 999999;
+}
+
+.cards div.first:hover img{
+    width: 250px;
+    height: 300px;
+    z-index: 9999;
+    position: relative;
+      
+}
+
+.watch{
+    display: none;
+}
+
+#watchnow{
+    background-color:rgb(241, 38, 38);
+    color: black;
+    font-size: 16px;
+    padding: 14px 28px;
+    width: 120px;
+    
+}
+
+#content{
+    position: absolute;
+    left: 950px;
+    bottom: 110px;
+    z-index: 1;
+    color:orange;
+    width: 140px;
+    opacity: 0.8;
+    font-size: medium;
+    background-color: dimgray;
+}
+
+#btn{
+    position: absolute;
+    left: 1130px;
+    bottom: 150px;
+    z-index: 1;
+    border-radius: 25px;
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    font-size: large;    
+
+}
+
+.scards h3{
+    margin-left: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size:x-large;
+    color: white;
+}
+
+.scards img {
+    /* margin: 30px; */
+    margin-left: 1%;
+    margin-bottom: 2%;
+    height: 200px;
+    width: 350px;
+    transition: .5s ease;
+}
+
+
+.scards div.first {
+    width: 280px;
+    height: 200px;
+    margin: 10px 40px;
+    border-radius: 15px;
+}
+
+.scards div.first:hover .watch {
+    width: 150px;
+    position: relative;
+    bottom: -90px;
+    left: -940px;
+    right: 30px;
+    display: block;
+    z-index: 999999;
+}
+
+.scards div.first:hover img{
+    width: 400px;
+    height: 250px;
+    z-index: 9999;
+    position: relative;
+      
+}
+
+#remindme{
+    background-color:white;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+    width: 150px;
+}
+
+.footer{
+    color: white;
+}
+
+table{
+    margin-top: 30px;
+    height: 100%;
+    width: 100%;
+    background-color: #15245f;
+}
+
+tr{
+    width: 100%;
+}
+
+th{
+    width: 25%;
+    padding: 40px;
+}
+
+td{
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .indvspak img{
+        height: 580px;   
+    }
+    
+    .banner div.indvspak:hover .live{
+        opacity: 1;
+        width: 150px;
+        position: relative;
+        bottom: -40px;
+        right: 510px;
+        display: block;
+        z-index: 999999;
+    }
+    
+    .live{
+        display: none;
+    }
+    
+    .sidebar img{
+        height: 80px;
+        margin-left: -10px;
+        /* margin-top: 10px; */
+        /* margin-left: 20px; */
+    }
+
+    .cards h3{
+        margin-left: 1%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size:x-large;
+        color: white;
+    }
+    
+    .cards img {
+        /* margin: 30px; */
+        margin-left: 1%;
+        margin-bottom: 2%;
+        height: 150px;
+        width: 100px;
+        transition: .5s ease;
+    }
+    
+    div.latest-release{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .cards div.first {
+        width: 100px;
+        height: 150px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+    }
+    
+    .cards div.first:hover .watch {
+        width: 150px;
+        position: relative;
+        bottom: -90px;
+        left: -930px;
+        right: 30px;
+        display: block;
+        z-index: 999999;
+    }
+    
+    .cards div.first:hover img{
+        width: 250px;
+        height: 300px;
+        z-index: 9999;
+        position: relative;
+          
+    }
+    
+    .watch{
+        display: none;
+    }
+    
+    #watchnow{
+        background-color:rgb(241, 38, 38);
+        color: black;
+        font-size: 16px;
+        padding: 14px 28px;
+        width: 120px;
+        
+    }
+    
+    #content{
+        position: absolute;
+        left: 950px;
+        bottom: 110px;
+        z-index: 1;
+        color:orange;
+        width: 140px;
+        opacity: 0.8;
+        font-size: medium;
+        background-color: dimgray;
+    }
+    }
+    
+    #btn{
+        position: absolute;
+        left: 1130px;
+        bottom: 150px;
+        z-index: 1;
+        border-radius: 25px;
+        background-color: yellow;
+        width: 50px;
+        height: 50px;
+        font-size: large;    
+    
+    }
+
+    .scards h3{
+        margin-left: 1%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size:x-large;
+        color: white;
+    }
+    
+    .scards img {
+        /* margin: 30px; */
+        margin-left: 1%;
+        margin-bottom: 2%;
+        height: 100px;
+        width: 250px;
+        transition: .5s ease;
+    }
+    
+    
+    .scards div.first {
+        width: 200px;
+        height: 100px;
+        margin: 10px 40px;
+        border-radius: 15px;
+    }
+    
+    .scards div.first:hover .watch {
+        width: 150px;
+        position: relative;
+        bottom: -90px;
+        left: -940px;
+        right: 30px;
+        display: block;
+        z-index: 999999;
+    }
+    
+    .scards div.first:hover img{
+        width: 400px;
+        height: 250px;
+        z-index: 9999;
+        position: relative;
+          
+    }
+
+    /* table{
+        margin-top: 30px;
+        height: 100%;
+        width: 100%;
+        background-color: #15245f;
+    }
+    
+    tr{
+        width: 100%;
+    }
+    
+    th{
+        width: 25%;
+        padding: 40px;
+    }
+    
+    td{
+        width: 25%;
+        text-align: center;
+        padding: 10px;
+    }
+     */
+
+@media screen and (max-width: 1000px) {
+
+    
+
+    .sidebar img{
+        height: 60px;
+        margin-top: 10px;
+        /* margin-left: 20px; */
+    }
+
+    .indvspak img{
+        height: 450px;   
+    }
+    
+    .banner div.indvspak:hover .live{
+        opacity: 1;
+        width: 150px;
+        position: relative;
+        bottom: -80px;
+        right: 630px;
+        display: block;
+        z-index: 999999;
+    }
+    
+    .live{
+        display: none;
+    }
+    
+    .cards h3{
+        margin-left: 1%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size:x-large;
+        color: white;
+    }
+    
+    .cards img {
+        /* margin: 30px; */
+        margin-left: 1%;
+        margin-bottom: 2%;
+        height: 150px;
+        width: 100px;
+        transition: .5s ease;
+    }
+    
+    div.latest-release{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .cards div.first {
+        width: 100px;
+        height: 150px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+    }
+    
+    .cards div.first:hover .watch {
+        width: 150px;
+        position: relative;
+        bottom: -90px;
+        left: -930px;
+        right: 30px;
+        display: block;
+        z-index: 999999;
+    }
+    
+    .cards div.first:hover img{
+        width: 250px;
+        height: 300px;
+        z-index: 9999;
+        position: relative;
+          
+    }
+    
+    .watch{
+        display: none;
+    }
+    
+    #watchnow{
+        background-color:rgb(241, 38, 38);
+        color: black;
+        font-size: 16px;
+        padding: 14px 28px;
+        width: 120px;
+        
+    }
+    
+    #content{
+        position: absolute;
+        left: 950px;
+        bottom: 110px;
+        z-index: 1;
+        color:orange;
+        width: 140px;
+        opacity: 0.8;
+        font-size: medium;
+        background-color: dimgray;
+    }
+    }
+    
+    
+    #btn{
+        position: absolute;
+        left: 1130px;
+        bottom: 150px;
+        z-index: 1;
+        border-radius: 25px;
+        background-color: yellow;
+        width: 50px;
+        height: 50px;
+        font-size: large;    
+    
+    }
+
+    .scards h3{
+        margin-left: 1%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size:x-large;
+        color: white;
+    }
+    
+    .scards img {
+        /* margin: 30px; */
+        margin-left: 1%;
+        margin-bottom: 2%;
+        height: 100px;
+        width: 250px;
+        transition: .5s ease;
+    }
+    
+    
+    .scards div.first {
+        width: 200px;
+        height: 100px;
+        margin: 10px 40px;
+        border-radius: 15px;
+    }
+    
+    .scards div.first:hover .watch {
+        width: 150px;
+        position: relative;
+        bottom: -90px;
+        left: -940px;
+        right: 30px;
+        display: block;
+        z-index: 999999;
+    }
+    
+    .scards div.first:hover img{
+        width: 400px;
+        height: 250px;
+        z-index: 9999;
+        position: relative;
+          
+    }
+
+    /* table{
+        margin-top: 30px;
+        height: 100%;
+        width: 100%;
+        background-color: #15245f;
+    }
+    
+    tr{
+        width: 100%;
+    }
+    
+    th{
+        width: 25%;
+        padding: 40px;
+    }
+    
+    td{
+        width: 25%;
+        text-align: center;
+        padding: 10px;
+    }
+     */
+
+
+@media screen and (max-width: 500px){
+    .indvspak img{
+        height: 200px;   
+    }
+
+    .banner div.indvspak:hover .live{
+        opacity: 1;
+        width: 150px;
+        position: relative;
+        bottom: -120px;
+        right: 820px;
+        display: block;
+        z-index: 999999;
+    }
+    
+    .live{
+        display: none;
+    }
+    #watchnow{
+        background-color:rgb(241, 38, 38);
+        color: black;
+        font-size:xx-small;
+        padding: 7px 14px;
+        width: 70px;
+    }
+}
+
+

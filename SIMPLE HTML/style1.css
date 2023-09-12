@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+.master{
+  width: 100%;
+  display: inline;
+}
+.header{
+  background-color: black;
+  height: 20%;
+  width: auto;
+}
+
+.header img{
+  width: 80px;
+  margin-left: 20px;
+}
+
+.navbar{
+  background-color: aliceblue;
+  width: 100%;
+  height: 5%;
+}
+
+.navbar ul{
+ list-style: none; 
+ text-align: center;
+}
+.navbar ul li{
+  display: inline-block;
+  padding: 20px;
+}
+
+.navbar ul li a {
+  font-style: normal;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar ul li:hover{
+  background-color: aqua;
+}
+
+.sidebar{
+  background-color: aliceblue;
+  width:10%;
+  height: 1500px;
+}
+
+.sidebar ul{
+  
+}
+
+.sidebar ul li{
+  text-align: center;
+  padding: 10px;
+}
+
+.sidebar ul li:hover{
+  background-color: aquamarine;
+}
+
+.main{
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+}
+
+.card{
+ height: 200px;
+ width: 325px;
+ background-color: bisque;
+ margin: 10px;
+ display: inline-block;
+ text-align: center;
+}
+
+.box{
+  width: 100%;
+  background-color: rgb(134, 181, 243);
+  
+}
+
+.card img{
+  
+  margin-top: 20px;
+  height: 130px;
+  width: 100px;
+}
+
+.card h3,h4{
+  /* margin-top: 50px; */
+  text-align: center;
+}
+
+.footer{
+  background-color: aliceblue;
+  height: 20%;
+  padding: 2%;
+  text-align: center;
+}
+
+.fieldd{
+  margin-left: 10px;
+  margin-top:10px;
+  font-size: 20px;
+  font-weight: bold;
+  border: solid black;
+  color:darkred;
+  width: 95%;
+  height: 450px;
+}
+
+#name, #email{
+  margin-left: 30px;
+  padding: 10px;
+  width: 500px;
+  border-radius: 450px;
+}
+
+#query{
+  margin-left: 30px;
+  padding: 10px;
+  width: 500px;
+  border-radius: 40px;
+}
+
+#sub{
+  margin-left: 200px;
+  width: 200px;
+  padding: 20px;
+  border-radius: 500px;
+  background-color: greenyellow;
+  font-weight: bold;
+  font-size: 22px;
+  color: teal;
+}
