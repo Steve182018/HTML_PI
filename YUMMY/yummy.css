@@ -4,7 +4,7 @@
 }
 
 .nav{
-    background-color: whitesmoke;
+    background-color: white;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -34,5 +34,51 @@
     border-color: black;
     border-radius: 20px;
     padding: 5px 10px;
-    
+}
+
+.home
+{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+}
+
+.hometable{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#title{
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    padding: 7px 14px;
+}
+
+#content{
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    padding: 7px 14px;
+}
+
+#bookh{
+    background-color: red;
+    color: white;
+    border-color: black;
+    border-radius: 20px;
+    padding: 7px 14px;
+}
+
+#watchvideo{
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+    border: 0px;
+    padding: 7px 14px;
+}
+
+#pt{
+    height: 50px;
 }
