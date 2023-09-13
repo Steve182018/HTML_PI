@@ -5,6 +5,10 @@
     width: 100%;
 }
 
+/* ::-webkit-scrollbar{
+    width: 1px;
+} */
+
 .container{
     background-color: black;
     width: 100%;
@@ -30,6 +34,11 @@
 
 .sidebar ul{
     padding-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    flex-direction: column;
     
 }
 
@@ -143,10 +152,11 @@ div.latest-release{
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
+    
 }
 
 .cards div.first {
-    width: 210px;
+    width: 240px;
     height: 280px;
     margin: 10px 8px;
     border-radius: 15px;
@@ -178,8 +188,8 @@ div.latest-release{
     background-color:rgb(241, 38, 38);
     color: black;
     font-size: 16px;
-    padding: 14px 28px;
-    width: 120px;
+    padding: 6px 8px;
+    width: 95px;
     
 }
 
@@ -197,13 +207,13 @@ div.latest-release{
 
 #btn{
     position: absolute;
-    left: 1130px;
+    left: 1070px;
     bottom: 150px;
     z-index: 1;
     border-radius: 25px;
-    background-color: yellow;
-    width: 50px;
-    height: 50px;
+    background-color: whitesmoke;
+    width: 40px;
+    height: 40px;
     font-size: large;    
 
 }
@@ -221,7 +231,7 @@ div.latest-release{
     margin-left: 1%;
     margin-bottom: 2%;
     height: 200px;
-    width: 350px;
+    width: 300px;
     transition: .5s ease;
 }
 
@@ -255,8 +265,8 @@ div.latest-release{
     background-color:white;
     color: black;
     font-size: 16px;
-    padding: 16px 32px;
-    width: 150px;
+    padding: 6px 8px;
+    width: 100px;
 }
 
 .footer{
@@ -287,6 +297,39 @@ td{
 
 
 @media screen and (max-width: 1500px) {
+    .sidebar{
+        background-color: #15245f ;
+        display: block;
+        width: 15%;
+        height: 100%;
+        list-style-type: none;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .sidebar img{ 
+        height: 100px;
+        margin-top: 10px;
+         margin-left: 20px;
+    }
+    
+    .sidebar ul{
+        padding-top: 200px;
+        
+    }
+    
+    .sidebar ul li{
+        color: lightgray;
+        padding: 30px;
+        font-size: small;
+        /* display: flex;
+        text-align: left;
+        justify-content: left; */
+        
+    }
+
     .indvspak img{
         height: 580px;   
     }
@@ -451,16 +494,16 @@ td{
     }
     
     tr{
-        width: 80%;
+        width: 100%;
     }
     
     th{
-        width: 20%;
+        width: 10%;
         padding: 40px;
     }
     
     td{
-        width: 20%;
+        width: 10%;
         text-align: center;
         padding: 10px;
     }
@@ -469,9 +512,6 @@ td{
     
 
 @media screen and (max-width: 1000px) {
-
-
-    
 
     .sidebar img{
         height: 60px;
@@ -636,28 +676,32 @@ td{
     }
     
     tr{
-        width: 80%;
+        width: 100%;
     }
     
     th{
-        width: 20%;
+        width: 5%;
         padding: 40px;
     }
     
     td{
-        width: 20%;
+        width: 5%;
         text-align: center;
         padding: 10px;
     }
     }
     
-    
-    
+@media screen and (max-width: 700px){
 
-    
-
-
-@media screen and (max-width: 500px){
+    .sidebar ul li{
+        color: lightgray;
+        padding: 30px;
+        font-size: xx-small;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        
+    }
     .indvspak img{
         height: 200px;   
     }
@@ -681,6 +725,164 @@ td{
         font-size:xx-small;
         padding: 7px 14px;
         width: 70px;
+    }
+    table{
+        margin-top: 30px;
+        height: 100%;
+        width: 100%;
+        background-color: #15245f;
+    }
+    
+    tr{
+        width: 100%;
+    }
+    
+    th{
+        width: 1%;
+        padding: 10px;
+    }
+    
+    td{
+        width: 1%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .sidebar img{
+        height: 60px;
+        margin-top: 10px;
+        /* margin-left: 20px; */
+    }
+    
+    .cards h3{
+        margin-left: 1%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size:x-large;
+        color: white;
+    }
+    
+    .cards img {
+        /* margin: 30px; */
+        margin-left: 1%;
+        margin-bottom: 2%;
+        height: 150px;
+        width: 100px;
+        transition: .5s ease;
+    }
+    
+    div.latest-release{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .cards div.first {
+        width: 100px;
+        height: 150px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+    }
+    
+    .cards div.first:hover .watch {
+        width: 150px;
+        position: relative;
+        bottom: -90px;
+        left: -930px;
+        right: 30px;
+        display: block;
+        z-index: 999999;
+    }
+    
+    .cards div.first:hover img{
+        width: 250px;
+        height: 300px;
+        z-index: 9999;
+        position: relative;
+          
+    }
+    
+    .watch{
+        display: none;
+    }
+    
+    #watchnow{
+        background-color:rgb(241, 38, 38);
+        color: black;
+        font-size: 16px;
+        padding: 14px 28px;
+        width: 120px;
+        
+    }
+    
+    #content{
+        position: absolute;
+        left: 950px;
+        bottom: 110px;
+        z-index: 1;
+        color:orange;
+        width: 140px;
+        opacity: 0.8;
+        font-size: medium;
+        background-color: dimgray;
+    }
+
+    #btn{
+        position: absolute;
+        left: 1130px;
+        bottom: 150px;
+        z-index: 1;
+        border-radius: 25px;
+        background-color: yellow;
+        width: 50px;
+        height: 50px;
+        font-size: large;    
+    
+    }
+
+    .scards h3{
+        margin-left: 1%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size:x-large;
+        color: white;
+    }
+    
+    .scards img {
+        /* margin: 30px; */
+        margin-left: 1%;
+        margin-bottom: 2%;
+        height: 100px;
+        width: 200px;
+        transition: .5s ease;
+    }
+    
+    
+    .scards div.first {
+        width: 200px;
+        height: 100px;
+        margin: 10px 40px;
+        border-radius: 15px;
+    }
+    
+    .scards div.first:hover .watch {
+        width: 150px;
+        position: relative;
+        bottom: -90px;
+        left: -940px;
+        right: 30px;
+        display: block;
+        z-index: 999999;
+    }
+    
+    .scards div.first:hover img{
+        width: 400px;
+        height: 250px;
+        z-index: 9999;
+        position: relative;
+          
     }
 }
 
