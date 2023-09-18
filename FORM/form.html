@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+    <div class="form">
+        <form method="post" action="#">
+        <fieldset class="reg">
+            <legend>Registration Form</legend>
+            <fieldset class="pd">
+                <legend>Personel Details</legend>
+                <table>
+                    <tr>
+                        <td><label>First Name:</label></td>
+                        <td>
+                            <input type="text" placeholder="Enter Your First Name" name="fname" id="fname" required autofocus>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Last Name:</label></td><td>
+                            <input type="text" placeholder="Enter Your Last Name" name="lname" id="fname" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Email:</label></td><td>
+                            <input type="email" placeholder="Enter Your Email" name="email" id="email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Password:</label></td><td>
+                            <input type="password" placeholder="Enter Your Password" name="pw" id="pw" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Date of Birth:</label></td><td>
+                            <input type="date" id="dob" name="dob" value="dob" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Time of Birth</label></td><td>
+                            <input type="time" id="time" name="time" value="time" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Contact Number:</label></td><td>
+                            <input type="number" placeholder="Enter Your Contact Number" name="cnum" id="cnum" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Gender:</label></td><td>
+                            <input type="radio" name="gender" value="Male"><label style="font-weight: normal; margin: 10px;" required>Male</label>
+                            <input type="radio" name="gender" value="Female"><label style="font-weight: normal; margin: 10px;" required>Female</label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset class="rd">
+                <legend>Residence Details</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label>Address:</label></td><td>
+                            <textarea placeholder="Enter Your Address" rows="10" cols="100" id="add"
+                                name="add"  required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>City:</label></td><td>
+                            <select id="city" name="city" required>
+                                <option>Surat</option>
+                                <option>Navsari</option>
+                                <option>Bardoli</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset class="in">
+                <legend>Interest</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label>Hobby:</label></td><td>
+                            <input type="checkbox" name="hobby" id="cricket">
+                            <label style="font-weight: normal; margin: 10px;">Cricket</label>
+                            <input type="checkbox" name="hobby" id="football">
+                            <label style="font-weight: normal; margin: 10px;">Football</label>
+                            <input type="checkbox" name="hobby" id="basketball  ">
+                            <label style="font-weight: normal; margin: 10px;">Basketball</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Car</label>
+                        </td><td>
+                            <select name="car" id="car">
+                                <optgroup label="Ford">
+                                    <option value="Mustang">Mustang</option>
+                                    <option value="GT">GT</option>
+                                </optgroup><optgroup label="Audi">
+                                    <option value="Audi A4">Audi A4</option>
+                                    <option value="Audi RS">Audi RS</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
+            </fieldset>
+
+            <fieldset class="up">
+                <legend>
+                    Upload
+                </legend>
+                <table>
+                    <tr>
+                        <td><label>Upload Resume</label></td><td>
+                            <input type="file" name="file" id="file" required><br><br></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="submit" id="submit" value="Submit" required></td><td>
+                            <input type="reset" name="reset" id="reset" value="Reset" required>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </fieldset>
+    </div>
+</form> 
+</body>
+
+</html>

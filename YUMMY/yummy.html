@@ -1,46 +1,444 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yummy</title>
-    <link rel="stylesheet" href="yummy.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./yummy.css">
 </head>
+
 <body>
-    <header>
-        <navbar>
-            <ul class="nav">
-            <li style="margin-right: 500px;"><img src="./../YOU TUBE/y.png"></li>
-            <li>Home</ll>
-            <li>About</li>
-            <li>Menu</li>
-            <li>Event</li>
-            <li>Chefs</li>
-            <li>Dropdown&nbsp;<i class="fa fa-angle-down"></i></li>
-            <li>Contact</li>
-            <li style="margin-left: 500px;"><button id="book">Book a Table</button></li>
-            </ul>
-        </navbar>
-    </header>
-    <section>
-        <div class="home">
-            <table class="hometable">
-                <tr>
-                    <td id="title">Enjoy Your Healthy</td>
-                    <td rowspan="4" id="pt"><img src="./PICS/pt.jpg" style="height: 100px;"></td>
-                </tr>
-                <tr>
-                    <td id="title">Delicious Food</td>
-                </tr>
-                <tr>
-                    <td id="content">Best Food Here</td>
-                </tr>
-                <tr>
-                    <td><button id="bookh">Book a Table</button><button id="watchvideo">Watch Video</button></td>
-                </tr>
-            </table>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./PICS/yummy-removebg-preview.png" alt="Bootstrap" width="150" height="110">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" style="justify-content: center; align-items: center;"
+                id="navbarSupportedContent">
+                <ul class="nav flex-md-wrap nav-underline" style="font-weight: bold;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Chefs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="#">
+                <button type="button" class="btn btn-outline-danger">Book a Table</button>
+            </a>
         </div>
-    </section>
+    </nav>
+
+    <div class="container-fluid text-left" style="background-color: lightgray; height: 575px;">
+        <div class="row">
+            <div class="col-6" style="display: flex;
+          align-content: center;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;">
+                <h2>
+                    ENJOY YOUR HEALTHY<br>
+                    DELICIOUS FOOD
+                </h2>
+                <p>Treat Your Friends & Family With us.</p>
+                <button type="button" class="btn btn-outline-danger"
+                    style="font-weight: bold; border-radius: 20px;">Book a Table</button>
+                <!-- <button type="button" class="btn btn-outline-info">Info</button> -->
+            </div>
+            <!-- <div class="col-4"></div> -->
+            <div class="col-6 text-left">
+                <img src="./PICS/hero-img.png" style="height: 500px; display: flex;
+            align-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-top: 40px;">
+            </div>
+        </div>
+    </div><br><br>
+    <section id="About">
+    <div class="container">
+        <div class="about" style="text-align: center;">
+            <h6>
+                About US
+            </h6>
+            <h4>
+                LEARN MORE ABOUT US
+            </h4>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <img src="./PICS/about.jpg" style="width: 100%;">
+            </div>
+            <div class="col-4">
+                <p>Classy Paragraphs is a Drupal module which gives your Paragraphs a little class. Content creators can
+                    easily assign a class to a paragraph to style it according to a controlled list which was defined by
+                    the site builder.</p>
+                <p>Classy Paragraphs is a Drupal module which gives your Paragraphs a little class. Content creators can
+                    easily assign a class to a paragraph to style it according to a controlled list which was defined by
+                    the site builder.</p>
+                <p>Classy Paragraphs is a Drupal module which gives your Paragraphs a little class. Content creators can
+                    easily assign a class to a paragraph to style it according to a controlled list which was defined by
+                    the site builder.</p>
+                <img src="./PICS/about-2.jpg" style="width: 100%; height: 45%; margin-bottom: 30px;">
+            </div>
+        </div>
+    </div>
+</section><br><br>
+    <div class="container-fluid"
+        style="background-color: lightgray; height: 400px; display: flex; align-items: center; justify-content: center;">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card text-center mb-3"
+                    style="width: 20rem; height: 23rem; color: white; background-color: red; margin: 10px;">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Why Choose Yummy?</strong></h5>
+                        <p class="card-text">Classy Paragraphs is a Drupal module which gives your Paragraphs a little
+                            class. Content creators can
+                            easily assign a class to a paragraph to style it according to a controlled list which was
+                            defined by
+                            the site builder.</p>
+                        <a href="#" class="btn btn-light">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card text-center mb-3"
+                    style="width: 18rem; color: black; background-color: white; margin: 10px;">
+                    <div class="card-body">
+                        <button class="why"><i class="fa fa-bar-chart"></i></button>
+                        <h5 class="card-title"><strong>Why Choose Yummy?</strong></h5>
+                        <p class="card-text">Classy Paragraphs is a Drupal module which gives your Paragraphs a little
+                            class. Content creators can
+                            easily assign a class to a paragraph to style it according to a controlled list which was
+                            defined by
+                            the site builder.</p>
+                        <a href="#" class="btn btn-light">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card text-center mb-3"
+                    style="width: 18rem; color: black; background-color: white; margin: 10px;">
+                    <div class="card-body">
+                        <button class="why"><i class="fa fa-diamond"></i></button>
+                        <h5 class="card-title"><strong>Why Choose Yummy?</strong></h5>
+                        <p class="card-text">Classy Paragraphs is a Drupal module which gives your Paragraphs a little
+                            class. Content creators can
+                            easily assign a class to a paragraph to style it according to a controlled list which was
+                            defined by
+                            the site builder.</p>
+                        <a href="#" class="btn btn-light">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card text-center mb-3"
+                    style="width: 18rem; color: black; background-color: white; margin: 10px;">
+                    <div class="card-body">
+                        <button class="why"><i class="fa fa-inbox"></i></button>
+                        <h5 class="card-title"><strong>Why Choose Yummy?</strong></h5>
+                        <p class="card-text">Classy Paragraphs is a Drupal module which gives your Paragraphs a little
+                            class. Content creators can
+                            easily assign a class to a paragraph to style it according to a controlled list which was
+                            defined by
+                            the site builder.</p>
+                        <a href="#" class="btn btn-light">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="container-fluid client">
+        <div class="row" style=" width: 100%; color: white; opacity: 0.5;
+        background-color: black;">
+            <div class="col-3 project">
+                <h1><strong>232</strong></h1>
+                <h5>Clients</h5>
+            </div>
+            <div class="col-3 project">
+                <h1><strong>521</strong></h1>
+                <h5>Projects</h5>
+            </div>
+            <div class="col-3 project">
+                <h1><strong>1453</strong></h1>
+                <h5>Hours Of Support</h5>
+            </div>
+            <div class="col-3 project">
+                <h1><strong>32</strong></h1>
+                <h5>Worker</h5>
+            </div>
+        </div>
+    </div><br><br>
+    <section id="Menu">
+    <div class="container">
+        <div class="about" style="text-align: center;">
+            <h6>
+                OUR MENU
+            </h6>
+            <h4>
+                CHECK OUR YUMMY MENU
+            </h4>
+        </div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Starters</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-underline" href="#">Breakfast</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-underline" href="#">Lunch</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-underline " href="#">Dinner</a>
+            </li>
+        </ul>
+        <div class="about" style="text-align: center;">
+            <h6>
+                MENU
+            </h6>
+            <h1>
+                Starters
+            </h1>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card menuitem">
+                    <img src="./PICS/menu/menu-item-1.png" class="card-img-top" alt="...">
+                    <div class="card-body menu">
+                        <h5 class="card-title dishname">Magnam Tiste</h5>
+                        <p class="card-text">Tasty Dish</p>
+                        <p class="card-text dollar">$5.95</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card menuitem">
+                    <img src="./PICS/menu/menu-item-2.png" class="card-img-top" alt="...">
+                    <div class="card-body menu">
+                        <h5 class="card-title dishname">Aut Luia</h5>
+                        <p class="card-text">Tasty Dish</p>
+                        <p class="card-text dollar">$14.95</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card menuitem">
+                    <img src="./PICS/menu/menu-item-3.png" class="card-img-top" alt="...">
+                    <div class="card-body menu">
+                        <h5 class="card-title dishname">Est Eligendi</h5>
+                        <p class="card-text">Tasty Dish</p>
+                        <p class="card-text dollar">$8.95</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card menuitem">
+                    <img src="./PICS/menu/menu-item-4.png" class="card-img-top" alt="...">
+                    <div class="card-body menu">
+                        <h5 class="card-title dishname">Eos Luibusdam</h5>
+                        <p class="card-text">Tasty Dish</p>
+                        <p class="card-text dollar">$12.95</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card menuitem">
+                    <img src="./PICS/menu/menu-item-5.png" class="card-img-top" alt="...">
+                    <div class="card-body menu">
+                        <h5 class="card-title dishname">Eos Luibusdam</h5>
+                        <p class="card-text">Tasty Dish</p>
+                        <p class="card-text dollar">$12.95</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card menuitem">
+                    <img src="./PICS/menu/menu-item-6.png" class="card-img-top" alt="...">
+                    <div class="card-body menu">
+                        <h5 class="card-title dishname">Direva Tiste</h5>
+                        <p class="card-text">Tasty Dish</p>
+                        <p class="card-text dollar">$9.95</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div></section><br><br>
+    <div class="container-fluid"
+        style="background-color: lightgray; height: 400px; display: flex; align-items: center; justify-content: center;">
+        <div class="about" style="text-align: center;">
+            <h6>
+                TESTIMONIALS
+            </h6>
+            <h2>
+                WHAT ARE THEY SAYING ABOUT US
+            </h2>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-6" style="text-align: left; margin-top: 20px;">
+                                <p><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;&nbsp;Classy Paragraphs is a Drupal
+                                    module which gives your Paragraphs a little
+                                    class. Content creators can
+                                    easily assign a class to a paragraph to style it according to a controlled list which was
+                                    defined by
+                                    the site builder.&nbsp;&nbsp;<i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                                <h4>Sara Wilson</h4>
+                                <h6>Designer</h6>
+                                <p class="star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="col-4">
+                                <img src="./PICS/testimonials/testimonials-2.jpg" class="testi">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-6" style="text-align: left; margin-top: 20px;">
+                                <p><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;&nbsp;Classy Paragraphs is a Drupal
+                                    module which gives your Paragraphs a little
+                                    class. Content creators can
+                                    easily assign a class to a paragraph to style it according to a controlled list which was
+                                    defined by
+                                    the site builder.&nbsp;&nbsp;<i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                                <h4>Saul Goodman</h4>
+                                <h6>CEO & Founder</h6>
+                                <p class="star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="col-4">
+                                <img src="./PICS/testimonials/testimonials-1.jpg" class="testi">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-6" style="text-align: left; margin-top: 20px;">
+                                <p><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;&nbsp;Classy Paragraphs is a Drupal
+                                    module which gives your Paragraphs a little
+                                    class. Content creators can
+                                    easily assign a class to a paragraph to style it according to a controlled list which was
+                                    defined by
+                                    the site builder.&nbsp;&nbsp;<i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                                <h4>Jena Karlis</h4>
+                                <h6>Store Owner</h6>
+                                <p class="star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="col-4">
+                                <img src="./PICS/testimonials/testimonials-3.jpg" class="testi">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-6" style="text-align: left; margin-top: 20px;">
+                                <p><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;&nbsp;Classy Paragraphs is a Drupal
+                                    module which gives your Paragraphs a little
+                                    class. Content creators can
+                                    easily assign a class to a paragraph to style it according to a controlled list which was
+                                    defined by
+                                    the site builder.&nbsp;&nbsp;<i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                                <h4>John Larson</h4>
+                                <h6>Entrepreneur</h6>
+                                <p class="star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="col-4">
+                                <img src="./PICS/testimonials/testimonials-4.jpg" class="testi">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
