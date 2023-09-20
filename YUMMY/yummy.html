@@ -4,7 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Yummy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./PICS/logo-no-background.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,10 +16,11 @@
 </head>
 
 <body>
+    <!-- nav-bar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="./PICS/yummy-removebg-preview.png" alt="Bootstrap" width="150" height="110">
+                <img src="./PICS/logo-no-background.png" alt="Bootstrap" width="100">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -26,7 +31,7 @@
                 id="navbarSupportedContent">
                 <ul class="nav flex-md-wrap nav-underline" style="font-weight: bold;">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#About">About</a>
@@ -35,13 +40,13 @@
                         <a class="nav-link" href="#Menu">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Events</a>
+                        <a class="nav-link" href="#Events">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Chefs</a>
+                        <a class="nav-link" href="#Chefs">Chefs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
+                        <a class="nav-link" href="#Gallery">Gallery</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -59,7 +64,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#Contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -69,261 +74,306 @@
         </div>
     </nav>
 
-    <div class="container-fluid text-left" style="background-color: lightgray; height: 575px;">
-        <div class="row">
-            <div class="col-6" style="display: flex;
-          align-content: center;
-          flex-wrap: wrap;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: center;">
-                <h2>
-                    ENJOY YOUR HEALTHY<br>
-                    DELICIOUS FOOD
-                </h2>
-                <p>Treat Your Friends & Family With us.</p>
-                <button type="button" class="btn btn-outline-danger"
-                    style="font-weight: bold; border-radius: 20px;">Book a Table</button>
-                <!-- <button type="button" class="btn btn-outline-info">Info</button> -->
-            </div>
-            <!-- <div class="col-4"></div> -->
-            <div class="col-6 text-left">
-                <img src="./PICS/hero-img.png" style="height: 500px; display: flex;
-            align-content: center;
-            flex-wrap: wrap;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            margin-top: 40px;">
-            </div>
-        </div>
-    </div><br><br>
-    <section id="About">
-    <div class="container">
-        <div class="about" style="text-align: center;">
-            <h6>
-                About US
-            </h6>
-            <h4>
-                LEARN MORE ABOUT US
-            </h4>
-        </div>
-        <div class="row">
-            <div class="col-8">
-                <img src="./PICS/about.jpg" style="width: 100%;">
-            </div>
-            <div class="col-4">
-                <p>Classy Paragraphs is a Drupal module which gives your Paragraphs a little class. Content creators can
-                    easily assign a class to a paragraph to style it according to a controlled list which was defined by
-                    the site builder.</p>
-                <p>Classy Paragraphs is a Drupal module which gives your Paragraphs a little class. Content creators can
-                    easily assign a class to a paragraph to style it according to a controlled list which was defined by
-                    the site builder.</p>
-                <p>Classy Paragraphs is a Drupal module which gives your Paragraphs a little class. Content creators can
-                    easily assign a class to a paragraph to style it according to a controlled list which was defined by
-                    the site builder.</p>
-                <img src="./PICS/about-2.jpg" style="width: 100%; height: 45%; margin-bottom: 30px;">
+    <!-- home -->
+    <section id="Home" style="background-color: rgb(221, 221, 221);padding: 30px;display: flex; align-items: center;">
+        <div class="container">
+            <div class="row justify-content-between align-items-center align-content-center ">
+                <div
+                    class="col-md-12 col-lg-7 flex-column justify-content-center align-items-center align-items-lg-start text-center">
+                    <h1>ENJOY YOUR HEALTHY
+                        <br>
+                        DELICIOUS FOOD
+                    </H1>
+                    <P style="font-size: large;">
+                        Send some one to pick-up your favourite ordered food.
+                        this can be <br> the best food in the world.
+                    </P>
+                    <button type="button" class="btn btn-danger"
+                        style="border-radius: 25px;height: 40px;width: 160px;">Book a Table</button>
+                    <button type="button" class="btn btn-outline-danger"
+                        style="border-radius: 25px;border: none;height: 40px;width: 180px;font-size: large"><i
+                            class="fa fa-play-circle-o" style="margin-right: 10px;"></i>Watch Video</button>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-sm-12 col-md-auto col-lg-5 justify-content-center align-items-center h-100">
+                    <img src="./PICS/hero-img.png" alt="dish" style="height: 100%;width: 100%;">
+                    <br>
+                </div>
             </div>
         </div>
-    </div>
-</section><br><br>
-    <div class="container-fluid"
-        style="background-color: lightgray; height: 400px; display: flex; align-items: center; justify-content: center;">
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="card text-center mb-3"
-                    style="width: 20rem; height: 23rem; color: white; background-color: red; margin: 10px;">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Why Choose Yummy?</strong></h5>
-                        <p class="card-text">Classy Paragraphs is a Drupal module which gives your Paragraphs a little
-                            class. Content creators can
-                            easily assign a class to a paragraph to style it according to a controlled list which was
-                            defined by
-                            the site builder.</p>
-                        <a href="#" class="btn btn-light">Learn More</a>
+    </section>
+    <!-- about -->
+    <section id="About"
+        style="height:fit-content;background-color: rgb(243, 243, 243);padding: 30px;display: flex; align-items: center;">
+        <div class="container ">
+            <div
+                style="display: flex;justify-content: center;flex-wrap: nowrap;flex-direction: column;align-items: center;">
+                <p class="h6">ABOUT US</p>
+                <h1 class="display-6">LEARN ABOUT US</h1>
+            </div>
+            <div class="row" style="width: 100%;display: flex;">
+                <div class="col-sm-12 col-md-12 col-lg-7">
+                    <img src="./PICS/about.jpg" style="height: 100%;width: 100%;">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-5">
+                    <div class="row">
+                        <div class="row">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua.</p>
+
+                        </div>
+                        <div class="row">
+                            <ul style="list-style: none;">
+                                <div class="row">
+                                    <div class="col-1 col-md-1"><i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="col-11 col-md-11">
+                                        <p>
+                                            Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1 col-md-1"><i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="col-11 col-md-11">
+                                        <p>
+                                            Duis aute irure dolor in reprehenderit in voluptate velit.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1 col-md-1"><i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="col-11 col-md-11">
+                                        <p>
+                                            Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            Duis aute irure dolor in
+                                            reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat
+                                            nulla
+                                            pariatur.
+                                        </p>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident</p>
+                        </div>
+
+                        <div class="row">
+                            <img src="./PICS/about-2.jpg" alt="img" style="height: 100%;width: 100%;">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="card text-center mb-3"
-                    style="width: 18rem; color: black; background-color: white; margin: 10px;">
-                    <div class="card-body">
-                        <button class="why"><i class="fa fa-bar-chart"></i></button>
-                        <h5 class="card-title"><strong>Why Choose Yummy?</strong></h5>
-                        <p class="card-text">Classy Paragraphs is a Drupal module which gives your Paragraphs a little
-                            class. Content creators can
-                            easily assign a class to a paragraph to style it according to a controlled list which was
-                            defined by
-                            the site builder.</p>
-                        <a href="#" class="btn btn-light">Learn More</a>
+    </section>
+
+    <!-- Why YUMMY? -->
+    <section id="why"
+        style="height:fit-content;background-color: rgb(221, 221, 221);padding: 30px;display: flex; align-items: center;">
+        <div class="container" style="display: flex;">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="card text-lg-start mb-3 "
+                        style="width: 100%;background-color: red;padding: 15px;color: white;">
+                        <div class="card-body chef">
+                            <h1 class="card-title">Why Choose <br> Yummy?</h1>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                                Asperiores
+                                dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad
+                                corporis.
+                            </p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-sm-12 col-md-12 col-lg-8 align-content-center justify-content-center align-items-center">
+                    <div class="row" style="flex-wrap: wrap;">
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+                            <div class="card text-lg-start ms-auto"
+                                style="background-color: rgb(255, 255, 255);padding: 15px;color: rgb(0, 0, 0);margin: 10px;align-items: center;">
+                                <div class="card-body   "
+                                    style="display: flex;align-items: center;flex-wrap: wrap;justify-content: center;">
+                                    <button class="why mb-3"><i class="fa fa-bar-chart"></i></button>
+                                    <h4 class="card-text">Corporis voluptates officia eiusmod</h4>
+                                    <p class="card-text">Consequuntur sunt aut quasi enim aliquam quae harum pariatur
+                                        laboris
+                                        nisi ut aliquip</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+                            <div class="card text-lg-start ms-auto"
+                                style="background-color: rgb(255, 255, 255);padding: 15px;color: rgb(0, 0, 0);margin: 10px;align-items: center;">
+                                <div class="card-body "
+                                    style="display: flex;align-items: center;flex-wrap: wrap;justify-content: center;">
+                                    <button class="why mb-3"><i class="fa fa-diamond"></i></button>
+                                    <h4 class="card-text">Corporis voluptates officia eiusmod</h4>
+                                    <p class="card-text">Consequuntur sunt aut quasi enim aliquam quae harum pariatur
+                                        laboris
+                                        nisi ut aliquip</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+                            <div class="card text-lg-start ms-auto"
+                                style="background-color: rgb(255, 255, 255);padding: 15px;color: rgb(0, 0, 0);margin: 10px;align-items: center;">
+                                <div class="card-body "
+                                    style="display: flex;align-items: center;flex-wrap: wrap;justify-content: center;">
+                                    <button class="why mb-3"><i class="fa fa-inbox"></i></button>
+                                    <h4 class="card-text">Corporis voluptates officia eiusmod</h4>
+                                    <p class="card-text">Consequuntur sunt aut quasi enim aliquam quae harum pariatur
+                                        laboris
+                                        nisi ut aliquip</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="card text-center mb-3"
-                    style="width: 18rem; color: black; background-color: white; margin: 10px;">
-                    <div class="card-body">
-                        <button class="why"><i class="fa fa-diamond"></i></button>
-                        <h5 class="card-title"><strong>Why Choose Yummy?</strong></h5>
-                        <p class="card-text">Classy Paragraphs is a Drupal module which gives your Paragraphs a little
-                            class. Content creators can
-                            easily assign a class to a paragraph to style it according to a controlled list which was
-                            defined by
-                            the site builder.</p>
-                        <a href="#" class="btn btn-light">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="card text-center mb-3"
-                    style="width: 18rem; color: black; background-color: white; margin: 10px;">
-                    <div class="card-body">
-                        <button class="why"><i class="fa fa-inbox"></i></button>
-                        <h5 class="card-title"><strong>Why Choose Yummy?</strong></h5>
-                        <p class="card-text">Classy Paragraphs is a Drupal module which gives your Paragraphs a little
-                            class. Content creators can
-                            easily assign a class to a paragraph to style it according to a controlled list which was
-                            defined by
-                            the site builder.</p>
-                        <a href="#" class="btn btn-light">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><br><br>
+    </section><br><br>
+
+    <!-- Total Count -->
     <div class="container-fluid client">
         <div class="row" style=" width: 100%; color: white; opacity: 0.5;
         background-color: black;">
-            <div class="col-3 project">
-                <h1><strong>232</strong></h1>
+            <div class="col-6 col-sm-3 project">
+                <h1 class="num" data-val="232"><strong>0</strong></h1>
                 <h5>Clients</h5>
             </div>
-            <div class="col-3 project">
-                <h1><strong>521</strong></h1>
+            <div class="col-6 col-sm-3 project" data-val="521">
+                <h1 class="num" data-val="521"><strong>0</strong></h1>
                 <h5>Projects</h5>
             </div>
-            <div class="col-3 project">
-                <h1><strong>1453</strong></h1>
+            <div class=" col-6 col-sm-3 project">
+                <h1 class="num" data-val="1453"><strong>0</strong></h1>
                 <h5>Hours Of Support</h5>
             </div>
-            <div class="col-3 project">
-                <h1><strong>32</strong></h1>
+            <div class="col-6 col-sm-3 project" data-val="32">
+                <h1 class="num" data-val="32"><strong>0</strong></h1>
                 <h5>Worker</h5>
             </div>
         </div>
     </div><br><br>
-    <section id="Menu">
-    <div class="container">
-        <div class="about" style="text-align: center;">
-            <h6>
-                OUR MENU
-            </h6>
-            <h4>
-                CHECK OUR YUMMY MENU
-            </h4>
-        </div>
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Starters</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-underline" href="#">Breakfast</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-underline" href="#">Lunch</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-underline " href="#">Dinner</a>
-            </li>
-        </ul>
-        <div class="about" style="text-align: center;">
-            <h6>
-                MENU
-            </h6>
-            <h1>
-                Starters
-            </h1>
-        </div>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card menuitem">
-                    <img src="./PICS/menu/menu-item-1.png" class="card-img-top" alt="...">
-                    <div class="card-body menu">
-                        <h5 class="card-title dishname">Magnam Tiste</h5>
-                        <p class="card-text">Tasty Dish</p>
-                        <p class="card-text dollar">$5.95</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card menuitem">
-                    <img src="./PICS/menu/menu-item-2.png" class="card-img-top" alt="...">
-                    <div class="card-body menu">
-                        <h5 class="card-title dishname">Aut Luia</h5>
-                        <p class="card-text">Tasty Dish</p>
-                        <p class="card-text dollar">$14.95</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card menuitem">
-                    <img src="./PICS/menu/menu-item-3.png" class="card-img-top" alt="...">
-                    <div class="card-body menu">
-                        <h5 class="card-title dishname">Est Eligendi</h5>
-                        <p class="card-text">Tasty Dish</p>
-                        <p class="card-text dollar">$8.95</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card menuitem">
-                    <img src="./PICS/menu/menu-item-4.png" class="card-img-top" alt="...">
-                    <div class="card-body menu">
-                        <h5 class="card-title dishname">Eos Luibusdam</h5>
-                        <p class="card-text">Tasty Dish</p>
-                        <p class="card-text dollar">$12.95</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card menuitem">
-                    <img src="./PICS/menu/menu-item-5.png" class="card-img-top" alt="...">
-                    <div class="card-body menu">
-                        <h5 class="card-title dishname">Eos Luibusdam</h5>
-                        <p class="card-text">Tasty Dish</p>
-                        <p class="card-text dollar">$12.95</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card menuitem">
-                    <img src="./PICS/menu/menu-item-6.png" class="card-img-top" alt="...">
-                    <div class="card-body menu">
-                        <h5 class="card-title dishname">Direva Tiste</h5>
-                        <p class="card-text">Tasty Dish</p>
-                        <p class="card-text dollar">$9.95</p>
-                    </div>
-                </div>
-            </div>
 
+    <!-- Menu -->
+    <section id="Menu">
+        <div class="container">
+            <div
+                style="display: flex;justify-content: center;flex-wrap: nowrap;flex-direction: column;align-items: center;">
+                <p class="h6">OUR MENU</p>
+                <h1 class="display-6">CHECK OUR YUMMY MENU</h1>
+            </div>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Starters</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-underline" href="#">Breakfast</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-underline" href="#">Lunch</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-underline " href="#">Dinner</a>
+                </li>
+            </ul>
+            <div class="about" style="text-align: center;">
+                <h6>
+                    MENU
+                </h6>
+                <h1>
+                    Starters
+                </h1>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card menuitem">
+                        <img src="./PICS/menu/menu-item-1.png" class="card-img-top" alt="...">
+                        <div class="card-body menu">
+                            <h5 class="card-title dishname">Magnam Tiste</h5>
+                            <p class="card-text">Tasty Dish</p>
+                            <p class="card-text dollar">$5.95</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card menuitem">
+                        <img src="./PICS/menu/menu-item-2.png" class="card-img-top" alt="...">
+                        <div class="card-body menu">
+                            <h5 class="card-title dishname">Aut Luia</h5>
+                            <p class="card-text">Tasty Dish</p>
+                            <p class="card-text dollar">$14.95</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card menuitem">
+                        <img src="./PICS/menu/menu-item-3.png" class="card-img-top" alt="...">
+                        <div class="card-body menu">
+                            <h5 class="card-title dishname">Est Eligendi</h5>
+                            <p class="card-text">Tasty Dish</p>
+                            <p class="card-text dollar">$8.95</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card menuitem">
+                        <img src="./PICS/menu/menu-item-4.png" class="card-img-top" alt="...">
+                        <div class="card-body menu">
+                            <h5 class="card-title dishname">Eos Luibusdam</h5>
+                            <p class="card-text">Tasty Dish</p>
+                            <p class="card-text dollar">$12.95</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card menuitem">
+                        <img src="./PICS/menu/menu-item-5.png" class="card-img-top" alt="...">
+                        <div class="card-body menu">
+                            <h5 class="card-title dishname">Eos Luibusdam</h5>
+                            <p class="card-text">Tasty Dish</p>
+                            <p class="card-text dollar">$12.95</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card menuitem">
+                        <img src="./PICS/menu/menu-item-6.png" class="card-img-top" alt="...">
+                        <div class="card-body menu">
+                            <h5 class="card-title dishname">Direva Tiste</h5>
+                            <p class="card-text">Tasty Dish</p>
+                            <p class="card-text dollar">$9.95</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div></section><br><br>
-    <div class="container-fluid"
-        style="background-color: lightgray; height: 400px; display: flex; align-items: center; justify-content: center;">
-        <div class="about" style="text-align: center;">
-            <h6>
-                TESTIMONIALS
-            </h6>
-            <h2>
-                WHAT ARE THEY SAYING ABOUT US
-            </h2>
-            <div id="carouselExampleCaptions" class="carousel slide">
+    </section><br><br>
+
+    <!-- Testimonials -->
+    <section id="testimonials"
+        style="height:fit-content;background-color: rgb(216, 216, 216);padding: 30px;display: flex; align-items: center;">
+        <div class="container">
+            <div
+                style="display: flex;justify-content: center;flex-wrap: nowrap;flex-direction: column;align-items: center;">
+                <p class="h6">TESTIMONIALS</p>
+                <h1 class="display-6">WHAT ARE THEY SAYING ABOUT US</h1>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -331,92 +381,135 @@
                         aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
                         aria-label="Slide 4"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-2"></div>
-                            <div class="col-6" style="text-align: left; margin-top: 20px;">
-                                <p><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;&nbsp;Classy Paragraphs is a Drupal
-                                    module which gives your Paragraphs a little
-                                    class. Content creators can
-                                    easily assign a class to a paragraph to style it according to a controlled list which was
-                                    defined by
-                                    the site builder.&nbsp;&nbsp;<i class="fa fa-quote-right" aria-hidden="true"></i></p>
-                                <h4>Sara Wilson</h4>
-                                <h6>Designer</h6>
-                                <p class="star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
-                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
-                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-8">
+                                        <p>
+                                            <i class="fa fa-quote-left"></i> Quis quorum aliqua sint quem legam fore
+                                            sunt eram
+                                            irure aliqua veniam tempor noster
+                                            veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam
+                                            esse veniam
+                                            culpa fore nisi cillum quid.
+                                            <i class="fa fa-quote-right"></i>
+                                        </p>
+                                        <h4>Sara Wilsson</h4>
+                                        <p class="h6">Designer</p>
+                                        <p class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4">
+                                        <img src="./PICS/testimonials/testimonials-2.jpg" class="d-block w-100"
+                                            alt="..." style="border-radius: 250px;">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-4">
-                                <img src="./PICS/testimonials/testimonials-2.jpg" class="testi">
-                            </div>
+                            <div class="col-2"></div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-2"></div>
-                            <div class="col-6" style="text-align: left; margin-top: 20px;">
-                                <p><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;&nbsp;Classy Paragraphs is a Drupal
-                                    module which gives your Paragraphs a little
-                                    class. Content creators can
-                                    easily assign a class to a paragraph to style it according to a controlled list which was
-                                    defined by
-                                    the site builder.&nbsp;&nbsp;<i class="fa fa-quote-right" aria-hidden="true"></i></p>
-                                <h4>Saul Goodman</h4>
-                                <h6>CEO & Founder</h6>
-                                <p class="star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
-                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
-                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-8 ">
+                                        <p>
+                                            <i class="fa fa-quote-left"></i> Quis quorum aliqua sint quem legam fore
+                                            sunt eram
+                                            irure aliqua veniam tempor noster
+                                            veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam
+                                            esse veniam
+                                            culpa fore nisi cillum quid.
+                                            <i class="fa fa-quote-right"></i>
+                                        </p>
+                                        <h4>Saul Goodman</h4>
+                                        <p class="h6">Ceo & Founder</p>
+                                        <p class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4">
+                                        <img src="./PICS/testimonials/testimonials-1.jpg" class="img-fluid" alt="..."
+                                            style="border-radius: 250px;">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-4">
-                                <img src="./PICS/testimonials/testimonials-1.jpg" class="testi">
-                            </div>
+                            <div class="col-2"></div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-2"></div>
-                            <div class="col-6" style="text-align: left; margin-top: 20px;">
-                                <p><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;&nbsp;Classy Paragraphs is a Drupal
-                                    module which gives your Paragraphs a little
-                                    class. Content creators can
-                                    easily assign a class to a paragraph to style it according to a controlled list which was
-                                    defined by
-                                    the site builder.&nbsp;&nbsp;<i class="fa fa-quote-right" aria-hidden="true"></i></p>
-                                <h4>Jena Karlis</h4>
-                                <h6>Store Owner</h6>
-                                <p class="star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
-                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
-                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-8 ">
+                                        <p>
+                                            <i class="fa fa-quote-left"></i> Quis quorum aliqua sint quem legam fore
+                                            sunt eram
+                                            irure aliqua veniam tempor noster
+                                            veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam
+                                            esse veniam
+                                            culpa fore nisi cillum quid.
+                                            <i class="fa fa-quote-right"></i>
+                                        </p>
+                                        <h4>Jena Karlis</h4>
+                                        <p class="h6">Store Owner</p>
+                                        <p class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 ">
+                                        <img src="./PICS/testimonials/testimonials-3.jpg" class="img-fluid" alt="..."
+                                            style="border-radius: 250px;">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-4">
-                                <img src="./PICS/testimonials/testimonials-3.jpg" class="testi">
-                            </div>
+                            <div class="col-2"></div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-2"></div>
-                            <div class="col-6" style="text-align: left; margin-top: 20px;">
-                                <p><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;&nbsp;Classy Paragraphs is a Drupal
-                                    module which gives your Paragraphs a little
-                                    class. Content creators can
-                                    easily assign a class to a paragraph to style it according to a controlled list which was
-                                    defined by
-                                    the site builder.&nbsp;&nbsp;<i class="fa fa-quote-right" aria-hidden="true"></i></p>
-                                <h4>John Larson</h4>
-                                <h6>Entrepreneur</h6>
-                                <p class="star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
-                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
-                                        aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-8 ">
+                                        <p>
+                                            <i class="fa fa-quote-left"></i> Quis quorum aliqua sint quem legam fore
+                                            sunt
+                                            eram
+                                            irure aliqua veniam tempor noster
+                                            veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam
+                                            esse
+                                            veniam
+                                            culpa fore nisi cillum quid.
+                                            <i class="fa fa-quote-right"></i>
+                                        </p>
+                                        <h4>John Larson</h4>
+                                        <p class="h6">Entrepeneur</p>
+                                        <p class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4">
+                                        <img src="./PICS/testimonials/testimonials-4.jpg" class="img-fluid" alt="..."
+                                            style="border-radius: 250px;">
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="col-4">
-                                <img src="./PICS/testimonials/testimonials-4.jpg" class="testi">
-                            </div>
+                            <div class="col-2"></div>
                         </div>
                     </div>
                 </div>
@@ -431,14 +524,670 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            
         </div>
-    </div>
+    </section>
+    <br><br>
+
+    <!-- Events -->
+    <section id="Events">
+        <div class="container">
+            <div
+                style="display: flex;justify-content: center;flex-wrap: nowrap;flex-direction: column;align-items: center;">
+                <p class="h6">EVENTS</p>
+                <h1 class="display-6">SHARE YOUR MOMENT IN OUR RESTURANT</h1>
+            </div><br><br>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row ">
+                            <div class="col-sm-12 col-lg-4">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/events-1.jpg" class="card-img" alt="..." height=400px">
+                                    <div class="card-img-overlayy">
+                                        <h5 class="card-title">Birthday Parties</h5>
+                                        <p class="card-text dollar"><strong>$499</strong></p>
+                                        <p class="card-text"><small>Classy Paragraphs is a Drupal
+                                                module which gives your Paragraphs a little
+                                                class. Content creators can
+                                                easily assign a class to a paragraph to style it according to a
+                                                controlled list
+                                                which was
+                                                defined by
+                                                the site builder.</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/events-2.jpg" class="card-img" alt="..." height=400px">
+                                    <div class="card-img-overlayy">
+                                        <h5 class="card-title">Custom Parties</h5>
+                                        <p class="card-text dollar"><strong>$99</strong></p>
+                                        <p class="card-text"><small>Classy Paragraphs is a Drupal
+                                                module which gives your Paragraphs a little
+                                                class. Content creators can
+                                                easily assign a class to a paragraph to style it according to a
+                                                controlled
+                                                list
+                                                which was
+                                                defined by
+                                                the site builder.</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/events-3.jpg" class="card-img" alt="..." height=400px">
+                                    <div class="card-img-overlayy">
+                                        <h5 class="card-title">Private Parties</h5>
+                                        <p class="card-text dollar"><strong>$289</strong></p>
+                                        <p class="card-text"><small>Classy Paragraphs is a Drupal
+                                                module which gives your Paragraphs a little
+                                                class. Content creators can
+                                                easily assign a class to a paragraph to style it according to a
+                                                controlled
+                                                list
+                                                which was
+                                                defined by
+                                                the site builder.</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row" style="margin: 0; border: none;">
+                            <div class="col-sm-12 col-lg-4">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/events-2.jpg" class="card-img" alt="..." height=400px">
+                                    <div class="card-img-overlayy">
+                                        <h5 class="card-title">Custom Parties</h5>
+                                        <p class="card-text dollar"><strong>$99</strong></p>
+                                        <p class="card-text"><small>Classy Paragraphs is a Drupal
+                                                module which gives your Paragraphs a little
+                                                class. Content creators can
+                                                easily assign a class to a paragraph to style it according to a
+                                                controlled list
+                                                which was
+                                                defined by
+                                                the site builder.</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/events-3.jpg" class="card-img" alt="..." height=400px">
+                                    <div class="card-img-overlayy">
+                                        <h5 class="card-title">Private Parties</h5>
+                                        <p class="card-text dollar"><strong>$289</strong></p>
+                                        <p class="card-text"><small>Classy Paragraphs is a Drupal
+                                                module which gives your Paragraphs a little
+                                                class. Content creators can
+                                                easily assign a class to a paragraph to style it according to a
+                                                controlled
+                                                list
+                                                which was
+                                                defined by
+                                                the site builder.</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/events-1.jpg" class="card-img" alt="..." height=400px">
+                                    <div class="card-img-overlayy">
+                                        <h5 class="card-title">Birthday Parties</h5>
+                                        <p class="card-text dollar"><strong>$499</strong></p>
+                                        <p class="card-text"><small>Classy Paragraphs is a Drupal
+                                                module which gives your Paragraphs a little
+                                                class. Content creators can
+                                                easily assign a class to a paragraph to style it according to a
+                                                controlled
+                                                list
+                                                which was
+                                                defined by
+                                                the site builder.</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row" style="margin: 0; border: none;">
+                            <div class="col-sm-12 col-lg-4">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/events-3.jpg" class="card-img" alt="..." height=400px">
+                                    <div class="card-img-overlayy">
+                                        <h5 class="card-title">Private Parties</h5>
+                                        <p class="card-text dollar"><strong>$499</strong></p>
+                                        <p class="card-text"><small>Classy Paragraphs is a Drupal
+                                                module which gives your Paragraphs a little
+                                                class. Content creators can
+                                                easily assign a class to a paragraph to style it according to a
+                                                controlled list
+                                                which was
+                                                defined by
+                                                the site builder.</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/events-1.jpg" class="card-img" alt="..." height=400px">
+                                    <div class="card-img-overlayy">
+                                        <h5 class="card-title">Birthday Parties</h5>
+                                        <p class="card-text dollar"><strong>$499</strong></p>
+                                        <p class="card-text"><small>Classy Paragraphs is a Drupal
+                                                module which gives your Paragraphs a little
+                                                class. Content creators can
+                                                easily assign a class to a paragraph to style it according to a
+                                                controlled
+                                                list
+                                                which was
+                                                defined by
+                                                the site builder.</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/events-2.jpg" class="card-img" alt="..." height=400px">
+                                    <div class="card-img-overlayy">
+                                        <h5 class="card-title">Custom Parties</h5>
+                                        <p class="card-text dollar"><strong>$499</strong></p>
+                                        <p class="card-text"><small>Classy Paragraphs is a Drupal
+                                                module which gives your Paragraphs a little
+                                                class. Content creators can
+                                                easily assign a class to a paragraph to style it according to a
+                                                controlled
+                                                list
+                                                which was
+                                                defined by
+                                                the site builder.</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+    </section><br><br>
+
+    <!-- Chefs -->
+    <section id="Chefs"
+        style="height:fit-content;background-color: rgb(243, 243, 243);padding: 30px;display: flex; align-items: center;">
+        <div class="container ">
+            <div
+                style="display: flex;justify-content: center;flex-wrap: nowrap;flex-direction: column;align-items: center;">
+                <p class="h6">CHEFS</p>
+                <h1 class="display-6">OUR PROFESSIONAL CHEFS</h1>
+            </div>
+            <BR></BR>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./PICS/chefs/chefs-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body flex-column align-items-center" style="display: flex;">
+                            <h5 class="card-title">Walter White</h5>
+                            <p class="card-subtitle">Master Chef</p>
+                            <p class="card-text">Classy Paragraphs is a Drupal module which gives your Paragraphs a
+                                little class. Content creators can easily assign a class to a paragraph to style it
+                                according to a controlled list which was defined.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./PICS/chefs/chefs-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body flex-column align-items-center" style="display: flex;">
+                            <h5 class="card-title">Sarah Jhonson</h5>
+                            <p class="card-subtitle">patissier</p>
+                            <p class="card-text">Classy Paragraphs is a Drupal module which gives your Paragraphs a
+                                little class. Content creators can easily assign a class to a paragraph to style it
+                                according to a controlled list which was defined.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./PICS/chefs/chefs-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body flex-column align-items-center" style="display: flex;">
+                            <h5 class="card-title">William Anderson</h5>
+                            <p class="card-subtitle">Cook</p>
+                            <p class="card-text">Classy Paragraphs is a Drupal module which gives your Paragraphs a
+                                little class. Content creators can easily assign a class to a paragraph to style it
+                                according to a controlled list which was defined.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section><br><br>
+
+    <!-- Book a Table -->
+    <section id="Book a Table"
+        style="height:fit-content;background-color: rgb(255, 255, 255);padding: 30px;display: flex; align-items: center;">
+        <div class="container ">
+            <div
+                style="display: flex;justify-content: center;flex-wrap: nowrap;flex-direction: column;align-items: center;">
+                <p class="h6">BOOK A TABLE</p>
+                <h1 class="display-6">BOOK YOUR STAY WITH US</h1>
+            </div>
+            <br>
+            <div class="container" style="background-color: lightgray; height: auto;">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <img src="./PICS/reservation.jpg" class="img-fluid" style="height: 100% !important;">
+                    </div>
+                    <div class="col-md-8 book" style="display: flex;flex-direction: column;justify-content: center;">
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <input type="text" placeholder="Your Name">
+                                <input type="email" placeholder="Your Email">
+                                <input type="tel" placeholder="Your Phone">
+                            </div>
+                            <div class="col-lg-12">
+                                <input type="date">
+                                <input type="time">
+                                <input type="number" placeholder="# of people">
+                            </div>
+                            <div class="col-lg-12">
+                                <input type="text" placeholder="Message">
+                            </div>
+                            <div class="col-lg-12">
+                                <center><button type="submit" class="btn btn-outline-danger">Book a
+                                        Table</button>
+                                </center>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section><br><br>
+
+    <!-- Gallery -->
+    <section id="Gallery">
+        <div class="container galleryy">
+            <br><br>
+            <div
+                style="display: flex;justify-content: center;flex-wrap: nowrap;flex-direction: column;align-items: center;">
+                <p class="h6">GALLERY</p>
+                <h1 class="display-6">CHECK OUR GALLERY</h1>
+            </div><br><br>
+            <div id="carousel" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row ">
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark gal">
+                                    <img src="./PICS/gallery/gallery-1.jpg" class="card-img" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark gal">
+                                    <img src="./PICS/gallery/gallery-2.jpg" class="card-img" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark gal">
+                                    <img src="./PICS/gallery/gallery-3.jpg" class="card-img" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark gal">
+                                    <img src="./PICS/gallery/gallery-4.jpg" class="card-img" alt="...">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row" style="margin: 0; border: none;">
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark gal">
+                                    <img src="./PICS/gallery/gallery-2.jpg" class="card-img" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark gal">
+                                    <img src="./PICS/gallery/gallery-3.jpg" class="card-img" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark gal ">
+                                    <img src="./PICS/gallery/gallery-4.jpg" class="card-img" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark gal">
+                                    <img src="./PICS/gallery/gallery-5.jpg" class="card-img" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row" style="margin: 0; border: none;">
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/gallery/gallery-3.jpg" class="card-img" alt="..." height=400px>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/gallery/gallery-4.jpg" class="card-img" alt="..." height=400px>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/gallery/gallery-5.jpg" class="card-img" alt="..." height=400px>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/gallery/gallery-6.jpg" class="card-img" alt="..." height=400px>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row" style="margin: 0; border: none;">
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/gallery/gallery-4.jpg" class="card-img" alt="..." height=400px>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/gallery/gallery-5.jpg" class="card-img" alt="..." height=400px>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/gallery/gallery-6.jpg" class="card-img" alt="..." height=400px>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/gallery/gallery-7.jpg" class="card-img" alt="..." height=400px>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row" style="margin: 0; border: none;">
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/gallery/gallery-5.jpg" class="card-img" alt="..." height=400px>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/gallery/gallery-6.jpg" class="card-img" alt="..." height=400px>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark">
+                                    <img src="./PICS/gallery/gallery-7.jpg" class="card-img" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 gall">
+                                <div class="card text-bg-dark gal">
+                                    <img src="./PICS/gallery/gallery-8.jpg" class="card-img" alt="..." >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+    </section><br><br>
+
+    <!-- Contact -->
+    <section id="Contact">
+        <div class="container">
+            <br><br>
+            <div
+                style="display: flex;justify-content: center;flex-wrap: nowrap;flex-direction: column;align-items: center;">
+                <p class="h6">CONTACT</p>
+                <h1 class="display-6">NEED HELP? CONTACT US</h1>
+            </div><br><br>
+            <div class="row">
+                <div class="col">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d948649.0041980037!2d72.32474098258707!3d21.754696378198005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04dcf4e1a1393%3A0xfdd151dde5d6dc07!2sPalm%20Infotech!5e0!3m2!1sen!2sin!4v1695117512315!5m2!1sen!2sin"
+                        width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"
+                    style="background-color: rgb(243, 243, 243); padding: 15px;margin: 10px; display: flex;    align-items: center">
+                    <button class="btnn"><i class="fa fa-map"></i></button>
+                    <div>
+                        <b class="card-title">Our Address</b>
+                        <p class="card-subtitle">A 108 Adam street, New York, NY 535022</p>
+                    </div>
+                </div>
+                <div class="col"
+                    style="background-color: rgb(243, 243, 243); padding: 15px;margin: 10px; display:flex;    align-items: center">
+                    <button class="btnn"><i class="fa fa-envelope"></i></button>
+                    <div>
+                        <b class="card-title">Email us</b>
+                        <p mailto:class="card-subtitle">contact@example.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"
+                    style="background-color: rgb(243, 243, 243); padding: 15px;margin: 10px; display: flex;    align-items: center">
+                    <button class="btnn"><i class="fa fa-phone"></i></button>
+                    <div>
+                        <b class="card-title">Call us</b>
+                        <p class="card-subtitle">+1 5589 55488 55</p>
+                    </div>
+                </div>
+                <div class="col"
+                    style="background-color: rgb(243, 243, 243); padding: 15px;margin: 10px; display:flex;    align-items: center">
+                    <button class="btnn"><i class="fa fa-home"></i></button>
+                    <div>
+                        <b class="card-title">Opening Hours</b>
+                        <p class="card-subtitle"><b>Mon-Sat:</b> 11AM-23PM<br><b>Sunday:</b>Closed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cardd"
+                    style="background-color: rgb(255, 255, 255);box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); padding: 25px;">
+                    <div class="card-body">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Your Email">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" name="sub" class="form-control" id="sub" placeholder="Subject">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div>
+                                    <textarea name="msg" id="msg" class="form-control" cols="30" placeholder="Message"
+                                        rows="10"></textarea>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row justify-content-center align-items-center align-content-center">
+                                <div class="col">
+                                    <center>
+                                        <button type="button" class="btn btn-danger" style="border-radius: 25px;">Send a
+                                            Message</button>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+
+            <!-- <div class="row">
+                <div class="cardd"
+                    style="background-color: rgb(255, 255, 255);box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); padding: 25px;">
+                    <div class="card-body">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Your Email">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" name="sub" class="form-control" id="sub" placeholder="Subject">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    <textarea name="msg" id="msg" class="form-control" cols="30" placeholder="Message"
+                                        rows="10"></textarea>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row justify-content-center align-items-center align-content-center">
+                                <div class="col ">
+                                    <center>
+                                        <button type="button" class="btn btn-danger" style="border-radius: 25px;">Send a
+                                            Message</button>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+    </section>
+
+    <!-- Footer -->
+    <section id="Footer">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col " style="display: flex;align-items: center;">
+                        <div>
+                            <i class="fa fa-location-arrow"></i>
+                        </div>
+                        <div style="margin: 5%;">
+                            <p class="card-title"><b>Address</b></p>
+                            <p class="card-subtitle">A108 Adam Street
+                                <br>New York, NY 535022 - US
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col" style="display: flex;align-items: center;">
+                        <div>
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div style="margin: 5%;">
+                            <p class="card-title"><b>Reservation</b></p>
+                            <p class="card-subtitle"><b>Phone: </b>+1 5589 55488 55
+                                <br><b>Email: </b>info@example.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col" style="display: flex;align-items: center;">
+                        <div><i class="fa fa-clock-o"></i></div>
+                        <div style="margin: 5%;">
+                            <p class="card-title"><b>Opening Hours</b></p>
+                            <p class="card-subtitle"><b>Mon-sat: </b>11AM-23PM<br>
+                                <b>Sunday:</b>Closed
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p class="card-title"><b>Follow Us</b></p>
+                        <br>
+                        <button class="flw"><i class="fa fa-twitter"></i>
+                        </button>
+                        <button class="flw"><i class="fa fa-facebook"></i>
+                        </button>
+                        <button class="flw"><i class="fa fa-instagram"></i>
+                        </button>
+                        <button class="flw"><i class="fa fa-linkedin-square"></i>
+                        </button>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <center><i class="fa fa-copyright"></i><b> Yummy.</b>All Rights Reserved <br>
+                        Designed by <b>Steve</b></center>
+                </div>
+                <br>
+            </div>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="./number.js"></script>
 </body>
 
 </html>

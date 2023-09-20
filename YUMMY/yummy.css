@@ -1,3 +1,16 @@
+* {
+    font-family: 'Croissant One', cursive;
+    ;
+}
+
+.nav-link {
+    color: gray !important;
+}
+
+.nav-link:hover {
+    color: black !important;
+}
+
 .why {
     border-radius: 20px;
     background-color: lightgrey;
@@ -18,7 +31,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    
+
 }
 
 .project {
@@ -28,34 +41,189 @@
     justify-content: center;
 }
 
-.menuitem{
+.btnn {
+    background-color: red !important;
+    border-radius: 25px;
+    border: none;
+    height: 50px;
+    width: 50px;
+    font-size: larger;
+    color: white;
+    margin: 5px;
+}
+
+.menuitem {
     border: none;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
 }
 
-.dishname{
+.dishname {
     font-weight: bold;
 }
 
-.dollar{
+.dollar {
     font-weight: bold;
     color: red;
     font-size: large;
+    text-decoration: underline 3px red;
 }
 
-.testi{
+.testi {
     border-radius: 200px;
     height: 200px;
     width: 200px;
 }
 
-.star{
+.star {
     color: gold;
 }
 
+
+.card-img-overlayy {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: var(--bs-card-img-overlay-padding);
+    border-radius: var(--bs-card-inner-border-radius);
+    background-color: black;
+    opacity: 0.5;
+}
+
+.card-img-overlayy:hover {
+    opacity: 1;
+}
+
+.chefs {
+    text-align: center;
+}
+
+.chef {
+    /* width: 18rem; */
+}
+
+.chef:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+    width: 26rem;
+    /* height: 20rem; */
+}
+
+.book {
+    margin-top: 100px;
+    
+}
+
+.book input {
+    height: 40px;
+    width: 200px;
+    padding: 15px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    border-color: lightgray;
+    border: 20px;
+    
+}
+
+
+.con {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    font-size: x-large;
+    color: white;
+    background-color: red;
+    border: none;
+}
+
+.cont {
+    padding: 8px 16px;
+}
+
+.conf input {
+    height: 50px;
+    width: 587px;
+    padding: 15px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    border-color: black;
+    display: inline;
+}
+
+.conf textarea {
+    padding: 15px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.footer {
+    background-color: black;
+    padding: 15px;
+    color: white;
+}
+
+.flw {
+    border-color: #fff;
+    background: none;
+    border-radius: 25px;
+    border-color: white;
+    height: 50px;
+    width: 50px;
+    color: white;
+    font-size: x-large;
+    margin: 5px;
+}
+
+
+
+.texta {
+    height: 130px !important;
+    width: 500px !important;
+}
+
+.res {}
+
+.info {
+    background-color: lightgrey;
+    height: 120px;
+    width: 100%;
+    margin: 10px;
+}
+
+.galleryy {
+    background-color: lightgray;
+    height: 600px;
+}
+
+
+.gal img {
+    height: 400px;
+   
+}
+
+.abimg {
+    height: 100%;
+    width: 95%;
+}
+
+
+
+@media screen and (max-width:992px) {
+
+    .galleryy{
+        height: auto;
+    }
+    .gal img {
+        height: 400px;
+    }
+    .gall{
+        margin: 10px;
+    }
+}
