@@ -11,13 +11,9 @@
     color: black !important;
 }
 
-.why {
-    border-radius: 20px;
-    background-color: lightgrey;
-    color: red;
-    height: 50px;
-    width: 50px;
-    border: none
+
+.row .why {
+    align-items: center !important;
 }
 
 .client {
@@ -31,8 +27,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
 }
+
 
 .project {
     display: flex;
@@ -104,31 +100,45 @@
     text-align: center;
 }
 
-.chef {
-    /* width: 18rem; */
-}
 
-.chef:hover {
+.yum:hover {
     transform: scale(1.1);
     transition: ease-in-out 0.5s;
-    width: 26rem;
-    /* height: 20rem; */
+    /* width: 18rem; */
+    /* height: 24rem; */
+}
+
+.cooks:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+     /* width: 16rem; */
+     /* height: 26rem; */
 }
 
 .book {
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    padding: 2%;
     
 }
 
 .book input {
     height: 40px;
-    width: 200px;
-    padding: 15px 30px;
-    margin: 10px 20px;
+    max-width: 100%;
+    padding: 5px 10px;
+    margin: 10px 8px;
     border-radius: 10px;
     border-color: lightgray;
     border: 20px;
-    
+}
+
+.book textarea {
+    /* height: 40px; */
+    max-width: 89%; 
+    padding: 5px 10px;
+    margin: 10px 8px;
+    border-radius: 10px;
+    border-color: lightgray;
+    border: 20px;
 }
 
 
@@ -213,7 +223,13 @@
     width: 95%;
 }
 
+.dt{
+    width: 28.5%;
+}
 
+.ti{
+    width: 28.5%;
+}
 
 @media screen and (max-width:992px) {
 
@@ -225,5 +241,61 @@
     }
     .gall{
         margin: 10px;
+    }
+
+    .eve{
+        margin: 10px;
+    }
+
+    .toogleee{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dis2{
+        display: none;
+    }
+
+    /*.yum:hover {
+        transform: scale(1.1);
+        transition: ease-in-out 0.5s;
+        width: 18rem;
+         height: 10%;
+    } */
+    
+   
+}
+
+@media screen and (max-width:768px) {
+    
+
+    .colss{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dis2{
+        display: none;
+    }
+}
+
+@media screen and (max-width:425px) {
+   
+}
+
+@media screen and (max-width:375px) {
+}
+
+@media screen and (max-width:320px) {
+    .flw {
+        border-color: #fff;
+        background: none;
+        border-radius: 25px;
+        border-color: white;
+        height: 35px;
+        width: 35px;
+        color: white;
+        font-size: large;
+        margin: 5px;
     }
 }
