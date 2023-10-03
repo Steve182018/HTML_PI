@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <link rel="stylesheet" href="./form.css">
+    
 </head>
 
 <body>
     <div class="form">
-        <form method="post" action="#">
+        <form method="post" action="#" name="demoform" onsubmit= "return validation()">
         <fieldset class="reg">
             <legend>Registration Form</legend>
             <fieldset class="pd">
@@ -19,49 +20,54 @@
                     <tr>
                         <td><label>First Name:</label></td>
                         <td>
-                            <input type="text" placeholder="Enter Your First Name" name="fname" id="fname" required autofocus>
+                            <input type="text" placeholder="Enter Your First Name" name="fname" id="fname" autofocus>
+                            <div id="fErr"></div>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <label>Last Name:</label></td><td>
-                            <input type="text" placeholder="Enter Your Last Name" name="lname" id="fname" required>
+                            <input type="text" placeholder="Enter Your Last Name" name="lname" id="lname">
+                            <div id="lErr"></div>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <label>Email:</label></td><td>
-                            <input type="email" placeholder="Enter Your Email" name="email" id="email" required>
+                            <input type="text" placeholder="Enter Your Email" name="email" id="email" >
+                            <div id="eErr"></div>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <label>Password:</label></td><td>
-                            <input type="password" placeholder="Enter Your Password" name="pw" id="pw" required>
+                            <input type="password" placeholder="Enter Your Password" name="pw" id="pw" >
+                            <div id="pwErr"></div>
                         </td>
                     </tr>
                     <tr>
                         <td><label>Date of Birth:</label></td><td>
-                            <input type="date" id="dob" name="dob" value="dob" required>
+                            <input type="date" id="dob" name="dob" value="dob" >
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <label>Time of Birth</label></td><td>
-                            <input type="time" id="time" name="time" value="time" required>
+                            <input type="time" id="time" name="time" value="time" >
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <label>Contact Number:</label></td><td>
-                            <input type="number" placeholder="Enter Your Contact Number" name="cnum" id="cnum" required>
+                            <input type="number" placeholder="Enter Your Contact Number" name="cnum" id="cnum" maxlength="10" >
+                            <div id="cnErr"></div>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <label>Gender:</label></td><td>
-                            <input type="radio" name="gender" value="Male"><label style="font-weight: normal; margin: 10px;" required>Male</label>
-                            <input type="radio" name="gender" value="Female"><label style="font-weight: normal; margin: 10px;" required>Female</label>
+                            <input type="radio" name="gender" value="Male" id="male" ><label style="font-weight: normal; margin: 10px;" >Male</label>
+                            <input type="radio" name="gender" value="Female" id="female"><label style="font-weight: normal; margin: 10px;" >Female</label>
                         </td>
                     </tr>
                 </table>
@@ -74,13 +80,13 @@
                         <td>
                             <label>Address:</label></td><td>
                             <textarea placeholder="Enter Your Address" rows="10" cols="100" id="add"
-                                name="add"  required></textarea>
+                                name="add"  ></textarea>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <label>City:</label></td><td>
-                            <select id="city" name="city" required>
+                            <select id="city" name="city" >
                                 <option>Surat</option>
                                 <option>Navsari</option>
                                 <option>Bardoli</option>
@@ -96,12 +102,9 @@
                     <tr>
                         <td>
                             <label>Hobby:</label></td><td>
-                            <input type="checkbox" name="hobby" id="cricket">
-                            <label style="font-weight: normal; margin: 10px;">Cricket</label>
-                            <input type="checkbox" name="hobby" id="football">
-                            <label style="font-weight: normal; margin: 10px;">Football</label>
-                            <input type="checkbox" name="hobby" id="basketball  ">
-                            <label style="font-weight: normal; margin: 10px;">Basketball</label>
+                            <label style="font-weight: normal; margin: 10px;"><input type="checkbox" id="cricket" name="hobby" value="Cricket"> Cricket</label>
+                            <label style="font-weight: normal; margin: 10px;"><input type="checkbox"  id="football" name="hobby" value="Football"> Football</label>
+                            <label style="font-weight: normal; margin: 10px;"><input type="checkbox" id="basketball" name="hobby" value="Basketball"> Basketball</label>
                         </td>
                     </tr>
                     <tr>
@@ -130,19 +133,20 @@
                 <table>
                     <tr>
                         <td><label>Upload Resume</label></td><td>
-                            <input type="file" name="file" id="file" required><br><br></td>
+                            <input type="file" name="file" id="file" ><br><br></td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="submit" name="submit" id="submit" value="Submit" required></td><td>
-                            <input type="reset" name="reset" id="reset" value="Reset" required>
+                            <input type="submit" name="submit" id="submit" value="Submit" ><div id="AllErr"></div></td><td>
+                            <input type="reset" name="reset" id="reset" value="Reset" >
                         </td>
                     </tr>
                 </table>
             </fieldset>
         </fieldset>
     </div>
-</form> 
+</form>
+<script src="./form.js"></script> 
 </body>
 
 </html>
