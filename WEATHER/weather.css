@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid{
+    background-color: #202b3c;
+    height: 100%;
+}
+
+.card-sidebar{
+    height: 100%;
+    background-color: #47505d ;
+}
+
+.first-item{
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+/* .mennu{
+    font-size: 20px;
+    margin-bottom: 20px;
+} */
+
+.mennu p{
+    font-size: 20px;
+    margin-bottom: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mennu i{
+    font-size: 30px;
+}
+
+.row{
+    color: aliceblue;
+}
+
+.sidebar{
+    background-color: #47505d;
+    color: white;
+    border: none;
+}
+
+.ul-1{
+    height: 900px;
+}
+
+/* 2nd card */
+
+.list-card-2{
+    margin-top: 1%;
+}
+
+
+.list-place-card{
+    /* margin-top: 5%; */
+}
+
+.list-place-data{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.list-place-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-place-icon i{
+    color: rgb(255, 242, 5);;
+    font-size: 100px;
+}
+
+.list-today-title{
+    color: white;
+    display: flex;
+    font-size: large;
+    font-weight: bold;
+}
+
+.main-card{
+    background-color: #47505d;
+    border-radius: 20px;
+}
+
+.temp-card{
+    border: none;
+    border-right: 1px solid white;
+}
+
+.temp-card1{
+    border: none;
+    /* border-right: 1px solid white; */
+}
+
+.temp-card .temp h5{
+    font-size: 25px;
+    color: white;
+}
+
+.temp-card .temp i{
+    font-size: 80px;
+    color: white;
+    margin-top: 20px;
+}
+
+.temp-card .temp p{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+
+.temp-card1 .temp h5{
+    font-size: 25px;
+    color: white;
+}
+
+.temp-card1 .temp i{
+    font-size: 80px;
+    /* color: white; */
+    margin-top: 20px;
+}
+
+.temp-card1 .temp p{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+
+.temp{
+    background-color: #47505d; 
+}
+
+.temp1{
+    background-color: #47505d; 
+    margin-top: 2%;
+    border-radius: 20px;
+}
+
+
+.mix{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.mix p {
+    font-size: 18px;
+    padding-top: 10px;
+}
+.mix i {
+    padding: 10px;
+    font-size: 30px;
+    color: lightgray;
+}
+
+.air i{
+    color: lightgray;
+    font-size: 30px;
+}
+
+
+#cap1{
+    padding: 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.input{
+    background-color: #47505d;
+}
+
+.input ::placeholder{
+    color: white;
+}
+
+
+
+/* 3rd Card */
+
+.list-title{
+    display: flex;
+    color: white;
+    font-size: medium;
+    padding-left: 12%;
+    padding-top: 10%;
+    font-weight: bold;
+}
+.card-list{
+    background-color: #47505d;
+    margin: 10%;
+    border-radius: 20px;
+}
+
+.card-view{
+    margin-bottom: 10%;
+    font-size: large;
+    border-bottom: 1px solid white; 
+}
+
+.card-view1{
+    margin-bottom: 10%;
+    font-size: large;
+    border-bottom: none;
+}
+
+.card-view .col .icon{
+    color: rgb(255, 242, 5);;
+}
+
+.card-view .col .icon1{
+    color: skyblue;
+}
+
+.card-view1 .col .icon2{
+    color:rgb(239, 192, 39);
+}
+
+.cel{
+    margin-top: 10%;
+}
+
+@media screen and (max-width:1024px) {
+
+    .first-item{
+        font-size: 15px;
+        margin-bottom: 50px;
+        margin-left: -5px   ;
+    }
+
+    .mennu p{
+        font-size: 7px;
+        margin-bottom: 50%;
+        display: none;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    
+    .mennu i{
+        font-size: 15px;
+        margin-top: 50px;
+        margin-left: -5px;
+    }
+
+    .temp-card .temp h5{
+        font-size: 11px;
+        color: white;
+    }
+    
+    .temp-card .temp i{
+        font-size: 30px;
+        color: white;
+        margin-top: 20px;
+    }
+    
+    .temp-card .temp p{
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        margin-top: 20px;
+    }
+    
+    .temp-card1 .temp h5{
+        font-size: 11px;
+        color: white;
+    }
+    
+    .temp-card1 .temp i{
+        font-size: 30px;
+        /* color: white; */
+        margin-top: 20px;
+    }
+    
+    .temp-card1 .temp p{
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        margin-top: 20px;
+    }
+    
+    .mix p {
+        font-size: 10px;
+        padding-top: 10px;
+    }
+    .mix i {
+        padding: 10px;
+        font-size: 20px;
+        color: lightgray;
+    }
+
+    #cap1{
+        padding: 0px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    .first-item{
+        font-size: 15px;
+        margin-bottom: 50px;
+        margin-left: -5px   ;
+    }
+
+    .mennu p{
+        font-size: 7px;
+        margin-bottom: 50%;
+        display: none;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    
+    .mennu i{
+        font-size: 15px;
+        margin-top: 50px;
+        margin-left: -5px;
+    }
+
+    .temp-card .temp h5{
+        font-size: 11px;
+        color: white;
+    }
+    
+    .temp-card .temp i{
+        font-size: 30px;
+        color: white;
+        margin-top: 20px;
+    }
+    
+    .temp-card .temp p{
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        margin-top: 20px;
+    }
+    
+    .temp-card1 .temp h5{
+        font-size: 11px;
+        color: white;
+    }
+    
+    .temp-card1 .temp i{
+        font-size: 30px;
+        /* color: white; */
+        margin-top: 20px;
+    }
+    
+    .temp-card1 .temp p{
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .card-view{
+        margin-bottom: 10%;
+        font-size: xx-small;
+        border-bottom: 1px solid white; 
+    }
+    
+    .card-view1{
+        margin-bottom: 10%;
+        font-size: xx-small;
+        border-bottom: none;
+    }
+    
+    .mix p {
+        font-size: 10px;
+        padding-top: 10px;
+    }
+    .mix i {
+        padding: 10px;
+        font-size: 20px;
+        color: lightgray;
+    }
+
+    #cap1{
+        padding: 0px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    .first-item{
+        font-size: 15px;
+        margin-bottom: 10px;
+        margin-left: -5px   ;
+    }
+
+    .mennu p{
+        font-size: 10px;
+        margin-bottom: 1%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    
+    .mennu i{
+        font-size: 20px;
+        margin-top: 0px;
+        /* margin-left: -5px; */
+    }
+
+    .temp-card .temp h5{
+        font-size: 11px;
+        color: white;
+    }
+    
+    .temp-card .temp i{
+        font-size: 30px;
+        color: white;
+        margin-top: 20px;
+    }
+    
+    .temp-card .temp p{
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        margin-top: 20px;
+    }
+    
+    .temp-card1 .temp h5{
+        font-size: 11px;
+        color: white;
+    }
+    
+    .temp-card1 .temp i{
+        font-size: 30px;
+        /* color: white; */
+        margin-top: 20px;
+    }
+    
+    .temp-card1 .temp p{
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .card-view{
+        margin-bottom: 10%;
+        font-size: medium;
+        border-bottom: 1px solid white; 
+    }
+    
+    .card-view1{
+        margin-bottom: 10%;
+        font-size: medium;
+        border-bottom: none;
+    }
+    
+    .mix p {
+        font-size: 10px;
+        padding-top: 10px;
+    }
+    .mix i {
+        padding: 10px;
+        font-size: 20px;
+        color: lightgray;
+    }
+
+    #cap1{
+        padding: 0px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+}

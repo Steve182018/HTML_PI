@@ -1,0 +1,64 @@
+.update-con{
+    display: none;
+}
+
+.update-con button{
+    margin-right: 1%;
+}
+body{
+    font-family: 'Shadows Into Light', cursive;
+}
+.to-do-list{
+    width: 100%;
+}
+
+.edit-con i{
+    font-size: 25px;
+    margin: 10%;
+}
+
+.to-do input{
+    width: 50%;
+    font-family: inherit;
+    border-top: 10px;
+    border-left: none;
+    border-right: none;
+    border-color: purple;
+    /* border-top-left-radius: 10px; */
+    /* border-bottom-left-radius: 10px; */
+    padding: 10px;
+    outline: none;
+}
+
+.to-do button{
+    margin: 1%;
+}
+
+.input-con textarea{
+    resize : none;
+}
+
+.card1{
+    background: linear-gradient(
+    to bottom,
+    rgb(68, 29, 227) 0%,
+    rgb(68, 29, 227) 27%,
+    rgb(197, 191, 219) 27%,
+    rgb(197, 191, 219) 100%
+  );
+  margin: 5%;
+  padding: 1%;
+
+}
+
+  .card-header h1{
+    color: white;
+  }
+
+  #fErr,#sErr{
+    color: red;
+  }
+
+  .check{
+    display: none;
+  }

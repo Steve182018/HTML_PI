@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-12 col">
+                <div class="card card-sidebar">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col first-item">
+                                <li class="list-group-item"><i class="fa-solid fa-wind" style="color: #678cbb;"></i></li>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <li class="list-group-item mennu"><i class="fa-solid fa-cloud"></i><p>Weather</p></li>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col first-item1">
+                                <li class="list-group-item mennu"><i class="fa-solid fa-list"></i><p>Cities</p></li>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col first-item1">
+                                <li class="list-group-item mennu"><i class="fa-solid fa-map"></i><p>Map</p></li>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col first-item1">
+                                <li class="list-group-item mennu"><i class="fa-solid fa-gear"></i><p>Settings</p></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-12 list-card-2">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control input" placeholder="Search for Cities">
+                    </div>
+                </div>
+                <div class="row list-place-card">
+                    <div class="col-lg-6 col-md-4 list-place-data p-5">
+                        <h1>Surat</h1>
+                        <h6>Chance of rain: 0%</h6>
+                        <div class="cel">
+                            <h1>31<sup>o</sup></h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 list-place-icon">
+                        <i class="fa-solid fa-sun icon"></i>
+                    </div>
+                </div>
+                <div class="card main-card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card-title list-today-title">
+                                    <p>Today's Forcast</p>
+                                </div>
+                                <div class="card-group">
+                                    <div class="card temp-card">
+                                        <div class="card-body temp">
+                                            <h5 class="card-title">6:00 AM</h5>
+                                            <i class="fa-solid fa-cloud" style="color:lightgray;"></i>
+                                            <p class="card-text">25<sup>o</sup></p>
+                                        </div>
+                                    </div>
+                                    <div class="card temp-card">
+                                        <div class="card-body temp">
+                                            <h5 class="card-title">9:00 AM</h5>
+                                            <i class="fa-solid fa-cloud-sun" style="color:lightblue;"></i>
+                                            <p class="card-text">28<sup>o</sup></p>
+                                        </div>
+                                    </div>
+                                    <div class="card temp-card">
+                                        <div class="card-body temp">
+                                            <h5 class="card-title">12:00 PM</h5>
+                                            <i class="fa-solid fa-sun" style="color: rgb(255, 242, 5);"></i>
+                                            <p class="card-text">33<sup>o</sup></p>
+                                        </div>
+                                    </div>
+                                    <div class="card temp-card">
+                                        <div class="card-body temp">
+                                            <h5 class="card-title">3:00 PM</h5>
+                                            <i class="fa-solid fa-sun" style="color: rgb(255, 242, 5);"></i>
+                                            <p class="card-text">34<sup>o</sup></p>
+                                        </div>
+                                    </div>
+                                    <div class="card temp-card">
+                                        <div class="card-body temp">
+                                            <h5 class="card-title">6:00 PM</h5>
+                                            <i class="fa-solid fa-sun" style="color: rgb(255, 242, 5);"></i>
+                                            <p class="card-text">32<sup>o</sup></p>
+                                        </div>
+                                    </div>
+                                    <div class="card temp-card1">
+                                        <div class="card-body temp">
+                                            <h5 class="card-title">9:00 PM</h5>
+                                            <i class="fa-solid fa-cloud-sun" style="color:lightblue;"></i>
+                                            <p class="card-text">30<sup>o</sup></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card temp1">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card-title list-today-title">
+                                    <p>Air Conditions</p>
+                                </div>
+                                <div class="row row-cols-2">
+                                    <div class="col">
+                                        <div class="mix">
+                                            <i class="fa-solid fa-temperature-three-quarters"></i>
+                                            <p>Real Feel</p>
+                                        </div>
+                                        <p id="cap1">30<sup>o</sup></p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="mix">
+                                            <i class="fa-solid fa-wind"></i>
+                                            <p>Wind</p>
+                                        </div>
+                                        <p id="cap1">0.2 km/h</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="mix">
+                                            <i class="fa-solid fa-droplet"></i>
+                                            <p>Chance of rain</p>
+                                        </div>
+                                        <p id="cap1">0%</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="mix">
+                                            <i class="fa-solid fa-sun"></i>
+                                            <p>UV index</p>
+                                        </div>
+                                        <p id="cap1">3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card card-list">
+                    <div class="card-title list-title">
+                        <p>7-Day Forcast</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="row card-view">
+                            <div class="col-sm-12 col">
+                                <p>Today</p>
+                            </div>
+                            <div class="col">
+                                <p><i class="fa-solid fa-sun icon"></i>
+                                    Sunny</p>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    36/22
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row card-view">
+                            <div class="col-sm-12">
+                                <p>Tuesday</p>
+                            </div>
+                            <div class="col">
+                                <p><i class="fa-solid fa-sun icon"></i>
+                                    Sunny</p>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    37/21
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row card-view">
+                            <div class="col-sm-12">
+                                <p>Wednesday</p>
+                            </div>
+                            <div class="col">
+                                <p><i class="fa-solid fa-sun icon"></i>
+                                    Sunny</p>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    37/21
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row card-view">
+                            <div class="col-sm-12">
+                                <p>Thursday</p>
+                            </div>
+                            <div class="col">
+                                <p><i class="fa-solid fa-cloud-moon-rain icon1"></i>
+                                    Cloudy</p>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    37/21
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row card-view">
+                            <div class="col-sm-12">
+                                <p>Friday</p>
+                            </div>
+                            <div class="col">
+                                <p><i class="fa-solid fa-cloud-moon-rain icon1"></i>
+                                    Cloudy</p>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    37/21
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row card-view">
+                            <div class="col-sm-12">
+                                <p>Saturday</p>
+                            </div>
+                            <div class="col">
+                                <p><i class="fa-solid fa-cloud-rain icon1"></i>
+                                    Rainy</p>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    37/21
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row card-view1">
+                            <div class="col-sm-12">
+                                <p>Sunday</p>
+                            </div>
+                            <div class="col">
+                                <p><i class="fa-solid fa-cloud-bolt icon2"></i>
+                                    Strom</p>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    37/21
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

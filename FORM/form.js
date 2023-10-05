@@ -9,12 +9,23 @@ function validation() {
     // var gen = document.getElementById('fname').value;
     var add = document.getElementById('add').value;
     var city = document.getElementById('city').value;
-    // var hobby1 = document.getElementById('cricket');
-    // var hobby2 = document.getElementById('football');
-    // var hobby3 = document.getElementById('basketball');
+    var hobby1 = document.getElementById('cricket');
+    var hobby2 = document.getElementById('football');
+    var hobby3 = document.getElementById('basketball');
     var car = document.getElementById('car').value;
     var file = document.getElementById('file').value;
 
+    var checkedhobbies = [];
+    var cb = document.getElementsByName('hobby');
+
+    cb.forEach(function(checkbox){
+        if(checkbox.checked){
+            checkedhobbies.push(checkbox.value);
+
+        }
+    });
+
+    alert(checkedhobbies.join(', '));
     // if(hobby1.checked == true){
     //     var cri = document.getElementById('cricket').value;
     //     alert(cri);
