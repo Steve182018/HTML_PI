@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./medical_service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navcom fixed-top sticky-top">
+        <div class="container-fluid">
+            <div class="col-5 ">
+                <a class="navbar-brand" href="#"><img src="./PICS/logo.avif" class="navimg"></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="col-7">
+                    <ul class="navbar-nav navset ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#doctor">Doctor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button navbtn" class="btn btn-primary navcu">Contact Us</button>
+                        </li>
+                    </ul>
+                    <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="Home">
+        <div class="card text-bg-dark">
+            <img src="./PICS/Mon-Fri 1000am-2300am Sat-Sun 1000am-2300am.png" class="card-img" alt="...">
+        </div>
+    </section>
+
+    <!-- Activity -->
+    <section
+        style="background-color: #f6f7fb;display: flex; align-items: center;padding-bottom: 1%; justify-content: center; text-align: center; flex-direction: column;">
+        <div class="row">
+            <div class="col-12">
+                <p class="topic">Cancer Care</p>
+                <h1 class="main-heading">OUR Activity</h1>
+                <div class="br">
+                    <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, dolor esse
+                        asperiores atque, aliquam quae minus in delectus sequi cupiditate natus porro ea ducimus
+                        repellendus velit, eligendi deleniti unde nobis!</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 col-lg-3 col-md-3">
+                    <div class="card main-  card">
+                        <div class="icon">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="card-body card-body-1">
+                            <div class="borderr">
+                                <h5 class="card-title">Book now</h5>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.Enim, dolor
+                                esse asperiores atque</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-3">
+                    <div class="card main-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-clipboard-user"></i>
+                        </div>
+                        <div class="card-body card-body-1">
+                            <div class="borderr">
+                                <h5 class="card-title">Emergency Case</h5>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.Enim, dolor
+                                esse asperiores atque</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-3">
+                    <div class="card main-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+                        <div class="card-body card-body-1">
+                            <div class="borderr">
+                                <h5 class="card-title">Painless Procedure</h5>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.Enim, dolor
+                                esse asperiores atque</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-3">
+                    <div class="card main-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-file-medical"></i>
+                        </div>
+                        <div class="card-body card-body-1">
+                            <div class="borderr">
+                                <h5 class="card-title">Health Queries</h5>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.Enim, dolor
+                                esse asperiores atque</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        </div>
+    </section>
+
+    <!-- Solution -->
+    <section
+        style="background-color: white;display: flex; align-items: center;padding-bottom: 1%; justify-content: center; text-align: center; flex-direction: column;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img src="./PICS/doc.jpg" class="img-fluid" alt="doc">
+                </div>
+                <div class="col-12 col-md-8 qs">
+                    <p id="quick" style="color: #02b9e6; font-weight: bold; font-size: medium;">Quick
+                        Solution</p>
+                    <div class="content">
+                        <h2 class="main-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur blanditiis
+                            voluptatibus itaque neque veniam dolores unde, suscipit quis. Porro voluptate ab dolores in
+                            iusto soluta saepe atque veniam suscipit vero</p>
+                        <div class="ap">
+                            <i class="fa-solid fa-bell-concierge"
+                                style="margin-right: 10px; font-size: 25px; color: #02b9e6;"></i>
+                            <p style="font-weight: bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="ap">
+                            <i class="fa-solid fa-bell-concierge"
+                                style="margin-right: 10px; font-size: 25px; color: #02b9e6;"></i>
+                            <p style="font-weight: bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <button type="button" class="btn btn-primary btnn">Make an Appointment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="Services"
+        style="background-color: #f6f7fb;display: flex; align-items: center;padding-bottom: 1%; justify-content: center; text-align: center; flex-direction: column;">
+        <div class="row">
+            <div class="col-12 ">
+                <p class="topic">Our Services</p>
+                <h1 class="main-heading caption" style="margin-bottom: 50px;">We Offer Diffrent Services To Improve Your
+                    Health</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <div class="icon-service">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Expert Doctor</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.Enim, dolor
+                                esse asperiores atque</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <div class="icon-service">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Expert Doctor</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.Enim, dolor
+                                esse asperiores atque</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <div class="icon-service">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Expert Doctor</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.Enim, dolor
+                                esse asperiores atque</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <div class="icon-service">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Expert Doctor</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.Enim, dolor
+                                esse asperiores atque</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1" style="margin-top: 20px;">
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <div class="icon-service">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Expert Doctor</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.Enim, dolor
+                                esse asperiores atque</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <div class="icon-service">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Expert Doctor</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.Enim, dolor
+                                esse asperiores atque</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <div class="icon-service">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Expert Doctor</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.Enim, dolor
+                                esse asperiores atque</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <div class="icon-service">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Expert Doctor</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.Enim, dolor
+                                esse asperiores atque</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialization -->
+    <section
+        style="background-color: white;display: flex; align-items: center;padding-bottom: 1%; justify-content: center; text-align: center; flex-direction: column;">
+        <div class="row">
+            <div class="col-12">
+                <p class="topic">Get Your best looking smile now</p>
+                <h1 class="main-heading caption">Our Doctor Specialize in</h1>
+                <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, dolor esse
+                    asperiores atque, aliquam quae minus in delectus sequi cupiditate natus porro ea ducimus
+                    repellendus velit, eligendi deleniti unde nobis!</p>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-3 col-md-3">
+                    <div class="card specialize-card">
+                        <img src="./PICS/doc.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card" style="border: none;">
+                                <div class="card-body ER">
+                                    <p>English</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.5</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Lorem ipsum</h5>
+                            <p class="card-text">Some quick example text to build on the card title</p>
+                            <div class="dollar">
+                                <p><s>$16.48</s></p>
+                                <p style="color: red;">$6.48</p>
+                            </div>
+                            <a href="#" class="btn btn-primary ln">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-3">
+                    <div class="card specialize-card">
+                        <img src="./PICS/doc.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card" style="border: none;">
+                                <div class="card-body ER">
+                                    <p>English</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.5</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Lorem ipsum</h5>
+                            <p class="card-text">Some quick example text to build on the card title</p>
+                            <div class="dollar">
+                                <p><s>$16.48</s></p>
+                                <p style="color: red;">$6.48</p>
+                            </div>
+                            <a href="#" class="btn btn-primary ln">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-3">
+                    <div class="card specialize-card">
+                        <img src="./PICS/doc.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card" style="border: none;">
+                                <div class="card-body ER">
+                                    <p>English</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.5</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Lorem ipsum</h5>
+                            <p class="card-text">Some quick example text to build on the card title</p>
+                            <div class="dollar">
+                                <p><s>$16.48</s></p>
+                                <p style="color: red;">$6.48</p>
+                            </div>
+                            <a href="#" class="btn btn-primary ln">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-3">
+                    <div class="card specialize-card">
+                        <img src="./PICS/doc.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="card" style="border: none;">
+                                <div class="card-body ER">
+                                    <p>English</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.5</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Lorem ipsum</h5>
+                            <p class="card-text">Some quick example text to build on the card title</p>
+                            <div class="dollar">
+                                <p><s>$16.48</s></p>
+                                <p style="color: red;">$6.48</p>
+                            </div>
+                            <a href="#" class="btn btn-primary ln">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq"
+        style="background-color: #f6f7fb;display: flex; align-items: center;padding-bottom: 1%; justify-content: center; text-align: center; flex-direction: column;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7 FAQ">
+                    <p class="FAQ1">Frequently Asked Question</p>
+                    <p class="main-heading">We Got You Covered</p>
+                    <p class="FAQ1">Can my family access my portal?</p>
+                    <div class="FAQ2">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa nihil in inventore dicta,
+                            veniam assumenda quaerat animi officiis eligendi, sunt perspiciatis enim error fugit
+                            accusantium nobis architecto explicabo cum accusamus!</p>
+                        <p class="FAQ1">Can my family access my portal?</p>
+                        <p class="FAQ1">Is my information safe?</p>
+                        <p class="FAQ1">How do i login the portal?</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 FAQ3">
+                    <img src="./PICS/doc2.jpg" alt="doc2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-12">
+                    <div class="card make1">
+                        <div class="card-body make">
+                            <p>Want to make an appointment easily?</p>
+                            <button type="button" class="btn btn-primary btnn">Make an Appointment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="doctor"
+        style="background-color: white;display: flex; align-items: center;padding-bottom: 1%; justify-content: center; text-align: center; flex-direction: column;">
+        <div class="row team">
+            <div class="col-12">
+                <p class="topic">Team</p>
+                <h1 class="main-heading">OUR Team</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mc">
+                <div class="col-6 col-lg-3 col-md-3">
+                    <div class="card doccard">
+                        <img src="./PICS/p1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jullian Jameson</h5>
+                            <p class="card-text">Proffession</p>
+                            <div class="sicon">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-3">
+                    <div class="card doccard">
+                        <img src="./PICS/p2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jullian Jameson</h5>
+                            <p class="card-text">Proffession</p>
+                            <div class="sicon">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-3">
+                    <div class="card doccard">
+                        <img src="./PICS/p3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jullian Jameson</h5>
+                            <p class="card-text">Proffession</p>
+                            <div class="sicon">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-3">
+                    <div class="card doccard">
+                        <img src="./PICS/p4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jullian Jameson</h5>
+                            <p class="card-text">Proffession</p>
+                            <div class="sicon">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News -->
+    <section id="News"
+        style="background-color: #f6f7fb;display: flex; align-items: center;padding-bottom: 1%; justify-content: center; text-align: center; flex-direction: column;">
+        <div class="row">
+            <div class="col-12 ">
+                <p class="topic">Newsletter</p>
+                <h1 class="main-heading br" style="margin-bottom: 50px;">Join Us</h1>
+            </div>
+            <!-- <div class="br">
+                <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, dolor esse
+                    asperiores atque, aliquam quae minus in delectus sequi cupiditate natus porro ea ducimus
+                    repellendus velit, eligendi deleniti unde nobis!</p>
+            </div> -->
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card news">
+                        <div class="card-body news1">
+                            <input type="text" class="form-control">
+                            <button type="button" class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section
+        style="background-color: white;display: flex; align-items: center;padding-bottom: 1%;justify-content: center; text-align: center; flex-direction: column;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 col-lg-3 fp">
+                    <div class="head">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <h1>Doctor Plus</h1>
+                    </div>
+                    <p id="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <div class="ficon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="copy">
+                        <i class="fa-solid fa-copyright"></i>
+                        <p>All rights reserved by Steve Mali</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 cs">
+                    <h1>Contact Us</h1>
+                    <div class="add">
+                        <i class="fa-solid fa-address-book"></i>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                    </div>
+                    <div class="call">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>1234567890</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3 links">
+                    <h1>Useful Links</h1>
+                    <p>About Us</p>
+                    <p>Services</p>
+                    <p>Appointments</p>
+                    <p>Doctors</p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3 services">
+                    <h1>Our Services</h1>
+                    <p>Diagnosis</p>
+                    <p>Pathology</p>
+                    <p>Dental</p>
+                    <p>Medicine</p>
+                    <p>Cardiology</p>
+                    <p>Neurology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

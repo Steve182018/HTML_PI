@@ -1,0 +1,671 @@
+
+
+.imgg {
+    height: 900px;
+    width: 100%;
+
+}
+
+.book {
+    bottom: 50px;
+}
+
+.topic {
+    color:#02b9e6;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.main-heading {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.caption {
+    font-size: 15px;
+    width: 600px;
+}
+
+.main-card {
+    width: 100%;
+    height: 100%;
+}
+
+.icon {
+    font-size: 40px;
+    background-color: #02b9e6;
+    border-radius: 40px;
+    width: 70px;
+    color: white;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.card-body-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    text-align: left;
+}
+
+.card-body-1 .borderr h5 {
+    font-size: 30px;
+    font-weight: bold;
+    /* text-decoration: underline 5px solid #02b9e6; */
+    padding-bottom: 20px;
+}
+
+.borderr {
+    border-bottom: 5px solid #02b9e6;
+}
+
+.card-body-1 p {
+    margin-top: 30px;
+}
+
+.qs {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.content {
+    padding-right: 100px;
+}
+
+.ap {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icon-service {
+    font-size: 50px;
+    color: #02b9e6;
+}
+
+.specialize-card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 18rem;
+}
+
+.english {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    font-weight: bold;   
+}
+
+.ER{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ER p{
+    color: #02b9e6;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    /* background-color: aliceblue;
+    border-radius: 20px;
+    width: 100px;
+    justify-content: center;
+    align-items: center; */
+    
+}
+
+.rating i {
+    color: gold;
+    font-size: 20px;
+}
+
+
+
+.dollar{
+    display: flex;
+    flex-direction: row;
+}
+
+.dollar p{
+    margin-right: 10px;
+    color: grey;
+    font-size: large;
+    font-weight: bold;
+}
+
+.FAQ{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.FAQ1{
+    color: #02b9e6;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.FAQ2 p{
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+}
+
+.FAQ3 img{
+    height: 100%;
+}
+
+.make1{
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.make{
+    display: flex;
+    flex-direction: row;
+    background-color: #02b9e6;
+    justify-content: space-between;
+    border-radius: 50px;
+}
+
+.make p{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.sicon{
+    font-size: 30px;
+    color: #02b9e6;
+}
+.news1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.news1 input{
+    width: 100%;
+    border-radius: 50px;
+}
+.news{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+}
+
+.head i{
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.fp p{
+    text-align: left;
+    margin-top: 20px;
+}
+
+.ficon{
+    font-size: 50px;
+    color: #02b9e6;
+}
+
+.copy{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+}
+
+.copy i{
+    font-size: 20px;
+    /* color: #02b9e6; */
+}
+
+.cs{
+    text-align: left;
+}
+
+.add{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.add i{
+    font-size: 40px;
+    color: #02b9e6;
+}
+
+.add p{
+    margin-left: 20px;
+}
+
+.call{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.call i{
+    font-size: 40px;
+    color: #02b9e6;
+}
+
+.call p{
+    margin-left: 20px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.navimg{
+    height: 50px;
+    width: 50px;
+}
+
+.navset{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navcom{
+    background-color: skyblue !important;
+}
+
+.navset li a{
+    font-weight: bold !important;
+}
+
+.navbtn{
+    border-radius: 50px;
+}
+
+.doccard{
+    width: 18rem;
+}
+
+.navcu{
+    font-size: 15px;
+}
+
+/* Media Query */
+
+@media screen and (max-width:1024px) {
+    .card-body-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 240px;
+        text-align: left;
+    }
+    
+    .card-body-1 .borderr h5 {
+        font-size: 20px;
+        font-weight: bold;
+        /* text-decoration: underline 5px solid #02b9e6; */
+        padding-bottom: 20px;
+    }
+    
+    .borderr {
+        border-bottom: 5px solid #02b9e6;
+    }
+    
+    .card-body-1 p {
+        margin-top: 30px;
+    }
+
+    .specialize-card {
+        width: 14rem;
+    }
+
+    .btnn {
+        border-radius: 50px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .make p{
+        font-size: 35px;
+    }
+
+    .doccard{
+        width: 15rem;
+    }
+    
+    .head i{
+        font-size: 40px;
+        margin-right: 10px;
+    }
+
+    .head h1{
+        font-size: 30px;
+    }
+    
+    .fp p{
+        text-align: left;
+        margin-top: 20px;
+    }
+    
+    .ficon{
+        font-size: 40px;
+        color: #02b9e6;
+    }
+    
+    .copy{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+    }
+    
+    .copy i{
+        font-size: 20px;
+    }
+
+    .copy p{
+        font-size: 12px;
+    }
+
+    .cs h1{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .add{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    .add i{
+        font-size: 35px;
+        color: #02b9e6;
+    }
+    
+    .add p{
+        margin-left: 20px;
+    }
+    
+    .call{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    .call i{
+        font-size: 35px;
+        color: #02b9e6;
+    }
+    
+    .call p{
+        margin-left: 20px;
+    }
+    
+    .links h1{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .services h1{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .navcu{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .FAQ3 img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .card-body-1 {
+        width: 170px;
+    }
+    
+    .card-body-1 .borderr h5 {
+        font-size: 15px;
+    }
+    
+    .icon {
+        font-size: 20px;
+        border-radius: 20px;
+        width: 40px;
+    }
+
+    .specialize-card {
+        width: 10rem;
+    }
+
+    .FAQ3 img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .ER{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ln{
+        font-size: 10px;
+    }
+
+    .doccard{
+        width: 11rem;
+    }
+
+    .btnn {
+        font-size: 12px;
+    }
+
+    .make p{
+        font-size: 25px;
+    }
+
+    .head i{
+        font-size: 30px;
+    }
+
+    .head h1{
+        font-size: 20px;
+    }
+    
+    #a{
+        font-size: 15px;
+    }
+    
+    .ficon{
+        font-size: 30px;
+    }
+    
+    .copy i{
+        font-size: 10px;
+    }
+
+    .copy p{
+        font-size: 10px;
+    }
+
+    .cs h1{
+        font-size: 20px;
+    }
+    
+    .add i{
+        font-size: 30px;
+    }
+    
+    .add p{
+        font-size: 15px;
+    }
+    
+    
+    .call i{
+        font-size: 30px;
+        
+    }
+    
+    .links h1{
+        font-size: 20px;
+    }
+    
+    .services h1{
+        font-size: 20px;
+    }
+
+    .team .topic {
+        font-size: 30px;
+    }
+    
+    .team .main-heading {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:425px) {
+     .card-body-1 {
+        width: 350px;
+        font-size: 15px;
+    }
+    
+    .card-body-1 .borderr h5 {
+        font-size: 20px;
+    }
+    
+    .icon {
+        font-size: 20px;
+        border-radius: 20px;
+        width: 40px;margin-right: 300px;
+    }
+
+    .topic {
+        font-size: 20px;
+    }
+    
+    .main-heading {
+        font-size: 35px;
+    }
+    
+    .caption {
+        font-size: 15px;
+        width: 300px;
+    }
+
+    .main-card{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #quick{
+        margin-top: 20px;
+    }
+
+    .btnn{
+        font-size: 10px;
+    }
+
+    .make p{
+        font-size: 15px;
+    }
+
+    .specialize-card {
+        width: 12rem;
+    }
+
+    .copy p{
+        font-size: 15px;
+    }
+
+    .copy i{
+        font-size: 15px;
+    }
+
+    .doccard{
+        width: 12rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .caption {
+        width: 300px;
+    }
+
+    .specialize-card {
+        width: 10rem;
+    }
+
+    .doccard{
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .card-body-1 {
+        width: 300px;
+        font-size: 15px;
+    }
+    
+    .card-body-1 .borderr h5 {
+        font-size: 20px;
+    }
+    
+    .icon {
+        font-size: 20px;
+        border-radius: 20px;
+        width: 40px;
+        margin-right: 250px;
+    }
+
+    .specialize-card {
+        width: 9rem;
+    }
+
+    .doccard{
+        width: 9rem;
+    }
+
+    .topic {
+        font-size: 15px;
+    }
+    
+    .main-heading {
+        font-size: 25px;
+    }
+    
+    .caption {
+        font-size: 9px;
+        width: 300px;
+    }
+}
