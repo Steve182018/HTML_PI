@@ -13,7 +13,6 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./weather.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
 </head>
 
 <body>
@@ -62,9 +61,15 @@
             <div class="col-lg-7 col-md-7 col-sm-12 list-card-2">
                 <div class="row">
                     <div class="col search">
-                        <input type="text" class="form-control" placeholder="Search for Cities" id="cityinput">
-                        <button type="button" class="btn btn-success sea" id="add"><i
-                                class="fa-solid fa-magnifying-glass"></i></button>
+                        <select class="form-select country" aria-label="Default select example" onchange="loadStates()">
+                            <option selected>Select Country</option>
+                        </select>
+                        <select class="form-select state" aria-label="Default select example">
+                            <option selected>Select State</option>
+                        </select>
+                        <select class="form-select city" aria-label="Default select example">
+                            <option selected>Select City</option>
+                        </select>
                     </div>
                 </div>
                 <div class="row list-place-card">
@@ -314,7 +319,6 @@
             </div>
         </div>
     </div>
-        <script src="./weather.js"></script>
 </body>
 
 </html>

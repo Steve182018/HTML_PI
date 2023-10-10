@@ -161,3 +161,40 @@ btn.addEventListener('click', function()
 
   .catch(err => alert('You entered Wrong city name'))
 })
+
+// Select Country
+
+var config = {
+  cUrl : "https://api.countrystatecity.in/v1/countries",
+  cKey : ""
+}
+
+var countrySelect = document.querySelector('.country');
+var countryState = document.querySelector(".state");
+var countryCity = document.querySelector(".city");
+
+function loadCountries(){
+    let apiEndPoint = config.cUrl
+
+    fetch (apiEndPoint, {headers: {"X-CSCAPI-KEY": config.cKey}})
+    .then(Response => Response.json())
+    .then(data =>{
+      console.log(data)
+      
+      data.forEach(country => {
+        const option = document.createElement('option')
+        option.value = country.iso2
+        option.textContent = country.name
+        countrySelect.appendChild(option)
+      })
+    })
+    .catch(error => console.error("Error Loading Countries", error))
+}
+
+function loadStates(){
+  const selectedCountryCode = countrySelect.value
+  console,log(selectedCountryCode)
+
+  
+}
+window.onload = loadCountries()
