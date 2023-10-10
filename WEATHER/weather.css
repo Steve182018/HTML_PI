@@ -177,15 +177,14 @@
     font-size: 20px;
 }
 
-.input{
-    background-color: #47505d;
+.search{
+    display: flex;
+    flex-direction: row;
 }
 
-.input ::placeholder{
-    color: white;
+.sea{
+    margin-left: 10px;
 }
-
-
 
 /* 3rd Card */
 
@@ -231,6 +230,21 @@
 
 .cel{
     margin-top: 10%;
+}
+
+.minmax{
+    display: flex;
+    flex-direction: row;
+}
+
+.sky{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.sky p{
+    margin-left: 10px;
 }
 
 @media screen and (max-width:1440px) {
