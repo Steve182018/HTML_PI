@@ -11,7 +11,6 @@ function displayItem() {
     for (let i = 0; i < itemsArray.length; i++) {
         items += `<div class="item">
         <div class="input-con d-flex justify-content-center">
-        <input type = "checkbox" class="check" onclick="strike()">
             <textarea class="text-center form-control m-1" disabled>${itemsArray[i]}</textarea>
             <div class="edit-con">
             <i class="fa fa-pencil-square-o edittask"></i>
@@ -26,28 +25,12 @@ function displayItem() {
     </div>`
     }
     document.querySelector(".to-do-list").innerHTML = items
-    
+
     deletetask()
     edittask()
     savebtn()
     cancelbtn()
-    //check()
-}
-
-function strike(){
-    const check = document.querySelectorAll(".check")
-    const input = document.querySelectorAll(".input-con textarea")
-
-    check.forEach((ch,i) => {
-        ch.addEventListener("change", ()=> {
-            // if(check[i].checked){
-            //     input[i].style.textDecoration =  "line-through";
-            //     input[i].strike();
-            // }else{
-            //     alert("No")
-            // }
-        })
-    })
+    strike()
 }
 
 function createItem(item) {
