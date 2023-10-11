@@ -30,7 +30,7 @@
                         <div class="row">
                             <div class="col">
                                 <li class="list-group-item mennu"><i class="fa-solid fa-cloud"></i>
-                                    <p>Weather</p>
+                                    <p><a href="./weather.html" style="text-decoration: none; color: white;">Weather</a></p>
                                 </li>
                             </div>
                         </div>
@@ -61,15 +61,17 @@
             <div class="col-lg-7 col-md-7 col-sm-12 list-card-2">
                 <div class="row">
                     <div class="col search">
-                        <select class="form-select country" aria-label="Default select example" onchange="loadStates()">
+                        <select class="form-select country" aria-label="Default select example" id="countryId" onchange="loadState()">
                             <option selected>Select Country</option>
                         </select>
-                        <select class="form-select state" aria-label="Default select example">
+                        <select class="form-select state" aria-label="Default select example" id="stateId" onchange="loadCity()">
                             <option selected>Select State</option>
                         </select>
-                        <select class="form-select city" aria-label="Default select example">
+                        <select class="form-select city" aria-label="Default select example" id="cityinput"  >
                             <option selected>Select City</option>
                         </select>
+                        <button type="button" class="btn btn-success sea" id="add"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                 </div>
                 <div class="row list-place-card">
@@ -319,6 +321,7 @@
             </div>
         </div>
     </div>
+    <script src="./country.js"></script>
 </body>
 
 </html>
