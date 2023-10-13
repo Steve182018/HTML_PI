@@ -1,4 +1,4 @@
-var inputval = document.querySelector('#cityinput')
+var inputval = document.querySelector('#cityinputt')
 var btn = document.querySelector('#add');
 var city = document.querySelector('#cityoutput')
 var descrip = document.querySelector('#description')

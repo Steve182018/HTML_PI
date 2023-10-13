@@ -13,6 +13,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./weather.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./logo.jpg">
 </head>
 
 <body>
@@ -29,22 +30,24 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <li class="list-group-item mennu"><i class="fa-solid fa-cloud"></i>
-                                    <p><a href="./weather.html" style="text-decoration: none; color: white;">Weather</a></p>
+                                <li class="list-group-item mennu"><a href="./weather.html"
+                                        style="text-decoration: none; color: white;"><i class="fa-solid fa-cloud"></i>
+                                        <p>Weather
+                                    </a></p>
                                 </li>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col first-item1">
-                                <li class="list-group-item mennu"><i class="fa-solid fa-list"></i>
-                                    <p><a href="./city.html" style="text-decoration: none; color: white;">Cities</a></p>
+                                <li class="list-group-item mennu"><a href="./city.html" style="text-decoration: none; color: white;"><i class="fa-solid fa-list"></i>
+                                    <p>Cities</a></p>
                                 </li>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col first-item1">
-                                <li class="list-group-item mennu"><i class="fa-solid fa-map"></i>
-                                    <p>Map</p>
+                                <li class="list-group-item mennu"><a href="https://maps.app.goo.gl/F4qWgVwCpqjSgi6SA" style="text-decoration: none; color: white;" target="_blank"><i class="fa-solid fa-map"></i>
+                                    <p>Map</p></a>
                                 </li>
                             </div>
                         </div>
@@ -61,17 +64,19 @@
             <div class="col-lg-7 col-md-7 col-sm-12 list-card-2">
                 <div class="row">
                     <div class="col search">
-                        <select class="form-select country" aria-label="Default select example" id="countryId" onchange="loadState()">
+                        <select class="form-select country" aria-label="Default select example" id="countryId"
+                            onchange="loadState()">
                             <option selected>Select Country</option>
                         </select>
-                        <select class="form-select state" aria-label="Default select example" id="stateId" onchange="loadCity()">
+                        <select class="form-select state" aria-label="Default select example" id="stateId"
+                            onchange="loadCity()">
                             <option selected>Select State</option>
                         </select>
-                        <select class="form-select city" aria-label="Default select example" id="cityinput"  >
+                        <select class="form-select city" aria-label="Default select example" id="cityinput">
                             <option selected>Select City</option>
                         </select>
                         <button type="button" class="btn btn-success sea" id="add"><i
-                            class="fa-solid fa-magnifying-glass"></i></button>
+                                class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                 </div>
                 <div class="row list-place-card">

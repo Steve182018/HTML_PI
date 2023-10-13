@@ -13,7 +13,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./weather.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    <link rel="icon" type="image/x-icon" href="./logo.jpg">
 </head>
 
 <body>
@@ -30,22 +30,22 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <li class="list-group-item mennu"><i class="fa-solid fa-cloud"></i>
-                                    <p>Weather</p>
+                                <li class="list-group-item mennu"><a href="./weather.html" style="text-decoration: none; color: white;"><i class="fa-solid fa-cloud"></i>
+                                    <p>Weather</p></a>
                                 </li>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col first-item1">
-                                <li class="list-group-item mennu"><i class="fa-solid fa-list"></i>
-                                    <p><a href="./city.html" style="text-decoration: none; color: white;">Cities</a></p>
+                                <li class="list-group-item mennu"><a href="./city.html" style="text-decoration: none; color: white;"><i class="fa-solid fa-list"></i>
+                                    <p>Cities</a></p>
                                 </li>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col first-item1">
-                                <li class="list-group-item mennu"><i class="fa-solid fa-map"></i>
-                                    <p>Map</p>
+                                <li class="list-group-item mennu"><a href="https://maps.app.goo.gl/F4qWgVwCpqjSgi6SA" target="_blank" style="text-decoration: none; color: white;"><i class="fa-solid fa-map"></i>
+                                    <p>Map</p></a>
                                 </li>
                             </div>
                         </div>
@@ -62,20 +62,20 @@
             <div class="col-lg-7 col-md-7 col-sm-12 list-card-2">
                 <div class="row">
                     <div class="col search">
-                        <input type="text" class="form-control" placeholder="Search for Cities" id="cityinput">
+                        <input type="text" class="form-control" placeholder="Search for Cities" id="cityinputt">
                         <button type="button" class="btn btn-success sea" id="add"><i
                                 class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                 </div>
                 <div class="row list-place-card">
-                    <div class="col-lg-6 col-md-4 list-place-data p-5">
+                    <div class="col-sm-6 col-md-4 list-place-data p-5 p-sm-2">
                         <h1 id="cityoutput">Weather of _____</h1>
                         <h6 id="temp">Temperature: ____</h6>
                         <div class="cel">
                             <h1 id="onlytemp">___</h1>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 list-place-icon">
+                    <div class="col-sm-6 col-12 list-place-icon mb-sm-3">
                         <i class="fa-solid fa-sun icon"></i>
                     </div>
                 </div>
@@ -176,6 +176,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="card card-list">
                     <div class="card-title list-title">
@@ -314,7 +315,7 @@
             </div>
         </div>
     </div>
-        <script src="./weather.js"></script>
+    <script src="./weather.js"></script>
 </body>
 
 </html>

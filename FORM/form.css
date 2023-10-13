@@ -86,7 +86,10 @@ textarea{
     padding: 5px 10px;
 }
 
-#fErr,#eErr,#lErr,#pwErr,#cnErr,#AllErr{
+#fErr,#eErr,#lErr,#pwErr,#cnErr,#AllErr,#fileErr,#addErr,#genErr{
     color: red;
-    margin-top: 1%;
+    margin-top: 2%;
 }
+
+ 
+

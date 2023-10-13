@@ -1,20 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    /* font-family: 'Croissant One', serif; */
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Shadows Into Light', cursive; */
+    font-family: 'Young Serif', serif;
 }
 
-.container-fluid{
+.container-fluid {
     background-color: #202b3c;
     height: 100%;
     padding-bottom: 45px;
 }
 
-.card-sidebar{
+.card-sidebar {
     height: 100%;
-    background-color: #47505d ;
+    background-color: #47505d;
 }
 
-.first-item{
+.first-item {
     font-size: 30px;
     margin-bottom: 100px;
 }
@@ -24,7 +28,7 @@
     margin-bottom: 20px;
 } */
 
-.mennu p{
+.mennu p {
     font-size: 20px;
     margin-bottom: 50%;
     display: flex;
@@ -33,122 +37,123 @@
     flex-direction: column;
 }
 
-.mennu i{
+.mennu i {
     font-size: 30px;
 }
 
-.row{
+.row {
     color: aliceblue;
 }
 
-.sidebar{
+.sidebar {
     background-color: #47505d;
     color: white;
     border: none;
 }
 
-.ul-1{
+.ul-1 {
     height: 900px;
 }
 
 /* 2nd card */
 
-.list-card-2{
+.list-card-2 {
     margin-top: 1%;
 }
 
 
-.list-place-card{
+.list-place-card {
     /* margin-top: 5%; */
 }
 
-.list-place-data{
+.list-place-data {
     display: flex;
     flex-direction: column;
     align-items: baseline;
 }
 
-.list-place-icon{
+.list-place-icon {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.list-place-icon i{
-    color: rgb(255, 242, 5);;
+.list-place-icon i {
+    color: rgb(255, 242, 5);
+    ;
     font-size: 100px;
 }
 
-.list-today-title{
+.list-today-title {
     color: white;
     display: flex;
     font-size: large;
     font-weight: bold;
 }
 
-.main-card{
+.main-card {
     background-color: #47505d;
     border-radius: 20px;
 }
 
-.temp-card{
+.temp-card {
     border: none;
     border-right: 1px solid white;
 }
 
-.temp-card1{
+.temp-card1 {
     border: none;
     /* border-right: 1px solid white; */
 }
 
-.temp-card .temp h5{
+.temp-card .temp h5 {
     font-size: 25px;
     color: white;
 }
 
-.temp-card .temp i{
+.temp-card .temp i {
     font-size: 80px;
     color: white;
     margin-top: 20px;
 }
 
-.temp-card .temp p{
+.temp-card .temp p {
     font-size: 25px;
     font-weight: bold;
     color: white;
     margin-top: 20px;
 }
 
-.temp-card1 .temp h5{
+.temp-card1 .temp h5 {
     font-size: 25px;
     color: white;
 }
 
-.temp-card1 .temp i{
+.temp-card1 .temp i {
     font-size: 80px;
     /* color: white; */
     margin-top: 20px;
 }
 
-.temp-card1 .temp p{
+.temp-card1 .temp p {
     font-size: 25px;
     font-weight: bold;
     color: white;
     margin-top: 20px;
 }
 
-.temp{
-    background-color: #47505d; 
+.temp {
+    background-color: #47505d;
 }
 
-.temp1{
-    background-color: #47505d; 
+.temp1 {
+    background-color: #47505d;
     margin-top: 2%;
     border-radius: 20px;
 }
 
 
-.mix{
+.mix {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -159,80 +164,83 @@
     font-size: 18px;
     padding-top: 10px;
 }
+
 .mix i {
     padding: 10px;
     font-size: 30px;
     color: lightgray;
 }
 
-.air i{
+.air i {
     color: lightgray;
     font-size: 30px;
 }
 
 
-#cap1{
+#cap1 {
     padding: 0px;
     font-weight: bold;
     font-size: 20px;
 }
 
-.search{
+.search {
     display: flex;
     flex-direction: row;
 }
 
-.sea{
+.sea {
     margin-left: 10px;
 }
 
 /* 3rd Card */
 
-.list-title{
+.list-title {
     display: flex;
     color: white;
-    font-size: medium;
+    font-size: 34px;
     padding-left: 12%;
     padding-top: 10%;
     font-weight: bold;
 }
-.card-list{
+
+.card-list {
     background-color: #47505d;
     margin: 10%;
     border-radius: 20px;
 }
 
-.card-view{
+.card-view {
     margin-bottom: 10%;
     font-size: large;
     border-bottom: 1px solid white;
     padding: 10px;
 }
 
-.card-view1{
+.card-view1 {
     margin-bottom: 10%;
     font-size: large;
     border-bottom: none;
     padding: 10px;
 }
 
-.card-view .col .icon{
-    color: rgb(255, 242, 5);;
+.card-view .col .icon {
+    color: rgb(255, 242, 5);
+    ;
 }
 
-.card-view .col .icon1{
+.card-view .col .icon1 {
     color: skyblue;
 }
 
-.card-view1 .col .icon2{
-    color:rgb(239, 192, 39);
+.card-view1 .col .icon2 {
+    color: rgb(239, 192, 39);
 }
 
-.cel{
+.cel {
     margin-top: 10%;
 }
 
-.minmax{
+.minmax {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -240,7 +248,7 @@
     justify-content: center;
 }
 
-.sky{
+.sky {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -248,7 +256,7 @@
     justify-content: center;
 }
 
-.sky p{
+.sky p {
     margin-left: 10px;
 }
 
@@ -256,19 +264,19 @@
 
 #countryId,
 #stateId,
-#cityinput{
+#cityinput {
     width: 33.33%;
     margin-left: 10px;
 }
 
 @media screen and (max-width:1440px) {
-    .first-item{
+    .first-item {
         font-size: 30px;
         margin-bottom: 50px;
-        margin-left: -5px   ;
+        margin-left: -5px;
     }
 
-    .mennu p{
+    .mennu p {
         font-size: 15px;
         margin-bottom: 50%;
         display: flex;
@@ -277,29 +285,29 @@
         flex-direction: column;
     }
 
-    .temp-card .temp h5{
+    .temp-card .temp h5 {
         font-size: 20px;
         color: white;
     }
 
-    .temp-card1 .temp h5{
+    .temp-card1 .temp h5 {
         font-size: 20px;
         color: white;
     }
 
-    .card-view{
+    .card-view {
         margin-bottom: 10%;
         font-size: 17px;
-        border-bottom: 1px solid white; 
+        border-bottom: 1px solid white;
     }
-    
-    .card-view1{
+
+    .card-view1 {
         margin-bottom: 10%;
         font-size: 17px;
         border-bottom: none;
     }
 
-    .sky p{
+    .sky p {
         margin-left: 0px;
         /* font-size: 10px; */
     }
@@ -308,93 +316,99 @@
 
 @media screen and (max-width:1024px) {
 
-    .first-item{
+    .first-item {
         font-size: 15px;
         margin-bottom: 50px;
-        margin-left: -5px   ;
+        margin-left: -5px;
     }
 
-    .mennu p{
+    .mennu p {
         font-size: 7px;
         margin-bottom: 50%;
         display: none;
         text-align: center;
         justify-content: center;
         flex-direction: column;
-        
+
     }
-    
-    .mennu i{
+
+    .mennu i {
         font-size: 15px;
         margin-top: 50px;
         margin-left: -5px;
     }
 
-    .temp-card .temp h5{
+    .temp-card .temp h5 {
         font-size: 11px;
         color: white;
     }
-    
-    .temp-card .temp i{
+
+    .temp-card .temp i {
         font-size: 30px;
         color: white;
         margin-top: 20px;
     }
-    
-    .temp-card .temp p{
+
+    .temp-card .temp p {
         font-size: 20px;
         font-weight: bold;
         color: white;
         margin-top: 20px;
     }
-    
-    .temp-card1 .temp h5{
+
+    .temp-card1 .temp h5 {
         font-size: 11px;
         color: white;
     }
-    
-    .temp-card1 .temp i{
+
+    .temp-card1 .temp i {
         font-size: 30px;
         /* color: white; */
         margin-top: 20px;
     }
-    
-    .temp-card1 .temp p{
+
+    .temp-card1 .temp p {
         font-size: 20px;
         font-weight: bold;
         color: white;
         margin-top: 20px;
     }
-    
+
     .mix p {
         font-size: 10px;
         padding-top: 10px;
     }
+
     .mix i {
         padding: 10px;
         font-size: 20px;
         color: lightgray;
     }
 
-    #cap1{
+    #cap1 {
         padding: 0px;
         font-weight: bold;
         font-size: 15px;
     }
 
-    .card-view{
+    .card-view {
         margin-bottom: 10%;
         font-size: 11px;
-        border-bottom: 1px solid white; 
+        border-bottom: 1px solid white;
     }
-    
-    .card-view1{
+
+    .card-view1 {
         margin-bottom: 10%;
         font-size: 11px;
         border-bottom: none;
     }
 
-    #temp1,#temp2,#temp3,#temp4,#temp5,#temp6{
+    #temp1,
+    #temp2,
+    #temp3,
+    #temp4,
+    #temp5,
+    #temp6 {
         font-size: 15px;
     }
 }
@@ -402,210 +416,233 @@
 
 @media screen and (max-width:768px) {
 
-    .first-item{
+    .first-item {
         font-size: 15px;
         margin-bottom: 50px;
-        margin-left: -5px   ;
+        margin-left: -5px;
     }
 
-    .mennu p{
+    .mennu p {
         font-size: 7px;
         margin-bottom: 50%;
         display: none;
         text-align: center;
         justify-content: center;
         flex-direction: column;
-        
+
     }
-    
-    .mennu i{
+
+    .mennu i {
         font-size: 15px;
         margin-top: 50px;
         margin-left: -5px;
     }
 
-    .temp-card .temp h5{
+    .temp-card .temp h5 {
         font-size: 11px;
         color: white;
     }
-    
-    .temp-card .temp i{
+
+    .temp-card .temp i {
         font-size: 30px;
         color: white;
         margin-top: 20px;
     }
-    
-    .temp-card .temp p{
-        font-size: 20px;
-        font-weight: bold;
-        color: white;
-        margin-top: 20px;
-    }
-    
-    .temp-card1 .temp h5{
-        font-size: 11px;
-        color: white;
-    }
-    
-    .temp-card1 .temp i{
-        font-size: 30px;
-        /* color: white; */
-        margin-top: 20px;
-    }
-    
-    .temp-card1 .temp p{
+
+    .temp-card .temp p {
         font-size: 20px;
         font-weight: bold;
         color: white;
         margin-top: 20px;
     }
 
-    .card-view{
+    .temp-card1 .temp h5 {
+        font-size: 11px;
+        color: white;
+    }
+
+    .temp-card1 .temp i {
+        font-size: 30px;
+        /* color: white; */
+        margin-top: 20px;
+    }
+
+    .temp-card1 .temp p {
+        font-size: 200px;
+        font-weight: bold;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .card-view {
         margin-bottom: 10%;
         font-size: small;
-        border-bottom: 1px solid white; 
+        border-bottom: 1px solid white;
     }
-    
-    .card-view1{
+
+    .card-view1 {
         margin-bottom: 10%;
         font-size: small;
         border-bottom: none;
     }
-    
+
     .mix p {
         font-size: 15px;
         padding-top: 10px;
     }
+
     .mix i {
         padding: 10px;
         font-size: 20px;
         color: lightgray;
     }
 
-    #cap1{
+    #cap1 {
         padding: 0px;
         font-weight: bold;
         font-size: 15px;
     }
 
-    #temp1,#temp2,#temp3,#temp4,#temp5,#temp6{
-        font-size: 10px;
-    }
-}
+    /* #temp1,
+    #temp2,
+    #temp3,
+    #temp4,
+    #temp5,
+    #temp6 {
+        font-size: 15px;
+    /* } */
+} 
 
-@media screen and (max-width:425px) {
-
-    .first-item{
+@media screen and (max-width:767px) {
+    .first-item {
         font-size: 15px;
         margin-bottom: 10px;
-        margin-left: -5px   ;
+        margin-left: -5px;
     }
 
-    .row-side{
+    .row-side {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;    
+        align-items: center;
     }
 
-    .mennu p{
+    .mennu p {
         font-size: 10px;
         margin-bottom: 1%;
         display: flex;
         text-align: center;
         justify-content: center;
         flex-direction: column;
-        
+
     }
-    
-    .mennu i{
+
+    .mennu i {
         font-size: 20px;
         margin-top: 0px;
         /* margin-left: -5px; */
     }
 
-    .temp-card .temp h5{
+}
+
+@media screen and (max-width:425px) {
+
+
+    .temp-card .temp h5 {
         font-size: 11px;
         color: white;
     }
-    
-    .temp-card .temp i{
+
+    .temp-card .temp i {
         font-size: 30px;
         color: white;
         margin-top: 20px;
     }
-    
-    .temp-card .temp p{
-        font-size: 20px;
-        font-weight: bold;
-        color: white;
-        margin-top: 20px;
-    }
-    
-    .temp-card1 .temp h5{
-        font-size: 11px;
-        color: white;
-    }
-    
-    .temp-card1 .temp i{
-        font-size: 30px;
-        /* color: white; */
-        margin-top: 20px;
-    }
-    
-    .temp-card1 .temp p{
+
+    .temp-card .temp p {
         font-size: 20px;
         font-weight: bold;
         color: white;
         margin-top: 20px;
     }
 
-    .card-view{
+    .temp-card1 .temp h5 {
+        font-size: 11px;
+        color: white;
+    }
+
+    .temp-card1 .temp i {
+        font-size: 30px;
+        /* color: white; */
+        margin-top: 20px;
+    }
+
+    .temp-card1 .temp p {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .card-view {
         margin-bottom: 10%;
         font-size: medium;
-        border-bottom: 1px solid white; 
+        border-bottom: 1px solid white;
     }
-    
-    .card-view1{
+
+    .card-view1 {
         margin-bottom: 10%;
         font-size: medium;
         border-bottom: none;
     }
-    
+
     .mix p {
         font-size: 10px;
         padding-top: 10px;
     }
+
     .mix i {
         padding: 10px;
         font-size: 20px;
         color: lightgray;
     }
 
-    #cap1{
+    #cap1 {
         padding: 0px;
         font-weight: bold;
         font-size: 15px;
     }
 
-    .temp-card{
-        border: none;
-        /* border-right: 1px solid white; */
-    }
-    
-    .temp-card1{
+    .temp-card {
         border: none;
         /* border-right: 1px solid white; */
     }
 
-    .list-place-icon{
+    .temp-card1 {
+        border: none;
+        /* border-right: 1px solid white; */
+    }
+
+    .list-place-icon {
         margin-bottom: 20px;
     }
-    #temp1,#temp2,#temp3,#temp4,#temp5,#temp6{
+
+    #temp1,
+    #temp2,
+    #temp3,
+    #temp4,
+    #temp5,
+    #temp6 {
         font-size: 20px;
     }
 
-    #time{
+    #time {
         font-size: 20px;
+    }
+
+    .card-list {
+        margin: 0%;
+        border-radius: 20px;
+        margin-top: 10px;
     }
 }
