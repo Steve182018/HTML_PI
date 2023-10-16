@@ -39,10 +39,7 @@ btnlap.addEventListener("click", function () {
 
     console.log("laps")
     lap = `${hour}:${minute}:${second}:${milisecond}`
-    lap1 = `${hour}:${minute}:${second}:${milisecond}`
-    total = lap1 - lap;
-    console.log(total)
-    count = x++;
+    var count = x++;
     document.getElementById("num").innerHTML += `<br>` + count + `.`
     document.getElementById("laps").innerHTML += `<br>` + lap
 
