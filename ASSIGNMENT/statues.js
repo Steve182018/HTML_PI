@@ -1,4 +1,4 @@
-var arr = [1,8,6,3]
+var arr = [6,10,15,22,29,28]
 var arr_sort = arr.sort(function (a, b) { return a - b });
 // console.log(arr_sort)
 var new_arr = arr
@@ -15,7 +15,7 @@ for (let i = 0; i <= arr_sort.length - 2; i++) {
         // console.log(arr[i]+1)
         new_arr.push(arr[i] + 1)
         Missing_arr.push(arr[i] + 1)
-        console.log("Missing Values:", Missing_arr)
+        // console.log("Missing Values:", Missing_arr)
         // console.log(new_arr)
         var new_arr_sort = new_arr.sort(function (a, b) { return a - b });
         // console.log(new_arr_sort)
@@ -24,3 +24,4 @@ for (let i = 0; i <= arr_sort.length - 2; i++) {
         break;
     }
 }
+console.log("Missing Values:", Missing_arr)

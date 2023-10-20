@@ -1,26 +1,36 @@
-var string1 = "Aabcc"
-var string2 = "Adcaa"
+let string1 = "aabcc";
+let string2 = "adcaa";
 
-var value1 = new Array(52);
-var value2 = new Array(52)
-value1.fill(0);
-value2.fill(0);
+let temp = ""
+const split1 = string1.split("");
+const split2 = string2.split("");
 
-let count = 0;
+let count = 1;
 
-for(let i=0; i<string1.length; i++){
-    value1[string1[i].charCodeAt() - 'A'.charCodeAt()]++;
-    console.log("1st",value1)
+const res = split1.filter((item) => {
+    for (let i = 0; i <= split2.length; i++) {
+        if (split2[i] === item) {
+            delete split2[i];
+            return item;
+        }
+    }
+})
+console.log("Matched Chars:",res);
+console.log("Matched Chars Length:",res.length)
+
+let n1 = []
+let n2 = []
+
+for (let i = 0; i < res.length; i++) {
+    let c = 0;
+    for (let j = i; j < res.length; j++) {
+        if (res[i] === res[j]) {
+            c++;
+        }
+    }
+
+    n1.push(c);
+    n2.push(res[i])
 }
-
-for(let j=0; j<string2.length; j++){
-    value2[string2[j].charCodeAt() - 'A'.charCodeAt()]++;
-    console.log("2nd",value2)
-}
-
-for(let k=0;k<52;k++){
-    count += (Math.min(value1[k], value2[k]));
-    
-}
-
-console.log("Freqency",count)
+console.log(n1, n2);
+console.log(res)

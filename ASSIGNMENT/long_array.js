@@ -1,14 +1,19 @@
-function long_array(arr)
-  {
-    var max_str = arr[0].length;
-    var ans = arr[0];
-    for (var i = 1; i < arr.length; i++) {
-        var maxi = arr[i].length;
-        if (maxi > max_str || maxi == max_str) {
-            ans = arr[i];
-            max_str = maxi;
-        }
+const array = ["abaa", "aa", "ad", "vcd", "aba"];
+
+let maxLength = 0;
+
+const output = [];
+
+for (let i = 0; i < array.length; i++) {
+    if (array[i].length > maxLength) {
+        maxLength = array[i].length
     }
-    return ans;
 }
-console.log(long_array(["aa", "ad", "vcd", "aba"]));
+console.log(maxLength);
+for (let i = 0; i < array.length; i++) {
+    if (array[i].length === maxLength) {
+        output.push(array[i]);
+    }
+}
+console.log(output);
+

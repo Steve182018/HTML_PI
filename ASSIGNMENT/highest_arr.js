@@ -9,6 +9,6 @@ function mul(arr) {
     return maxmul;
 }
 
-let arr = [3, 6, -2, -5, 7, 3];
+let arr = [1,2,3,4,5,6];
 let result = mul(arr);
 console.log("Answer",result); 

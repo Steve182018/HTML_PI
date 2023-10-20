@@ -1,41 +1,33 @@
-// function canFormPalindrome(inputString) {
-//     const charCount = {};
 
-//     // Count the occurrences of each character
-//     for (const char of inputString) {
-//         charCount[char] = (charCount[char] || 0) + 1;
-//     }
+let str = "aabb"
 
-//     // Count how many characters have an odd count
-//     let oddCount = 0;
-//     for (const count of Object.values(charCount)) {
-//         if (count % 2 !== 0) {
-//             oddCount += 1;
-//         }
-//     }
+const temp = str.split('');
+temp.sort();
 
-//     // Check the conditions for forming a palindrome
-//     return oddCount <= 1;
-// }
+let count = 0;
 
-// // Example
-// const inputString = "aabb";
-// const result = canFormPalindrome(inputString);
-// console.log(result); // Output: true
+let out = "";
 
-// var string = "a"
 
-// var count = {};
+for (let i = 0; i < temp.length; i++) {
+    let c = 0;
 
-// for (var char in string) {
-//     count[char] = (count[char] || 0) + 1;
-// }
+    for (let j = 0; j < temp.length; j++) {
+        if (i !== j) {
+            if (temp[i] === temp[j]) {
+                c++;
+            }
+        }
+    }
+    if (c == 0) {
+        count++;
+    }
+}
+if (count <= 1) {
+    out = "true"
+}
+else {
+    out = "false";
+}
 
-// let oddCount = 0;
-// for (const count of Object.values(char)) {
-//     if (count % 2 !== 0) {
-//         oddCount += 1;
-//     }
-// }
-
-// console.log(oddCount<=1)
+console.log(out)

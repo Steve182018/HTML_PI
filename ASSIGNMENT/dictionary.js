@@ -1,18 +1,18 @@
-var string = "applepenapple"
-var wordDict = ["apple", "pen"]
+const wordDict1 = ["apple", "pen"];
+let string1 = "applepenapple";
 
-var arr = new Array(string.length +1 ).fill(false)
-arr[0] = true
-console.log(arr)
+const wordDict2 = ["cats", "dog", "sand", "and", "cat"];
+let string2 = "catsandog";
 
-for (let i = 1; i <= string.length; i++) {
-    for (let j = 0; j < i; j++) {
-        if (arr[j] && wordDict.includes(string.substring(j, i))) {
-            console.log(arr[i] = true)
-            arr[i] = true;
-            break;
+function check(dic, str) {
+    let result;
+    for (let i = 0; i < dic.length; i++) {
+        result = str.includes(dic[i]);
+        if (result) {
+            str = str.replace(dic[i], '*')
         }
     }
+    return result;
 }
 
-console.log(arr[string.length])
+console.log(check(wordDict1,string1))
