@@ -17,108 +17,117 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: rgba(0, 0, 0, 0.5) !important;">
-        <div class="container-fluid">
-            <a class="navbar-brand ms-5" href="#">
-                <img src="./Images/logo.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse ms-5" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active m-2 p-2 fs-5 ms-5" aria-current="page" href="#"
-                            style="color: white;">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link m-2 p-2 fs-5 ms-5" href="#" style="color: white;">Find Kitchens</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link m-2 p-2 fs-5 ms-5" href="#" style="color: white;">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link m-2 p-2 fs-5 ms-5" href="#" style="color: white;">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link m-2 p-2 fs-5 ms-5" href="#" style="color: white;">Register Your Kitchen</a>
-                    </li>
-                </ul>
-                <div class="d-flex" style="margin-left: 25%;">
-                    <a class="nav-link m-4 p-2 fs-5" href="#" style="color: white; "><i
-                            class="fa-solid fa-basket-shopping m-2">
-                        </i><span
-                            class="position-absolute top-1 translate-middle p-2 bg-warning border border-light rounded-circle"></span></a>
-                    <a class="nav-link m-4 p-2 fs-5" href="#" style="color: white; "><i
-                            class="fa-solid fa-right-to-bracket m-2"></i>Sign In</a>
+    
+    <div class="header">
+        <!--#region banner-img  -->
+        <img src="./images/banner-img.jpg" alt="banner" width="100%" height="70%" class="main-banner">
+
+        <!--#region Navbar  -->
+        <nav class="navbar navbar-expand-xl navbar-light bg-light" style="background: rgba(0, 0, 0, 0.5) !important;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png" alt="logo" style="width: 80px !important;">
+                </a>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item text-white">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item text-white">
+                            <a class="nav-link text-white" aria-current="page" href="#">Find Kitchens</a>
+                        </li>
+                        <li class="nav-item text-white">
+                            <a class="nav-link text-white" aria-current="page" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item text-white">
+                            <a class="nav-link text-white" aria-current="page" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item text-white">
+                            <a class="nav-link text-white" aria-current="page" href="#">Register Your Kitchen</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a class="nav-link text-white"> <i class="fa-solid fa-basket-shopping"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <!-- <span
+                                class="position-absolute top-1 translate-middle p-2 bg-warning border border-light rounded-circle"></span> -->
+                        </a>
+                        <a class="nav-link text-white">Sign In <i class="fa-solid fa-right-to-bracket"></i></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!--#region Banner-text -->
+        <div class="col-1"></div>
+        <div class="col-10 col-md-6 col-lg-6 col-xl-5 mt-5 px-4 ">
+            <h2 class="py-2 text-light">Find Fresh, Authentic and Homemade Food Near You</h2>
+            <h4 class="py-2 text-light">We aim to connect local, home-based food businesses with customers.</h4>
+        </div>
+        <div class="col-6 col-md-5 col-lg-5 col-xl-6"></div>
+
+        <div class="col-12 col-md-8 col-lg-6 px-4 mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <input type="text" placeholder="Enter Your Location" style="border: none; width: 83%; padding: 10px;" >
+                    <button class="btn btn-danger">Update Location</button>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
     <!-- Banner -->
-    <section id="Home">
-        <div class="container-fluid image-container" style="padding: 0; margin: 0;">
-            <img src="./Images/banner-img.jpg" class="h-100 w-100" alt="Background Image">
-            <div class="overlay">
-                <h1>Find Fresh, Authentic And Homemade Food Near You
-                </h1>
-                <h5 class="mt-5" style="width: 500px;">We Aim To Connect Local, Home-Based Food Businesses With
-                    Customers.
-                </h5>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header text-warning"> <i class="fa-solid fa-location-dot"></i> STEP 1</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Explore Kitchen</h5> <br>
+                        <p class="card-text"> Choose delicious, homemade meals, snacks, baked goods and more. </p>
+                    </div>
+                </div>
             </div>
-            <div class="location mt-5">
-                <input type="text" placeholder="Enter your location" class="form-control p-3">
-                <button type="button" class="btn searchbtn p-3">Update Location</button>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header text-warning"><i class="fa-regular fa-calendar-days"></i> STEP 2</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Choose Your Date And Dishes</h5>
+                        <p class="card-text"> Kitchens require 48 hrs of minimum time to ensure they can fulfill the
+                            order. </p>
+                    </div>
+                </div>
             </div>
-            <div class="row bncard">
-                <div class="col">
-                    <div class="card clr">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fa-solid fa-location-dot m-2"></i>Step 01</h5>
-                            <h6 class="card-subtitle mb-2 text-body-dark fs-5 m-2">Explore Kitchen</h6>
-                            <p class="card-text m-2">Choose delicious, homemade meals, snacks, baked goods and more.</p>
-                        </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header text-warning"><i class="fa-solid fa-drumstick-bite"></i> STEP 3</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Submit Your Order</h5>
+                        <p class="card-text">Order for pickup/delivery and enjoy!</p><br>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card clr">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fa-solid fa-location-dot m-2"></i>Step 02</h5>
-                            <h6 class="card-subtitle mb-2 text-body-dark fs-5 m-2">Choose Your Dates</h6>
-                            <p class="card-text m-2">Choose delicious, homemade meals, snacks, baked goods and more.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card clr">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fa-solid fa-location-dot m-2"></i>Step 03</h5>
-                            <h6 class="card-subtitle mb-2 text-body-dark fs-5 m-2">Submit Your Order</h6>
-                            <p class="card-text m-2">Choose delicious, homemade meals, snacks, baked goods and more.</p>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Featured Kitchens -->
-    <section id="kitchens" style="display: flex; align-items: center;padding: 1%; margin-top: 6%;">
+    <section id="kitchens" style="display: flex; align-items: center;padding: 1%; margin-top: 0%;">
         <div class="container">
             <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
                 <p class="fw-bold fs-3" style="color: goldenrod;">Featured</p>
                 <h1 class="fw-bold fs-1">Featured Kitchens</h1>
-                <p class="fw-bold fs-5 mt-3" style="color: red;">At this moment we are not providing service in your location</p>
-                <p class="fw-bold fs-5">Meanwhile, check out some of our featured Kitchens!</p>
+                <p class="fw-bold fs-5 mt-3 text-center" style="color: red;">At this moment we are not providing service in your
+                    location</p>
+                <p class="fw-bold fs-5 text-center">Meanwhile, check out some of our featured Kitchens!</p>
             </div>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card">
                         <img src="./Images/117_163763319692220211123100636_351710.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card-body kfont">
                             <h5 class="card-title fw-bold fs-4">Sugi's Cookery Corner</h5>
                             <p class="card-text mt-3 fw-bold fs-5" style="color: gold;"><i
                                     class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
@@ -140,7 +149,7 @@
                 <div class="col">
                     <div class="card">
                         <img src="./Images/1444_166300986209520220912081101_784877.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card-body kfont">
                             <h5 class="card-title fw-bold fs-4">Halal Dines</h5>
                             <p class="card-text mt-3 fw-bold fs-5" style="color: gold;"><i
                                     class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
@@ -162,7 +171,7 @@
                 <div class="col">
                     <div class="card">
                         <img src="./Images/1864_168837007726920230703011115_304054.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card-body kfont">
                             <h5 class="card-title fw-bold fs-4">Benny</h5>
                             <p class="card-text mt-3 fw-bold fs-5" style="color: gold;"><i
                                     class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
@@ -184,13 +193,13 @@
                 <div class="col">
                     <div class="card">
                         <img src="./Images/1965_169015560557620230723044005_652428.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card-body kfont">
                             <h5 class="card-title fw-bold fs-4">Mari's Kitchen</h5>
                             <p class="card-text mt-3 fw-bold fs-5" style="color: gold;"><i
                                     class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
                                     class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
                                     class="fa-regular fa-star me-2"></i>0.00(0)</p>
-                            <div class="row">
+                            <div class="row ">
                                 <div class="col-8">
                                     <p class="card-text fw-bold fs-5">Charlotte</p>
                                 </div>
@@ -206,7 +215,7 @@
                 <div class="col">
                     <div class="card">
                         <img src="./Images/1099_165531884863420220615014728_147659.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card-body kfont">
                             <h5 class="card-title fw-bold fs-4">Um Yamen</h5>
                             <p class="card-text mt-3 fw-bold fs-5" style="color: gold;"><i
                                     class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
@@ -228,7 +237,7 @@
                 <div class="col">
                     <div class="card">
                         <img src="./Images/773_166571662410120221013110343_602830.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card-body kfont">
                             <h5 class="card-title fw-bold fs-4">Juhi's Kitchen</h5>
                             <p class="card-text mt-3 fw-bold fs-5" style="color: gold;"><i
                                     class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
@@ -249,6 +258,324 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Reason -->
+    <section id="Reason" style="display: flex; align-items: center;padding: 1%; margin-top: 6%;">
+        <div class="container">
+            <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
+                <p class="fw-bold fs-3" style="color: goldenrod;">The Reason Why</p>
+                <h1 class="fw-bold fs-1 text-center">Why People Choose US</h1>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-3 col-12"></div>
+                <div class="col-sm-3 col-12 text-center">
+                    <img src="./Images/menu_60X60 (1).png" alt="">
+                    <p class="fw-bold fs-4 mt-5">Diverse Option</p>
+                    <p class="fs-5">Choose from a diverse range of meals, snacks, and baked goods made with love.</p>
+                </div>
+                <div class="col-sm-3 col-12 text-center">
+                    <img src="./Images/calendar_60X60.png" alt="">
+                    <p class="fw-bold fs-4 mt-5">Flexible Scheduling</p>
+                    <p class="fs-5">Kitchens can operate at their own time and customers can order for up to 30 days in
+                        advance.</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-3 col-12"></div>
+                <div class="col-sm-3 col-12 text-center">
+                    <img src="./Images/grow_60X60.png" alt="">
+                    <p class="fw-bold fs-4 mt-5">Grow Your Brand</p>
+                    <p class="fs-5">We will provide marketing tools and resources to help kitchens grow their business.
+                    </p>
+                </div>
+                <div class="col-sm-3 col-12 text-center">
+                    <img src="./Images/community_60X60.png" alt="">
+                    <p class="fw-bold fs-4 mt-5">Connecting Communities</p>
+                    <p class="fs-5">Grow your local network and share the joy of food with others in your community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testinomials -->
+    <section id="Testinomials" style="display: flex; align-items: center;padding: 1%; margin-top: 6%;">
+        <div class="container">
+            <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
+                <p class="fw-bold fs-3" style="color: goldenrod;">Testinomials</p>
+                <h1 class="fw-bold fs-1">Happy Customers Say</h1>
+            </div>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators d-none">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row mt-5">
+                            <div class="col-sm-2 col-12"></div>
+                            <div class="col-sm-10 col-12 text-center">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-10">
+                                        <p>
+                                            Quis quorum aliqua sint quem legam fore
+                                            sunt eram
+                                            irure aliqua veniam tempor noster
+                                            veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam
+                                            esse veniam
+                                            culpa fore nisi cillum quid.
+                                        </p>
+                                        <h4>Asha(HomeCook)</h4>
+                                        <p>Jul 15,2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mt-5">
+                            <div class="col-sm-2 col-12"></div>
+                            <div class="col-sm-10 col-12 text-center">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-10">
+                                        <p>
+                                            Quis quorum aliqua sint quem legam fore
+                                            sunt eram
+                                            irure aliqua veniam tempor noster
+                                            veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam
+                                            esse veniam
+                                            culpa fore nisi cillum quid.
+                                        </p>
+                                        <h4>Marco Bitchuni</h4>
+                                        <p>May 15,2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mt-5">
+                            <div class="col-sm-2 col-12"></div>
+                            <div class="col-sm-10 col-12 text-center">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-10">
+                                        <p>
+                                            Quis quorum aliqua sint quem legam fore
+                                            sunt eram
+                                            irure aliqua veniam tempor noster
+                                            veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam
+                                            esse veniam
+                                            culpa fore nisi cillum quid.
+                                        </p>
+                                        <h4>Anushka(Customer)</h4>
+                                        <p>Dec 15,2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mt-5">
+                            <div class="col-sm-2 col-12"></div>
+                            <div class="col-sm-10 col-12 text-center">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-10">
+                                        <p>
+                                            Quis quorum aliqua sint quem legam fore
+                                            sunt eram
+                                            irure aliqua veniam tempor noster
+                                            veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam
+                                            esse veniam
+                                            culpa fore nisi cillum quid.
+                                        </p>
+                                        <h4>Tina(Customer)</h4>
+                                        <p>Oct 15,2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Make Orders -->
+    <section id="Ordes" style="display: flex; align-items: center;padding: 0%; margin-top: 6%;">
+        <div class="map">
+            <img src="./Images/bg2.jpg" alt="" class="img-fluid">
+            <div class="map-overlay">
+                <p class="fw-bold" style="color: whitesmoke;">Make Orders With Our</p>
+                <p class="fw-bold" style="color: gold;">Application</p>
+            </div>
+            <div class="card-1">
+                <div class="row">
+                    <div class="col-sm-2 col-12">
+                        <i class="fa-regular fa-square-check fs-2 " style="color: gold;"></i>
+                    </div>
+                    <div class="col-sm-10 col-12">
+                        <p class="fw-bold">Order and pay in a few minutes</p>
+                        <p class="fw-bold cap">Сhoose food and pay for the order in a couple of clicks online also
+                            choose you current location using GPS.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 col-12">
+                        <i class="fa-regular fa-square-check fs-2" style="color: gold;"></i>
+                    </div>
+                    <div class="col-sm-10 col-12">
+                        <p class="fw-bold">Check Delivery Status</p>
+                        <p class="fw-bold cap">Follow the status of your order in real time and also track the delivery
+                            path until you get it.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="play">
+                <div class="row mt-5">
+                    <div class="col-sm-6 col-12">
+                        <img src="./Images/ps1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <img src="./Images/ps2.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2 Cards -->
+    <section id="cards" style="display: flex; align-items: center;padding: 0%; margin-top: 2%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-12 mb-5">
+                    <div class="join-1">
+                        <img src="./Images/join_patrons.jpeg" class="img-fluid rounded" alt="">
+                        <div class="join-1-overlay">
+                            <div class="row">
+                                <div class="col-10">
+                                    <p class="fw-bold fs-1 join">Join as a Patron</p>
+                                </div>
+                                <div class="col-2 text-center">
+                                    <p class="fw-bold fs-1 border border-white rounded-circle border-2 join"><i
+                                            class="fa-solid fa-arrow-right"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-12">
+                    <div class="join-2">
+                        <img src="./Images/join_kitchen.jpeg" class="img-fluid rounded" alt="">
+                        <div class="join-2-overlay">
+                            <div class="row">
+                                <div class="col-10">
+                                    <p class="fw-bold fs-1 join">Partner with us as a Kitchen</p>
+                                </div>
+                                <div class="col-2 text-center mt-lg-5">
+                                    <p class="fw-bold fs-1 border border-white rounded-circle border-2 join"><i
+                                            class="fa-solid fa-arrow-right"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="mt-5">
+        <footer>
+            <div class="top-footer">
+                <div class="fixed-bg bg3"></div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-6 col-12 text-center">
+                            <div class="widget widget-about footer-logo p-3">
+                                <img src="./images/logo.png" class="img-fluid" style="width: 60%;">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="widget widget-contact text-center footer-follow-section">
+                                <h4 class="text-white">Follow us on: <a class="social_icon"
+                                        href="https://www.facebook.com/tiffineatz" target="blank"><img
+                                            src="https://www.tiffineatz.com/assets/images/icons/facebook.png"
+                                            style="margin: 1%;"></a><a class="social_icon"
+                                        href="https://www.instagram.com/tiffineatz" target="blank"><img
+                                            src="https://www.tiffineatz.com/assets/images/icons/instagram.png"></a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 text-center">
+                            <div class="widget widget-payment">
+                                <div class="wid-payment">
+                                    <h6 class="text-white">Payment Options</h6>
+                                    <img src="https://www.tiffineatz.com/assets/images/imgssss.png" alt="">
+                                </div>
+                                <div class="wid-payment mt-4">
+                                    <h6 class="text-white">Download the app</h6>
+                                    <ul style="margin: 0%;padding: 0%;">
+                                        <li style="display: inline-block;">
+                                            <a target="__blank"
+                                                href="https://play.google.com/store/apps/details?id=com.tiffineatz"
+                                                title=""><img src="https://www.tiffineatz.com/assets/images/btn1.png"
+                                                    alt="" style="width: 100px;"></a>
+                                        </li>
+                                        <li style="display: inline-block;">
+                                            <a target="__blank"
+                                                href="https://apps.apple.com/us/app/tiffineatz-homemade-food/id1575051495"
+                                                title=""><img src="https://www.tiffineatz.com/assets/images/btn2.png"
+                                                    alt="" style="width: 100px;"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-12 text-center">
+                            <div class="copyright">
+                                <p>© All Rights Reserved. TiffinEatz Inc. 2023</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="find-us text-center ">
+                                <ul class="social-links-text">
+                                    <li><a href="https://www.tiffineatz.com/terms-condition" title=""
+                                            style="text-decoration: none; color: white;">Terms Of
+                                            Service</a></li>
+                                    <li style="color: white;" id="pipe">|</li>
+                                    <li><a href="https://www.tiffineatz.com/privacy-policy" title=""
+                                            style="text-decoration: none; color: white;">Privacy
+                                            Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     </section>
 
 </body>
