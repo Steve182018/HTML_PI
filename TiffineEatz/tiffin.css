@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+.steps{
+    display: block;
+    position: relative;
+    margin-top: 100px;
+}
 .main-banner {
     position: absolute;
     z-index: -10;
@@ -22,16 +27,43 @@
     font-weight: 600;
 }
 
-.img-bg {
-    position: absolute;
-
+.btnhover {
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
+.btnhover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
 
-@media screen and (max-width:425px) {
-    .card {
-        max-width: 25rem !important;
-    }
+.btnhover:focus {
+    outline: none;
+}
+
+.ud{
+    width: 50%;
+}
+
+.btnhover.color-4 {
+    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+.img-bg {
+    position: absolute;
+}
+.join{
+    padding-top: 50%;
 }
 
 .image-container {
@@ -45,8 +77,6 @@
     transform: translate(-50%, -50%);
     color: white;
     width: 600px;
-    /* background-color: rgba(255, 255, 255, 0.7); */
-    /* Adjust the alpha (4th parameter) for transparency */
     padding: 20px;
     border-radius: 10px;
 }
@@ -58,10 +88,6 @@
     transform: translate(-50%, -50%);
     color: white;
     width: 600px;
-    /* background-color: rgba(255, 255, 255, 0.7); */
-    /* Adjust the alpha (4th parameter) for transparency */
-    /* padding: 20px; */
-    /* border-radius: 10px; */
     display: flex;
 }
 
@@ -78,9 +104,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    /* width: 100px; */
-    /* background-color: rgba(255, 255, 255, 0.7); */
-    /* Adjust the alpha (4th parameter) for transparency */
     padding: 20px;
     border-radius: 10px;
 }
@@ -108,8 +131,6 @@
     transform: translate(-50%, -50%);
     color: white;
     width: 600px;
-    /* background-color: rgba(255, 255, 255, 0.7); */
-    /* Adjust the alpha (4th parameter) for transparency */
     padding: 20px;
     border-radius: 10px;
     font-size: 70px;
@@ -122,8 +143,6 @@
     transform: translate(-50%, -50%);
     color: white;
     width: 600px;
-    /* background-color: rgba(255, 255, 255, 0.7); */
-    /* Adjust the alpha (4th parameter) for transparency */
     padding: 20px;
     border-radius: 10px;
     font-size: 20px;
@@ -136,46 +155,12 @@
     transform: translate(-50%, -50%);
     color: white;
     width: 600px;
-    /* background-color: rgba(255, 255, 255, 0.7); */
-    /* Adjust the alpha (4th parameter) for transparency */
     padding: 20px;
     border-radius: 10px;
     font-size:20px;
 }
 
-.join-1 {
-    position: relative;
-}
 
-.join-1-overlay {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    width: 600px;
-    /* background-color: rgba(255, 255, 255, 0.7); */
-    /* Adjust the alpha (4th parameter) for transparency */
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.join-2 {
-    position: relative;
-}
-
-.join-2-overlay {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    width: 600px;
-    /* background-color: rgba(255, 255, 255, 0.7); */
-    /* Adjust the alpha (4th parameter) for transparency */
-    padding: 20px;
-    border-radius: 10px;
-}
 
 .bg3 {
     background-image: url('./images/footer-bg.jpg') !important;
@@ -222,7 +207,35 @@ footer .bottom-footer .find-us .social-links-text li {
     list-style: none;
 }
 
+@media screen and (max-width:2560px) {
+    .india{
+        height: 800px;
+    }
+
+    .kt{
+        margin-top: 2%;
+    }
+
+    /* .steps{
+        margin-top: 300px;
+    } */
+}
+
+@media screen and (max-width:1880px) {
+    .steps{
+        margin-top: 50px;
+    }
+}
+
 @media screen and (max-width:1440px) {
+
+    .steps{
+        margin-top: 50px;
+    }
+
+    .kt{
+        margin-top: 0%;
+    }
     .map-overlay {
         top: 25%;
         left: 36%;
@@ -233,69 +246,63 @@ footer .bottom-footer .find-us .social-links-text li {
     }
 }
 
+@media screen and (max-width:1200px) {
+
+    .steps{
+        margin-top: 100px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
-
-    .join-1-overlay {
-        position: absolute;
-        top: 80%;
-        transform: translate(-50%, -50%);
-        color: white;
-        width: 400px;
-        padding: 0px;
-        border-radius: 10px;
-    }
-
-    .join-2-overlay {
-        position: absolute;
-        top: 80%;
-        transform: translate(-50%, -50%);
-        width: 400px;
-        padding: 0px;
-
-    }
-
-    .join{
-        font-size: 30px !important;
-    }
 
     .map-overlay {
         top: 15%;
         left: 36%;
         transform: translate(-50%, -50%);
         padding: 0px;
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .card-1 {
-        top: 63%;
+        top: 55%;
         left: 36%;
         transform: translate(-50%, -50%);
         color: white;
         width: 600px;
         padding: 0px;
-        font-size: 15px;
+        font-size: 20px;
+    }
+
+    .join{
+        padding-top: 45%;
+    }
+
+    .india{
+        height: 650px;
     }
 }
 
 @media screen and (max-width: 768px) {
 
+    .ud{
+        width: 75%;
+    }
+
     .kfont h5{
         font-size: 17px !important; 
     }
     .map-overlay {
-        left: 40%;
-        font-size: 30px;
+        left: 50%;
     }
 
     .card-1 {
-        top: 50%;
-        left: 40%;
-        font-size: 10px;
+        top: 55%;
+        left: 50%;
     }
 
     .play {
-        top: 75%;
-        left: 40%;
+        top: 85%;
+        left: 50%;
         transform: translate(-50%, -50%);
         padding: 0px;
         font-size:0px;
@@ -304,76 +311,70 @@ footer .bottom-footer .find-us .social-links-text li {
         height: 60px;
     }
 
-    .join-1-overlay {
-        top: 85%;
-        left: 48%;
-        width: 320px;
-    }
-
-    .join-2-overlay {
-        top: 85%;
-        left: 48%;
-        width: 320px;
-    }
-
     .join{
-        font-size: 20px !important;
+        padding-top: 40%;
+    }
+
+    .steps{
+        margin-top: 50px;
     }
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:625px) {
+
+    .ud{
+        width: 100%;
+    }
+
+    .card {
+        max-width: 25rem !important;
+    }
+
     .map-overlay {
-        top: 20%;
-        left: 30%;
-        font-size: 13px;
-        width: 200px;
+        top: 15%;
+        left: 35%;
+        font-size: 30px;
+        width: 250px;
     }
 
     .card-1 {
-        top: 50%;
-        left: 71%;
-        font-size: 10px;
-        width: 200px;
-    }
-
-    .card-1 .cap{
-        display: none;
-    }
-
-    .card-1 i{
-        font-size: 10px;
+        top: 55%;
+        left: 43%;
+        font-size: 15px;
+        width: 300px;
     }
 
     .play {
-        top: 55%;
-        left: 20%;
-        width: 100px;
+        top: 85%;
+        left: 40%;
+        width: 300px;
     }
     .play img{
         height: 40px;
+    }
+
+    .india{
+        height: 600px;
+    }
+
+    .join{
+        padding-top: 45%;
     }
 
 }
 
 @media screen and (max-width:375px){
     .map-overlay {
-        top: 30%;
         left: 40%;
-        font-size: 18px;
-        width: 200px;
     }
 
     .card-1{
-        display: none;
+        left: 48%;
     }
 
     .play {
-        top: 45%;
-        left: 70%;
-        width: 100px;
-    }
-    .play img{
-        height: 40px;
+        top: 85%;
+        left: 45%;
     }
 
     #pipe{
@@ -382,22 +383,20 @@ footer .bottom-footer .find-us .social-links-text li {
 }
 
 @media screen and (max-width:320px) {
-    .join-1-overlay {
-        top: 85%;
-        left: 50%;
-        width: 100%;
-        padding: 1%;
+
+    .map-overlay{
+        left: 45%;
     }
 
-    .join-2-overlay {
-        top: 85%;
-        left: 50%;
-        width: 100%;
-        padding: 1%;
+    .card-1{
+        top: 55%;
+        left: 45%;
+        width: 250px;
     }
 
-    .join{
-        font-size: 15px !important;
+    .play{
+        left: 50%;
+        width: 250px;
     }
 
 

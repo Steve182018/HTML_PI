@@ -17,7 +17,7 @@
 
 <body>
     <!-- Navbar -->
-    
+
     <div class="header">
         <!--#region banner-img  -->
         <img src="./images/banner-img.jpg" alt="banner" width="100%" height="70%" class="main-banner">
@@ -39,20 +39,21 @@
                             <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item text-white">
-                            <a class="nav-link text-white" aria-current="page" href="#">Find Kitchens</a>
+                            <a class="nav-link text-white" aria-current="page" href="#kitchens">Find Kitchens</a>
                         </li>
                         <li class="nav-item text-white">
-                            <a class="nav-link text-white" aria-current="page" href="#">About Us</a>
+                            <a class="nav-link text-white" aria-current="page" href="#Reason">About Us</a>
                         </li>
                         <li class="nav-item text-white">
-                            <a class="nav-link text-white" aria-current="page" href="#">Contact Us</a>
+                            <a class="nav-link text-white" aria-current="page" href="#Orders">Contact Us</a>
                         </li>
                         <li class="nav-item text-white">
-                            <a class="nav-link text-white" aria-current="page" href="#">Register Your Kitchen</a>
+                            <a class="nav-link text-white" aria-current="page" href="#cards">Register Your Kitchen</a>
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <a class="nav-link text-white"> <i class="fa-solid fa-basket-shopping"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="nav-link text-white"> <i
+                                class="fa-solid fa-basket-shopping"></i>&nbsp;&nbsp;&nbsp;&nbsp;
                             <!-- <span
                                 class="position-absolute top-1 translate-middle p-2 bg-warning border border-light rounded-circle"></span> -->
                         </a>
@@ -62,64 +63,68 @@
             </div>
         </nav>
 
-        <!--#region Banner-text -->
-        <div class="col-1"></div>
-        <div class="col-10 col-md-6 col-lg-6 col-xl-5 mt-5 px-4 ">
-            <h2 class="py-2 text-light">Find Fresh, Authentic and Homemade Food Near You</h2>
-            <h4 class="py-2 text-light">We aim to connect local, home-based food businesses with customers.</h4>
-        </div>
-        <div class="col-6 col-md-5 col-lg-5 col-xl-6"></div>
+        <div class="container">
+            <div class="col-1"></div>
+            <div class="col-10 col-md-6 col-lg-6 col-xl-5 mt-5 px-4 ">
+                <h1 class="py-2 text-white">Find Fresh, Authentic and <br> Homemade Food Near You</h1>
+                <h4 class="py-2 text-white">We aim to connect local, home-based <br> food businesses with customers.
+                </h4>
+            </div>
+            <div class="col-6 col-md-5 col-lg-5 col-xl-6"></div>
 
-        <div class="col-12 col-md-8 col-lg-6 px-4 mt-5">
-            <div class="card">
-                <div class="card-body">
-                    <input type="text" placeholder="Enter Your Location" style="border: none; width: 83%; padding: 10px;" >
-                    <button class="btn btn-danger">Update Location</button>
-                </div>
+            <div class="input-group mb-3 ud">
+                <input type="text" class="form-control p-4" placeholder="Enter our Location.."
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary btnhover color-4"
+                    style="background-color: orange;border: none;" type="button" id="button-addon2">Update
+                    Location</button>
             </div>
         </div>
     </div>
-    <!-- Banner -->
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-                    <div class="card-header text-warning"> <i class="fa-solid fa-location-dot"></i> STEP 1</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Explore Kitchen</h5> <br>
-                        <p class="card-text"> Choose delicious, homemade meals, snacks, baked goods and more. </p>
+    
+    <section class="steps">
+        <div class="container">
+            <div class="row mt-5 d-flex ">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card text-white bg-dark mb-3" style="height: 14rem;max-width: 20rem;">
+                        <div class="card-header text-warning"> <i class="fa-solid fa-location-dot"></i> STEP 1</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Explore Kitchen</h5> <br>
+                            <p class="card-text"> Choose delicious, homemade meals, snacks, baked goods and more. </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-                    <div class="card-header text-warning"><i class="fa-regular fa-calendar-days"></i> STEP 2</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Choose Your Date And Dishes</h5>
-                        <p class="card-text"> Kitchens require 48 hrs of minimum time to ensure they can fulfill the
-                            order. </p>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card text-white bg-dark mb-3" style="height: 14rem;max-width: 20rem;">
+                        <div class="card-header text-warning"><i class="fa-regular fa-calendar-days"></i> STEP 2</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Choose Your Date And Dishes</h5><br>
+                            <p class="card-text"> Kitchens require 48 hrs of minimum time to ensure they can fulfill the
+                                order. </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-                    <div class="card-header text-warning"><i class="fa-solid fa-drumstick-bite"></i> STEP 3</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Submit Your Order</h5>
-                        <p class="card-text">Order for pickup/delivery and enjoy!</p><br>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card text-white bg-dark mb-3" style="height: 14rem;max-width: 20rem;">
+                        <div class="card-header text-warning"><i class="fa-solid fa-drumstick-bite"></i> STEP 3</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Submit Your Order</h5><br>
+                            <p class="card-text">Order for pickup/delivery and enjoy!</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Featured Kitchens -->
     <section id="kitchens" style="display: flex; align-items: center;padding: 1%; margin-top: 0%;">
-        <div class="container">
+        <div class="container kt">
             <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
                 <p class="fw-bold fs-3" style="color: goldenrod;">Featured</p>
                 <h1 class="fw-bold fs-1">Featured Kitchens</h1>
-                <p class="fw-bold fs-5 mt-3 text-center" style="color: red;">At this moment we are not providing service in your
+                <p class="fw-bold fs-5 mt-3 text-center" style="color: red;">At this moment we are not providing service
+                    in your
                     location</p>
                 <p class="fw-bold fs-5 text-center">Meanwhile, check out some of our featured Kitchens!</p>
             </div>
@@ -261,7 +266,7 @@
     </section>
 
     <!-- Reason -->
-    <section id="Reason" style="display: flex; align-items: center;padding: 1%; margin-top: 6%;">
+    <section id="Reason" style="display: flex; align-items: center;padding: 1%; margin-top: 2%;">
         <div class="container">
             <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
                 <p class="fw-bold fs-3" style="color: goldenrod;">The Reason Why</p>
@@ -299,7 +304,7 @@
     </section>
 
     <!-- Testinomials -->
-    <section id="Testinomials" style="display: flex; align-items: center;padding: 1%; margin-top: 6%;">
+    <section id="Testinomials" style="display: flex; align-items: center;padding: 1%; margin-top: 2%;">
         <div class="container">
             <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
                 <p class="fw-bold fs-3" style="color: goldenrod;">Testinomials</p>
@@ -417,42 +422,45 @@
     </section>
 
     <!-- Make Orders -->
-    <section id="Ordes" style="display: flex; align-items: center;padding: 0%; margin-top: 6%;">
-        <div class="map">
-            <img src="./Images/bg2.jpg" alt="" class="img-fluid">
-            <div class="map-overlay">
-                <p class="fw-bold" style="color: whitesmoke;">Make Orders With Our</p>
-                <p class="fw-bold" style="color: gold;">Application</p>
-            </div>
-            <div class="card-1">
-                <div class="row">
-                    <div class="col-sm-2 col-12">
-                        <i class="fa-regular fa-square-check fs-2 " style="color: gold;"></i>
+    <section id="Orders" style="display: flex; align-items: center;padding: 0%; margin-top: 2%;">
+        <div class="container">
+            <div class="map">
+                <img src="./Images/bg2.jpg" alt="" class="img-fluid india">
+                <div class="map-overlay">
+                    <p class="fw-bold" style="color: whitesmoke;">Make Orders With Our</p>
+                    <p class="fw-bold" style="color: gold;">Application</p>
+                </div>
+                <div class="card-1">
+                    <div class="row">
+                        <div class="col-sm-2 col-12">
+                            <i class="fa-regular fa-square-check fs-2 " style="color: gold;"></i>
+                        </div>
+                        <div class="col-sm-10 col-12">
+                            <p class="fw-bold">Order and pay in a few minutes</p>
+                            <p class="fw-bold">Сhoose food and pay for the order in a couple of clicks online also
+                                choose you current location using GPS.</p>
+                        </div>
                     </div>
-                    <div class="col-sm-10 col-12">
-                        <p class="fw-bold">Order and pay in a few minutes</p>
-                        <p class="fw-bold cap">Сhoose food and pay for the order in a couple of clicks online also
-                            choose you current location using GPS.</p>
+                    <div class="row">
+                        <div class="col-sm-2 col-12">
+                            <i class="fa-regular fa-square-check fs-2" style="color: gold;"></i>
+                        </div>
+                        <div class="col-sm-10 col-12">
+                            <p class="fw-bold">Check Delivery Status</p>
+                            <p class="fw-bold">Follow the status of your order in real time and also track the
+                                delivery
+                                path until you get it.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-2 col-12">
-                        <i class="fa-regular fa-square-check fs-2" style="color: gold;"></i>
-                    </div>
-                    <div class="col-sm-10 col-12">
-                        <p class="fw-bold">Check Delivery Status</p>
-                        <p class="fw-bold cap">Follow the status of your order in real time and also track the delivery
-                            path until you get it.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="play">
-                <div class="row mt-5">
-                    <div class="col-sm-6 col-12">
-                        <img src="./Images/ps1.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-sm-6 col-12">
-                        <img src="./Images/ps2.png" alt="" class="img-fluid">
+                <div class="play">
+                    <div class="row mt-5">
+                        <div class="col-6">
+                            <img src="./Images/ps1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-6">
+                            <img src="./Images/ps2.png" alt="" class="img-fluid">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -461,35 +469,33 @@
 
     <!-- 2 Cards -->
     <section id="cards" style="display: flex; align-items: center;padding: 0%; margin-top: 2%;">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-12 mb-5">
-                    <div class="join-1">
-                        <img src="./Images/join_patrons.jpeg" class="img-fluid rounded" alt="">
-                        <div class="join-1-overlay">
-                            <div class="row">
+        <div class="container bt">
+            <div class="row mt-3">
+                <div class="col-12 col-md-6 mb-2">
+                    <div class="card bg-dark text-white">
+                        <img src="./images/join_patrons.jpeg" class="card-img" alt="info-img">
+                        <div class="card-img-overlay">
+                            <div class="row join">
                                 <div class="col-10">
-                                    <p class="fw-bold fs-1 join">Join as a Patron</p>
+                                    <h2 class="fs-1 fw-bold">Join as a Patron</h2>
                                 </div>
-                                <div class="col-2 text-center">
-                                    <p class="fw-bold fs-1 border border-white rounded-circle border-2 join"><i
-                                            class="fa-solid fa-arrow-right"></i></p>
+                                <div class="col-2 py-3">
+                                    <i class="fa-regular fa-circle-right fs-1" style="color: #ffffff;"></i>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-12">
-                    <div class="join-2">
-                        <img src="./Images/join_kitchen.jpeg" class="img-fluid rounded" alt="">
-                        <div class="join-2-overlay">
-                            <div class="row">
-                                <div class="col-10">
-                                    <p class="fw-bold fs-1 join">Partner with us as a Kitchen</p>
+                <div class="col-12 col-md-6 sp">
+                    <div class="card bg-dark text-white">
+                        <img src="./images/join_kitchen.jpeg" class="card-img" alt="info-img">
+                        <div class="card-img-overlay">
+                            <div class="row join">
+                                <div class="col-10 col-md-10">
+                                    <h2 class="fs-1 fw-bold">Partner with us as a Kitchen</h2>
                                 </div>
-                                <div class="col-2 text-center mt-lg-5">
-                                    <p class="fw-bold fs-1 border border-white rounded-circle border-2 join"><i
-                                            class="fa-solid fa-arrow-right"></i></p>
+                                <div class="col-2 py-4">
+                                    <i class="fa-regular fa-circle-right fs-1" style="color: #ffffff;"></i>
                                 </div>
                             </div>
                         </div>
@@ -497,6 +503,7 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- Footer -->
