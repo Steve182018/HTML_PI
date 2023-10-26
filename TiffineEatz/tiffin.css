@@ -3,11 +3,12 @@
     padding: 0;
 }
 
-.steps{
+.steps {
     display: block;
     position: relative;
     margin-top: 100px;
 }
+
 .main-banner {
     position: absolute;
     z-index: -10;
@@ -51,7 +52,7 @@
     outline: none;
 }
 
-.ud{
+.ud {
     width: 50%;
 }
 
@@ -59,10 +60,12 @@
     background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
     box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
 }
+
 .img-bg {
     position: absolute;
 }
-.join{
+
+.join {
     padding-top: 50%;
 }
 
@@ -157,10 +160,8 @@
     width: 600px;
     padding: 20px;
     border-radius: 10px;
-    font-size:20px;
+    font-size: 20px;
 }
-
-
 
 .bg3 {
     background-image: url('./images/footer-bg.jpg') !important;
@@ -168,7 +169,7 @@
 
 footer .top-footer {
     position: relative;
-     padding: 75px 0;
+    padding: 75px 0;
 }
 
 .text-right {
@@ -208,11 +209,11 @@ footer .bottom-footer .find-us .social-links-text li {
 }
 
 @media screen and (max-width:2560px) {
-    .india{
+    .india {
         height: 800px;
     }
 
-    .kt{
+    .kt {
         margin-top: 2%;
     }
 
@@ -222,20 +223,21 @@ footer .bottom-footer .find-us .social-links-text li {
 }
 
 @media screen and (max-width:1880px) {
-    .steps{
+    .steps {
         margin-top: 50px;
     }
 }
 
 @media screen and (max-width:1440px) {
 
-    .steps{
+    .steps {
         margin-top: 50px;
     }
 
-    .kt{
+    .kt {
         margin-top: 0%;
     }
+
     .map-overlay {
         top: 25%;
         left: 36%;
@@ -246,11 +248,23 @@ footer .bottom-footer .find-us .social-links-text li {
     }
 }
 
+@media screen and (max-width: 1400px) {
+    .main-banner {
+        height: 700px;
+    }
+}
+
+
 @media screen and (max-width:1200px) {
 
-    .steps{
+    .steps {
         margin-top: 100px;
     }
+
+    .join {
+        padding-top: 45%;
+    }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -273,61 +287,177 @@ footer .bottom-footer .find-us .social-links-text li {
         font-size: 20px;
     }
 
-    .join{
+    .join {
         padding-top: 45%;
     }
 
-    .india{
+    .india {
         height: 650px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .main-banner {
+        height: 780px;
+    }
+
+    .map-overlay {
+        left: 45%
+    }
+
+    .card-1 {
+        left: 45%;
+    }
+
+    .play {
+        height: 150px;
+        left: 50%;
+    }
+
+    .ud {
+        width: 100%;
+    }
+
+    .join {
+        padding-top: 40%;
     }
 }
 
 @media screen and (max-width: 768px) {
 
-    .ud{
-        width: 75%;
+    .main-banner {
+        height: 750px;
     }
 
-    .kfont h5{
-        font-size: 17px !important; 
+    .ud {
+        width: 100%;
     }
+
+    .kfont h5 {
+        font-size: 17px !important;
+    }
+
     .map-overlay {
         left: 50%;
+        /* font-size: 40px;
+        width: 300px; */
     }
 
     .card-1 {
         top: 55%;
-        left: 50%;
+        left: 30%;
+        font-size: 20px;
+        width: 300px;
     }
 
+    
     .play {
         top: 85%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 0px;
-        font-size:0px;
+        left: 40%;
+        width: 400px;
     }
     .play img{
-        height: 60px;
+        height: 55px;
     }
 
-    .join{
+    .join {
         padding-top: 40%;
     }
 
-    .steps{
-        margin-top: 50px;
+    .steps {
+        margin-top: 80px;
+    }
+
+    .card {
+        max-width: 50rem !important;
+    }
+
+    .india {
+        height: 800px;
     }
 }
 
 @media screen and (max-width:625px) {
 
-    .ud{
-        width: 100%;
+    .main-banner {
+        height: 600px;
     }
 
-    .card {
-        max-width: 25rem !important;
+     .main-cap {
+        text-align: center !important;
+        padding: 0% !important;
+    } 
+
+    .map-overlay {
+        top: 15%;
+        /* left: 25%; */
+        /* font-size: 30px;*/
+        width: 450px; 
+    }
+
+    .card-1 {
+        top: 60%;
+        left: 40%;
+        /* font-size: 15px;
+        width: 300px; */
+    }
+
+    .play {
+        top: 90%;
+        /* left: 30%; */
+        /* width: 300px; */
+    }
+
+    .play img {
+        /* height: 40px; */
+    }
+
+    .india {
+        height: 750px;
+    }
+
+    .join {
+        padding-top: 45%;
+    }
+
+}
+
+@media screen and (max-width:525px) {
+    .map-overlay {
+        top: 15%;
+        left: 35%;
+        font-size: 30px;
+        width: 250px;
+    }
+
+    .card-1 {
+        top: 55%;
+        left: 43%;
+        font-size: 15px;
+        width: 300px;
+    }
+
+    .play {
+        top: 85%;
+        left: 40%;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    #carouselExampleDark .carousel-control-prev,
+    #carouselExampleDark .carousel-control-next {
+        display: none;
+    }
+
+    .steps {
+        margin-top: 0px;
+    }
+
+    .main-banner {
+        height: 650px;
     }
 
     .map-overlay {
@@ -349,26 +479,14 @@ footer .bottom-footer .find-us .social-links-text li {
         left: 40%;
         width: 300px;
     }
-    .play img{
-        height: 40px;
-    }
-
-    .india{
-        height: 600px;
-    }
-
-    .join{
-        padding-top: 45%;
-    }
-
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:375px) {
     .map-overlay {
         left: 40%;
     }
 
-    .card-1{
+    .card-1 {
         left: 48%;
     }
 
@@ -377,26 +495,26 @@ footer .bottom-footer .find-us .social-links-text li {
         left: 45%;
     }
 
-    #pipe{
+    #pipe {
         display: none;
     }
 }
 
 @media screen and (max-width:320px) {
 
-    .map-overlay{
+    .map-overlay {
         left: 45%;
     }
 
-    .card-1{
+    .card-1 {
         top: 55%;
         left: 45%;
         width: 250px;
     }
 
-    .play{
+    .play {
         left: 50%;
-        width: 250px;
+        width: 350px;
     }
 
 

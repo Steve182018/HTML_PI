@@ -13,19 +13,24 @@
     <link rel="stylesheet" href="./tiffin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="./Images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Noto+Sans+JP:wght@100&family=Oswald:wght@300&family=Roboto:wght@100&family=Shadows+Into+Light&family=Young+Serif&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <!-- Navbar -->
 
     <div class="header">
-        <!--#region banner-img  -->
+
         <img src="./images/banner-img.jpg" alt="banner" width="100%" height="70%" class="main-banner">
 
-        <!--#region Navbar  -->
+
         <nav class="navbar navbar-expand-xl navbar-light bg-light" style="background: rgba(0, 0, 0, 0.5) !important;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand ms-lg-5" href="#">
                     <img src="./images/logo.png" alt="logo" style="width: 80px !important;">
                 </a>
                 <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
@@ -35,29 +40,26 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item text-white">
+                        <li class="nav-item me-xl-5 ms-xl-5 ms-lg-3 me-lg-3">
                             <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item text-white">
+                        <li class="nav-item me-xl-5 ms-xl-5 ms-lg-3 me-lg-3">
                             <a class="nav-link text-white" aria-current="page" href="#kitchens">Find Kitchens</a>
                         </li>
-                        <li class="nav-item text-white">
+                        <li class="nav-item me-xl-5 ms-xl-5 ms-lg-3 me-lg-3">
                             <a class="nav-link text-white" aria-current="page" href="#Reason">About Us</a>
                         </li>
-                        <li class="nav-item text-white">
+                        <li class="nav-item me-xl-5 ms-xl-5 ms-lg-3 me-lg-3">
                             <a class="nav-link text-white" aria-current="page" href="#Orders">Contact Us</a>
                         </li>
-                        <li class="nav-item text-white">
+                        <li class="nav-item me-xl-5 ms-xl-5 ms-lg-3 me-lg-3">
                             <a class="nav-link text-white" aria-current="page" href="#cards">Register Your Kitchen</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <a class="nav-link text-white"> <i
-                                class="fa-solid fa-basket-shopping"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <!-- <span
-                                class="position-absolute top-1 translate-middle p-2 bg-warning border border-light rounded-circle"></span> -->
-                        </a>
-                        <a class="nav-link text-white">Sign In <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <form class="d-flex forms">
+                        <a class="nav-link text-white me-xl-5 ms-xl-5 ms-lg-3 me-lg-3"> <i class="fa-solid fa-basket-shopping"></i>
+                        </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="nav-link text-white me-xl-5 ms-xl-5 ms-lg-3 me-lg-3">Sign In <i class="fa-solid fa-right-to-bracket"></i></a>
                     </form>
                 </div>
             </div>
@@ -65,9 +67,9 @@
 
         <div class="container">
             <div class="col-1"></div>
-            <div class="col-10 col-md-6 col-lg-6 col-xl-5 mt-5 px-4 ">
-                <h1 class="py-2 text-white">Find Fresh, Authentic and <br> Homemade Food Near You</h1>
-                <h4 class="py-2 text-white">We aim to connect local, home-based <br> food businesses with customers.
+            <div class="col-12 col-md-6 col-lg-6 col-xl-5 mt-5 px-4 ">
+                <h1 class="py-2 text-white main-cap" >Find Fresh, Authentic and <br> Homemade Food Near You</h1>
+                <h4 class="py-2 text-white main-cap">We aim to connect local, home-based <br> food businesses with customers.
                 </h4>
             </div>
             <div class="col-6 col-md-5 col-lg-5 col-xl-6"></div>
@@ -75,13 +77,13 @@
             <div class="input-group mb-3 ud">
                 <input type="text" class="form-control p-4" placeholder="Enter our Location.."
                     aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary btnhover color-4"
-                    style="background-color: orange;border: none;" type="button" id="button-addon2">Update
+                <button class="btn btn-outline-secondary btnhover color-4" type="button" id="button-addon2">Update
                     Location</button>
             </div>
         </div>
     </div>
-    
+
+    <!-- Steps Card -->
     <section class="steps">
         <div class="container">
             <div class="row mt-5 d-flex ">
@@ -89,7 +91,7 @@
                     <div class="card text-white bg-dark mb-3" style="height: 14rem;max-width: 20rem;">
                         <div class="card-header text-warning"> <i class="fa-solid fa-location-dot"></i> STEP 1</div>
                         <div class="card-body">
-                            <h5 class="card-title">Explore Kitchen</h5> <br>
+                            <h5 class="card-title" style="font-family: 'Croissant One', serif;">Explore Kitchen</h5> <br>
                             <p class="card-text"> Choose delicious, homemade meals, snacks, baked goods and more. </p>
                         </div>
                     </div>
@@ -98,7 +100,7 @@
                     <div class="card text-white bg-dark mb-3" style="height: 14rem;max-width: 20rem;">
                         <div class="card-header text-warning"><i class="fa-regular fa-calendar-days"></i> STEP 2</div>
                         <div class="card-body">
-                            <h5 class="card-title">Choose Your Date And Dishes</h5><br>
+                            <h5 class="card-title" style="font-family: 'Croissant One', serif;">Choose Your Date And Dishes</h5><br>
                             <p class="card-text"> Kitchens require 48 hrs of minimum time to ensure they can fulfill the
                                 order. </p>
                         </div>
@@ -106,9 +108,9 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card text-white bg-dark mb-3" style="height: 14rem;max-width: 20rem;">
-                        <div class="card-header text-warning"><i class="fa-solid fa-drumstick-bite"></i> STEP 3</div>
+                        <div class="card-header text-warning"><i class="fa-solid fa-bowl-food"></i> STEP 3</div>
                         <div class="card-body">
-                            <h5 class="card-title">Submit Your Order</h5><br>
+                            <h5 class="card-title" style="font-family: 'Croissant One', serif;">Submit Your Order</h5><br>
                             <p class="card-text">Order for pickup/delivery and enjoy!</p>
                         </div>
                     </div>
@@ -121,8 +123,8 @@
     <section id="kitchens" style="display: flex; align-items: center;padding: 1%; margin-top: 0%;">
         <div class="container kt">
             <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
-                <p class="fw-bold fs-3" style="color: goldenrod;">Featured</p>
-                <h1 class="fw-bold fs-1">Featured Kitchens</h1>
+                <p class="fw-bold fs-3" style="color: goldenrod; font-family: 'Croissant One', serif;">Featured</p>
+                <h1 class="fw-bold fs-1" style="font-family: 'Roboto', sans-serif;">Featured Kitchens</h1>
                 <p class="fw-bold fs-5 mt-3 text-center" style="color: red;">At this moment we are not providing service
                     in your
                     location</p>
@@ -269,20 +271,20 @@
     <section id="Reason" style="display: flex; align-items: center;padding: 1%; margin-top: 2%;">
         <div class="container">
             <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
-                <p class="fw-bold fs-3" style="color: goldenrod;">The Reason Why</p>
-                <h1 class="fw-bold fs-1 text-center">Why People Choose US</h1>
+                <p class="fw-bold fs-3" style="color: goldenrod;font-family: 'Croissant One', serif;">The Reason Why</p>
+                <h1 class="fw-bold fs-1 text-center" style="font-family: 'Roboto', sans-serif;">Why People Choose Us</h1>
             </div>
             <div class="row mt-5">
                 <div class="col-sm-3 col-12"></div>
                 <div class="col-sm-3 col-12 text-center">
                     <img src="./Images/menu_60X60 (1).png" alt="">
-                    <p class="fw-bold fs-4 mt-5">Diverse Option</p>
-                    <p class="fs-5">Choose from a diverse range of meals, snacks, and baked goods made with love.</p>
+                    <p class="fw-bold fs-4 mt-5" style="font-family: 'Croissant One', serif;">Diverse Option</p>
+                    <p class="fs-5" style="font-family: 'Roboto', sans-serif;">Choose from a diverse range of meals, snacks, and baked goods made with love.</p>
                 </div>
                 <div class="col-sm-3 col-12 text-center">
                     <img src="./Images/calendar_60X60.png" alt="">
-                    <p class="fw-bold fs-4 mt-5">Flexible Scheduling</p>
-                    <p class="fs-5">Kitchens can operate at their own time and customers can order for up to 30 days in
+                    <p class="fw-bold fs-4 mt-5" style="font-family: 'Croissant One', serif;">Flexible Scheduling</p>
+                    <p class="fs-5" style="font-family: 'Roboto', sans-serif;">Kitchens can operate at their own time and customers can order for up to 30 days in
                         advance.</p>
                 </div>
             </div>
@@ -290,14 +292,14 @@
                 <div class="col-sm-3 col-12"></div>
                 <div class="col-sm-3 col-12 text-center">
                     <img src="./Images/grow_60X60.png" alt="">
-                    <p class="fw-bold fs-4 mt-5">Grow Your Brand</p>
-                    <p class="fs-5">We will provide marketing tools and resources to help kitchens grow their business.
+                    <p class="fw-bold fs-4 mt-5" style="font-family: 'Croissant One', serif;">Grow Your Brand</p>
+                    <p class="fs-5" style="font-family: 'Roboto', sans-serif;">We will provide marketing tools and resources to help kitchens grow their business.
                     </p>
                 </div>
                 <div class="col-sm-3 col-12 text-center">
                     <img src="./Images/community_60X60.png" alt="">
-                    <p class="fw-bold fs-4 mt-5">Connecting Communities</p>
-                    <p class="fs-5">Grow your local network and share the joy of food with others in your community.</p>
+                    <p class="fw-bold fs-4 mt-5"style="font-family: 'Croissant One', serif;">Connecting Communities</p>
+                    <p class="fs-5" style="font-family: 'Roboto', sans-serif;">Grow your local network and share the joy of food with others in your community.</p>
                 </div>
             </div>
         </div>
@@ -307,8 +309,8 @@
     <section id="Testinomials" style="display: flex; align-items: center;padding: 1%; margin-top: 2%;">
         <div class="container">
             <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
-                <p class="fw-bold fs-3" style="color: goldenrod;">Testinomials</p>
-                <h1 class="fw-bold fs-1">Happy Customers Say</h1>
+                <p class="fw-bold fs-3" style="color: goldenrod;font-family: 'Croissant One', serif;">Testinomials</p>
+                <h1 class="fw-bold fs-1" style="font-family: 'Roboto', sans-serif;">Happy Customers Say</h1>
             </div>
             <div id="carouselExampleDark" class="carousel carousel-dark slide">
                 <div class="carousel-indicators d-none">
@@ -324,11 +326,11 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row mt-5">
-                            <div class="col-sm-2 col-12"></div>
-                            <div class="col-sm-10 col-12 text-center">
+                            <div class="col-md-2 col-12 "></div>
+                            <div class="col-md-10 col-12 text-center">
                                 <div class="row">
                                     <div class="col-sm-12 col-md-10">
-                                        <p>
+                                        <p style="font-family: 'Roboto', sans-serif;">
                                             Quis quorum aliqua sint quem legam fore
                                             sunt eram
                                             irure aliqua veniam tempor noster
@@ -336,8 +338,8 @@
                                             esse veniam
                                             culpa fore nisi cillum quid.
                                         </p>
-                                        <h4>Asha(HomeCook)</h4>
-                                        <p>Jul 15,2022</p>
+                                        <h4 style="font-family: 'Croissant One', serif;">Asha(HomeCook)</h4>
+                                        <p style="font-family: 'Roboto', sans-serif;">Jul 15,2022</p>
                                     </div>
                                 </div>
                             </div>
@@ -346,10 +348,10 @@
                     <div class="carousel-item">
                         <div class="row mt-5">
                             <div class="col-sm-2 col-12"></div>
-                            <div class="col-sm-10 col-12 text-center">
+                            <div class="col-md-10 col-12 text-center">
                                 <div class="row">
                                     <div class="col-sm-12 col-md-10">
-                                        <p>
+                                        <p style="font-family: 'Roboto', sans-serif;">
                                             Quis quorum aliqua sint quem legam fore
                                             sunt eram
                                             irure aliqua veniam tempor noster
@@ -357,8 +359,8 @@
                                             esse veniam
                                             culpa fore nisi cillum quid.
                                         </p>
-                                        <h4>Marco Bitchuni</h4>
-                                        <p>May 15,2022</p>
+                                        <h4 style="font-family: 'Croissant One', serif;">Marco Bitchuni</h4>
+                                        <p style="font-family: 'Roboto', sans-serif;">May 15,2022</p>
                                     </div>
                                 </div>
                             </div>
@@ -367,10 +369,10 @@
                     <div class="carousel-item">
                         <div class="row mt-5">
                             <div class="col-sm-2 col-12"></div>
-                            <div class="col-sm-10 col-12 text-center">
+                            <div class="col-md-10 col-12 text-center">
                                 <div class="row">
                                     <div class="col-sm-12 col-md-10">
-                                        <p>
+                                        <p style="font-family: 'Roboto', sans-serif;">
                                             Quis quorum aliqua sint quem legam fore
                                             sunt eram
                                             irure aliqua veniam tempor noster
@@ -378,8 +380,8 @@
                                             esse veniam
                                             culpa fore nisi cillum quid.
                                         </p>
-                                        <h4>Anushka(Customer)</h4>
-                                        <p>Dec 15,2022</p>
+                                        <h4 style="font-family: 'Croissant One', serif;">Anushka(Customer)</h4>
+                                        <p style="font-family: 'Roboto', sans-serif;">Dec 15,2022</p>
                                     </div>
                                 </div>
                             </div>
@@ -387,11 +389,11 @@
                     </div>
                     <div class="carousel-item">
                         <div class="row mt-5">
-                            <div class="col-sm-2 col-12"></div>
-                            <div class="col-sm-10 col-12 text-center">
+                            <div class="col-md-2 col-12"></div>
+                            <div class="col-md-10 col-12 text-center">
                                 <div class="row">
                                     <div class="col-sm-12 col-md-10">
-                                        <p>
+                                        <p style="font-family: 'Roboto', sans-serif;">
                                             Quis quorum aliqua sint quem legam fore
                                             sunt eram
                                             irure aliqua veniam tempor noster
@@ -399,8 +401,8 @@
                                             esse veniam
                                             culpa fore nisi cillum quid.
                                         </p>
-                                        <h4>Tina(Customer)</h4>
-                                        <p>Oct 15,2022</p>
+                                        <h4 style="font-family: 'Croissant One', serif;">Tina(Customer)</h4>
+                                        <p style="font-family: 'Roboto', sans-serif;">Oct 15,2022</p>
                                     </div>
                                 </div>
                             </div>
@@ -409,13 +411,19 @@
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class=" text-danger">
+                        <i class="fa-solid fa-circle-arrow-left fs-1" style="color: #8daee7;" aria-hidden="true"></i>
+                    </span>
+                    <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span> -->
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class=" text-danger">
+                        <i class="fa-solid fa-circle-arrow-right fs-1" style="color: #8daee7;" aria-hidden="true"></i>
+                    </span>
+                    <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span> -->
                 </button>
             </div>
         </div>
@@ -423,9 +431,9 @@
 
     <!-- Make Orders -->
     <section id="Orders" style="display: flex; align-items: center;padding: 0%; margin-top: 2%;">
-        <div class="container">
+        <div class="col-12">
             <div class="map">
-                <img src="./Images/bg2.jpg" alt="" class="img-fluid india">
+                <img src="./Images/bg2.jpg" alt="" class="img-fluid india" style="object-fit: cover; width: 100%;">
                 <div class="map-overlay">
                     <p class="fw-bold" style="color: whitesmoke;">Make Orders With Our</p>
                     <p class="fw-bold" style="color: gold;">Application</p>
